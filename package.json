@@ -1,0 +1,20 @@
+{
+  "name": "todos-web",
+  "version": "1.0.0",
+  "description": "- Créer un répertoire .docker  - Déplacer le fichier DockerFile, la structure de base et le vhost.conf dedans  - Corriger le fichier docker-compose.yml  - Recompiler et lancer compose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "compass watch --css-dir public/css sass/hello.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.unistra.fr/hebabil/tp2.git"
+  },
+  "author": "Nadjib Belaribi",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1"
+  }
+}

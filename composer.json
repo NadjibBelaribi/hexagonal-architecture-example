@@ -1,0 +1,29 @@
+{
+    "name": "hakan/hello",
+    "require": {
+        "ext-pdo": "*",
+        "slim/slim": "^4.5",
+        "slim/psr7": "^1.2",
+        "twig/twig": "^3.0",
+        "slim/twig-view": "^3.1",
+        "php-di/php-di": "^6.2",
+        "vlucas/phpdotenv": "^5.2",
+        "ext-json": "^1.7"
+    },
+    "authors": [
+        {
+            "name": "Hakan EBABIL",
+            "email": "hakan@chargemap.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Hakan\\Hello\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Hakan\\Hello\\": "test/"
+        }
+    }
+}
