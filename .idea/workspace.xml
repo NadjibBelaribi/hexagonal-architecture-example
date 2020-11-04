@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3412089c-fde2-4fb9-b17d-43b9522fc2e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/hell.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/hello.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/hello.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/hello.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/hello.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/navbar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/navbar.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/search.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tasks.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/tasks.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +74,8 @@
       <updated>1604235303479</updated>
       <workItem from="1604235305122" duration="270000" />
       <workItem from="1604435319972" duration="154000" />
-      <workItem from="1604492820540" duration="1012000" />
+      <workItem from="1604492820540" duration="1162000" />
+      <workItem from="1604494969811" duration="72000" />
     </task>
     <servers />
   </component>
