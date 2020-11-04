@@ -13,8 +13,7 @@ class TasksController
     private PDO $pdo;
     private Twig $twig;
 
-    public function __construct(PDO $pdo, Twig $twig)
-    {
+    public function __construct(PDO $pdo, Twig $twig){
         $this->pdo = $pdo;
         $this->twig = $twig;
     }
@@ -39,10 +38,9 @@ class TasksController
             'error' => 'Could not connect to database'
         ]);
     }
-    public function getTaskDetails (RequestInterface $request, ResponseInterface $response, array $args)
-    {
+    public function getTaskDetails (RequestInterface $request, ResponseInterface $response, array $args){
         $taskId = $args['id'] ;
-
+        $_SESSION['curTaskId'] = $taskId ;
         $task = $this->pdo->prepare('select * from todos inner join users
         on users.id = todos.created_by where todos.id = :tid');
         $task->bindParam(':tid', $taskId, PDO::PARAM_INT);
@@ -59,7 +57,6 @@ class TasksController
         $users->execute() ;
         $assigned = $users->fetch() ;
 
-
         $todos = $this->pdo->query('select * from todos ')->fetchAll();
         $users = $this->pdo->query('select * from users')->fetchAll();
         $comments = $this->pdo->prepare('select * from comments where task_id = :tid ');
@@ -67,19 +64,18 @@ class TasksController
         $comments->execute() ;
         $comments = $comments->fetchAll() ;
 
-
          return $this->twig->render($response, 'tasks.tpl', [
              'todos' => $todos,
              'users' => $users,
              'comments' => $comments,
              'curTask' => $task,
-            'creator' => $creator['email'],
-            'assigned'=> $assigned['email'],
-            'error' => 'Could not connect to database'
+             'currentUser'=>ucfirst(strtok($_SESSION['user'],'@')),
+             'creator' => $creator['email'],
+             'assigned'=> $assigned['email'],
+             'error' => 'Could not connect to database'
         ]);
     }
-    public function addTask(RequestInterface $request, ResponseInterface $response)
-    {
+    public function addTask(RequestInterface $request, ResponseInterface $response){
         $title = $_POST['title'];
         $assigned = $_POST['assigned'];
         $description = $_POST['description'];
@@ -94,30 +90,31 @@ class TasksController
         $userId = $user['id'] ;
 
         $sql = "INSERT INTO todos (id, created_by, assigned_to, title, description, created_at, due_date)
-VALUES(null,'$currUser','$userId','$title','$description','$currDate','$dueDate');" ;
+        VALUES(null,'$currUser','$userId','$title','$description','$currDate','$dueDate');" ;
         $execute = $this->pdo->prepare($sql);
 
-        if($execute->execute())
-        {
-            $res = json_encode($title) ;
+        if($execute->execute()) {
+            $data= $this->pdo->query('SELECT * FROM todos ORDER BY id DESC LIMIT 1 ');
+            $task = $data->fetch() ;
+            $res = json_encode($task) ;
             $response->getBody()->write($res) ;
             return $response->withStatus(200);
         }
     }
-    public function addComment(RequestInterface $request, ResponseInterface $response)
-    {
-
+    public function addComment(RequestInterface $request, ResponseInterface $response){
          $comment = $_POST['comment'];
-         $sql = "insert into comments (id, task_id, created_by, created_at, comment) VALUES (null,2,1,'2019-08-11 16:33:15','$comment')" ;
+         $taskId =  $_SESSION['curTaskId'] ;
+         $created_by =  $_SESSION['userId'] ;
+
+        $currDate = date("Y-m-d H:i:s");
+        $sql = "insert into comments (id, task_id, created_by, created_at, comment) VALUES (null,'$taskId','$created_by','$currDate','$comment')" ;
          $execute = $this->pdo->prepare($sql);
 
-        if($execute->execute())
-        {
+         if($execute->execute()){
             $comm = $comment;
             $res = json_encode($comm) ;
             $response->getBody()->write($res) ;
             return $response->withStatus(200);
-
         }
     }
 }

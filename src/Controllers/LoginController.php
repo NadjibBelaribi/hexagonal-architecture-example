@@ -58,4 +58,11 @@ class LoginController
         return $response->withStatus(200);
 
     }
+
+    public function signOut (RequestInterface $request, ResponseInterface $response) {
+
+        session_reset();
+        return $response->withStatus(200);
+
+    }
 }
