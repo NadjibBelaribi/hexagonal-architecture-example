@@ -7,13 +7,16 @@
         "twig/twig": "^3.0",
         "slim/twig-view": "^3.1",
         "php-di/php-di": "^6.2",
-        "vlucas/phpdotenv": "^5.2",
-        "doext-json": "^1.7"
+        "vlucas/phpdotenv": "^5.2"
     },
     "authors": [
         {
-            "name": "Hakan EBABIL",
-            "email": "hakan@chargemap.com"
+            "name": "Nadjib Belaribi",
+            "email": "nbelaribi@etu.unistra.fr"
+        },
+        {
+            "name": "Amir  BOUAFIA",
+            "email": "abouafia@etu.unistra.fr"
         }
     ],
     "autoload": {
@@ -25,5 +28,8 @@
         "psr-4": {
             "Tests\\Hakan\\Hello\\": "test/"
         }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit  tests/*"
     }
 }

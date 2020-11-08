@@ -5,7 +5,7 @@
       build:
         context: .
         dockerfile: .docker/Dockerfile
-      container_name: hello_world_web_hakan_1
+      container_name: todos_web_nadjib
       ports:
         - 8003:80
       volumes:
@@ -14,7 +14,7 @@
         - mysql
     mysql:
       image: mysql:5.7
-      container_name: hello_world_mysql_hakan_1
+      container_name: todos_sql_nadjib
       environment:
         MYSQL_ROOT_PASSWORD: root
         MYSQL_DATABASE: todos

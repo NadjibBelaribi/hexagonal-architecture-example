@@ -13,7 +13,6 @@
 
 <body style="background-image: url('img/bg.jpg');background-repeat: no-repeat;background-size: cover;">
 {% include 'navbar.tpl' %}
-
 <div class="site-wrapper">
 
     <div class="site-wrapper-inner">
@@ -69,7 +68,7 @@
          request.send(formData);
          document.getElementById('emailHelp').innerText = "";
          const data = JSON.parse(request.responseText) ;
-         if(data =="no")
+         if(data =="failure")
          {
              document.getElementById('emailHelp').innerText = "Error identifiants";
          }
@@ -81,6 +80,3 @@
 
 </body>
 </html>
-
-
-

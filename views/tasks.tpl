@@ -26,6 +26,7 @@
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -36,6 +37,7 @@
     <!-- Sidebar -->
     <div class="border-right" id="sidebar-wrapper">
         <br />
+
         <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
                 aria-expanded="false" aria-controls="collapseExample">
             Filter Pannel
@@ -50,6 +52,56 @@
                 </form>
             <br/>
         </div>
+        <script>
+
+            <!-- Menu Toggle Script -->
+
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+            document.getElementById('userFilterInput').onkeyup = function (event) {
+                const hint = this.value;
+                event.preventDefault();
+                var request = new XMLHttpRequest();
+                request.open('GET', '/filterIdSearch?user=' + hint, true);
+                request.send();
+                request.onreadystatechange = function () {
+                    data = JSON.parse(request.responseText);
+                    document.getElementById('listTasks').innerHTML = "";
+
+                    for (i = 0; i < data.length; ++i) {
+                        var a = document.createElement('a');
+                        a.href = "/tasks/" + data[i].id + "/details";
+                        a.classList.add("list-group-item", "list-group-item-action", "bg-light");
+                        a.textContent = data[i].title;
+                        document.getElementById('listTasks').append(a);
+
+                    }
+                }
+            }
+            document.getElementById('taskFilterInput').onkeyup = function (event) {
+                const hint = this.value;
+                event.preventDefault();
+                var request = new XMLHttpRequest();
+                request.open('GET', '/filterTaskSearch?title=' + hint, true);
+                request.send();
+                request.onreadystatechange = function () {
+                    data = JSON.parse(request.responseText);
+                    document.getElementById('listTasks').innerHTML = "";
+                    console.log(data);
+                    for (i = 0; i < data.length; ++i) {
+                        var a = document.createElement('a');
+                        a.href = "/tasks/" + data[i].id + "/details";
+                        a.classList.add("list-group-item", "list-group-item-action", "bg-light");
+                        a.textContent = data[i].title;
+                        document.getElementById('listTasks').append(a);
+
+                    }
+                }
+            }
+
+        </script>
         <button type="button" style="justify-content: center" class="btn btn-outline-primary"" data-toggle="modal"
                 data-target="#exampleModalCenter">
             Add New Task </button>
@@ -195,17 +247,6 @@
 
     </div>
 
-
-    <!-- Bootstrap core JavaScript -->
-
-    <!-- Menu Toggle Script -->
-    <script>
-
-        $("#menu-toggle").click(function (e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-    </script>
 
 </body>
 

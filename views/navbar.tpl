@@ -30,47 +30,6 @@
 </nav>
 
 <script>
-    document.getElementById('userFilterInput').onkeyup = function (event) {
-        const hint = this.value;
-        event.preventDefault();
-        var request = new XMLHttpRequest();
-        request.open('GET', '/filterIdSearch?user=' + hint, true);
-        request.send();
-        request.onreadystatechange = function () {
-            data = JSON.parse(request.responseText);
-            document.getElementById('listTasks').innerHTML = "";
-
-            for (i = 0; i < data.length; ++i) {
-                var a = document.createElement('a');
-                a.href = "/tasks/" + data[i].id + "/details";
-                a.classList.add("list-group-item", "list-group-item-action", "bg-light");
-                a.textContent = data[i].title;
-                document.getElementById('listTasks').append(a);
-
-            }
-        }
-    }
-    document.getElementById('taskFilterInput').onkeyup = function (event) {
-        const hint = this.value;
-        event.preventDefault();
-        var request = new XMLHttpRequest();
-        request.open('GET', '/filterTaskSearch?title=' + hint, true);
-        request.send();
-        request.onreadystatechange = function () {
-            data = JSON.parse(request.responseText);
-            document.getElementById('listTasks').innerHTML = "";
-            console.log(data);
-            for (i = 0; i < data.length; ++i) {
-                var a = document.createElement('a');
-                a.href = "/tasks/" + data[i].id + "/details";
-                a.classList.add("list-group-item", "list-group-item-action", "bg-light");
-                a.textContent = data[i].title;
-                document.getElementById('listTasks').append(a);
-
-            }
-        }
-    }
-
     function signOut()   {
         /* Login page scripts */
             var request = new XMLHttpRequest();

@@ -1,14 +1,3 @@
-# ************************************************************
-# Sequel Pro SQL dump
-# Version 4541
-#
-# http://www.sequelpro.com/
-# https://github.com/sequelpro/sequelpro
-#
-# Hôte: 127.0.0.1 (MySQL 5.7.25)
-# Base de données: architecture_web_tp1
-# Temps de génération: 2019-08-11 14:34:03 +0000
-# ************************************************************
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;

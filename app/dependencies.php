@@ -2,7 +2,6 @@
 
 use DI\ContainerBuilder;
 use Slim\Views\Twig;
-
 return function () {
 
     $containerBuilder = new ContainerBuilder();
