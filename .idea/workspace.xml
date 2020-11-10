@@ -23,23 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3412089c-fde2-4fb9-b17d-43b9522fc2e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.docker/structure.sql" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/structure.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/todo-list.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/todo-list.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dependencies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/dependencies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/FilterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/FilterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/HomeController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/hello.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/sass/todos.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hello.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/login.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/login.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/navbar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/navbar.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/tasks.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/tasks.tpl" afterDir="false" />
@@ -57,6 +52,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -117,6 +113,13 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jgosUztKYLQqMJkZ5DAT1xDmDj" />
@@ -128,12 +131,16 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/javascript" />
       <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -155,6 +162,7 @@
       <workItem from="1604616773991" duration="2202000" />
       <workItem from="1604745504627" duration="11628000" />
       <workItem from="1604848064059" duration="994000" />
+      <workItem from="1604963716798" duration="4932000" />
     </task>
     <servers />
   </component>
@@ -174,10 +182,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604771029740">
+    <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604966858535">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1604771029740" />
+    <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1604966858535" />
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1604767677052">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -186,11 +194,31 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1604846067162" />
+    <state x="474" y="369" key="ComposerInitDialogKey" timestamp="1604968232725">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="474" y="369" key="ComposerInitDialogKey/0.0.1440.900@0.0.1440.900" timestamp="1604968232725" />
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1604848945419">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1604848945419" />
     <state x="100" y="100" width="1240" height="700" maximized="true" key="DiffContextDialog/0.23.1440.792@0.23.1440.792" timestamp="1604841805685" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1604963834946">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604963834946" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1604963834945">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604963834945" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1604963834944">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604963834944" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1604963834945">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604963834945" />
     <state x="446" y="183" key="NewPhpClassDialog" timestamp="1604846051316">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

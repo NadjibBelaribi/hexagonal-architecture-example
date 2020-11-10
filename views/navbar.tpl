@@ -22,22 +22,12 @@
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">About</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" id="signOut" onclick="signOut()">Sign out </a>
+                    <a class="dropdown-item" id="signOut">Sign out </a>
                 </div>
             </li>
         </ul>
     </div>
 </nav>
 
-<script>
-    function signOut()   {
-        /* Login page scripts */
-            var request = new XMLHttpRequest();
-            request.open('GET', '/signOut', false);
-            request.send();
-            window.location.href ="/";
-    }
-
-</script>
 </body>
 <html/>

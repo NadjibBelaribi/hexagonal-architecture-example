@@ -68,7 +68,7 @@
          request.send(formData);
          document.getElementById('emailHelp').innerText = "";
          const data = JSON.parse(request.responseText) ;
-         if(data =="failure")
+         if(data =="no")
          {
              document.getElementById('emailHelp').innerText = "Error identifiants";
          }

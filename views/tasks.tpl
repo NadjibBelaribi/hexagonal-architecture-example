@@ -3,110 +3,51 @@
 
 <head>
 
+    {% block head%}
+
+    <base href="/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <title>Tasks </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/todos.css">
+    <script src="js/index.js"></script>
+    {% endblock%}
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+
 {% include 'navbar.tpl' %}
 
-<div class="d-flex container-fluid" id="wrapper">
+<div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
     <div class="border-right" id="sidebar-wrapper">
         <br />
-
         <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
                 aria-expanded="false" aria-controls="collapseExample">
             Filter Pannel
         </button>
+
         <div class="collapse" id="collapseExample">
-            <br/>
-                 <form class="form-inline my-2 my-lg-0" method="post" id="filterForm">
-                    <input id="userFilterInput" name="user" class="form-control mr-sm-2" placeholder="By User"
-                           aria-label="Search">
-                    <input id="taskFilterInput" name="title" class="form-control mr-sm-2"
-                           placeholder="By Task Title" aria-label="Search">
-                </form>
-            <br/>
+            <br>
+            <form class="form-inline my-2 my-lg-0" method="post" id="filterForm">
+                <input id="userFilterInput" name="user" class="form-control mr-sm-2" placeholder="By User"
+                       aria-label="Search">
+                <input id="taskFilterInput" name="title" class="form-control mr-sm-2" placeholder="By Task Title"
+                       aria-label="Search">
+            </form>
         </div>
-        <script>
-
-            <!-- Menu Toggle Script -->
-
-            $("#menu-toggle").click(function (e) {
-                e.preventDefault();
-                $("#wrapper").toggleClass("toggled");
-            });
-            document.getElementById('userFilterInput').onkeyup = function (event) {
-                const hint = this.value;
-                event.preventDefault();
-                var request = new XMLHttpRequest();
-                request.open('GET', '/filterIdSearch?user=' + hint, true);
-                request.send();
-                request.onreadystatechange = function () {
-                    data = JSON.parse(request.responseText);
-                    document.getElementById('listTasks').innerHTML = "";
-
-                    for (i = 0; i < data.length; ++i) {
-                        var a = document.createElement('a');
-                        a.href = "/tasks/" + data[i].id + "/details";
-                        a.classList.add("list-group-item", "list-group-item-action", "bg-light");
-                        a.textContent = data[i].title;
-                        document.getElementById('listTasks').append(a);
-
-                    }
-                }
-            }
-            document.getElementById('taskFilterInput').onkeyup = function (event) {
-                const hint = this.value;
-                event.preventDefault();
-                var request = new XMLHttpRequest();
-                request.open('GET', '/filterTaskSearch?title=' + hint, true);
-                request.send();
-                request.onreadystatechange = function () {
-                    data = JSON.parse(request.responseText);
-                    document.getElementById('listTasks').innerHTML = "";
-                    console.log(data);
-                    for (i = 0; i < data.length; ++i) {
-                        var a = document.createElement('a');
-                        a.href = "/tasks/" + data[i].id + "/details";
-                        a.classList.add("list-group-item", "list-group-item-action", "bg-light");
-                        a.textContent = data[i].title;
-                        document.getElementById('listTasks').append(a);
-
-                    }
-                }
-            }
-
-        </script>
-        <button type="button" style="justify-content: center" class="btn btn-outline-primary"" data-toggle="modal"
+        <hr>
+        <button type="button" style="justify-content: center" class="btn btn-outline-primary" data-toggle="modal"
                 data-target="#exampleModalCenter">
             Add New Task </button>
 
-        <br /> <br />
+        <br />
+        <hr>
+
 
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -153,100 +94,86 @@
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </form>
-                        <script>
-                            var testForm = document.getElementById('taskForm');
-                            testForm.onsubmit = function (event) {
-                                event.preventDefault();
-                                var request = new XMLHttpRequest();
-                                request.open('POST', '/tasks/addTask', false);
-                                var formData = new FormData(document.getElementById('taskForm'));
-                                request.send(formData);
-                                 var a = document.createElement('a');
-                                 const data  = JSON.parse(request.responseText);
-                                a.textContent = data['title'] ;
-                                a.href = "/tasks/" + data['id']+ "/details" ;
-                                a.classList.add("list-group-item", "list-group-item-action", "bg-light");
-                                document.getElementById('listTasks').appendChild(a);
-
-                            }
-                        </script>
                     </div>
 
                 </div>
             </div>
         </div>
 
-        <div id="listTasks" class="list-group list-group-flush overflow-auto">
+        <div id="listTasks" class="list-group list-group-flush overflow-auto" style="
+            display: block;
+            width: 200px;
+            height: 500px;
+            overflow-y: scroll;
+            scroll-behavior: smooth;">
             {% for task in todos %}
             <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action" onclick="this.classList.add('active');">{{task.title}}</a>
             {% endfor %}
+
+
         </div>
     </div>
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
     <div class="container-fluid" id="page-content-wrapper">
-        <br />
-        <div class="container-fluid">
-            <div class="card" id="taskDetails">
-                <div class="card-header">
-                    Title : {{curTask['title']}}
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Description : </h5>
-                    <p class="card-text">{{curTask['description']}}</p>
-                </div>
-
-                <ul>
-                    <li>Created By : {{creator}} </li>
-                    <li>Created at : {{curTask['created_at']}} </li>
-                    <li>Assign To : {{assigned}} </li>
-                    <li>Due Date : {{curTask['due_date']}}</li>
-                </ul>
-            </div>
-            <br />
-            <div class="card" id="taskComments">
-                <div class="card-header">
-                    Comments
-                </div>
-                <ul id="listComments">
-                    {% for comment in comments %}
-                    <li> {{comment.comment}} </li>
-                    {% endfor %}
-                </ul>
-                <form id="commentForm">
-                    <div class="input-group mb-3">
-                        <input id="commentInput" name="comment" type="text" class="form-control"
-                               placeholder="Add a comment" aria-label="Recipient's username"
-                               aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button type="submit" class="btn btn-primary mb-2" id="addComment">Send</button>
+        <div class="h-100 p-3">
+            <div class = "row h-100">
+                <div class = "col-md-6 h-100">
+                    <div class="card h-100" id="taskDetails">
+                        <div class="card-header important">
+                            Title : Titre de tache
                         </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Description : </h5>
+                            <p class="card-text">{{curTask['description']}}</p>
+                        </div>
+
+                        <ul>
+                            <li>Created By : {{creator}} </li>
+                            <li>Created at : {{curTask['created_at']}} </li>
+                            <li>Assign To : {{assigned}} </li>
+                            <li>Due Date : {{curTask['due_date']}}</li>
+                        </ul>
                     </div>
-                </form>
-                <script>
-                    var testForm = document.getElementById('commentForm');
-                    testForm.onsubmit = function (event) {
-                        event.preventDefault();
-                        var request = new XMLHttpRequest();
-                        request.open('POST', '/addComment', false);
-                        var formData = new FormData(document.getElementById('commentForm'));
-                        request.send(formData);
-                        var li = document.createElement('li');
-                        li.textContent = JSON.parse(request.responseText);
-                        var testForm = document.getElementById('commentInput').textContent ='';
-                        document.getElementById('listComments').appendChild(li);
-                        document.getElementById('commentInput').textContent= "" ;
-                     }
-                </script>
+                </div>
+                <div class="col-md-6 h-100">
+                    <div class="card h-100" id="taskComments">
+                        <div class="card-header important" id="listComments">Comments</div>
+                             {% for comment in comments %}
+                                <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
+                                    <div class = "userClass important">
+                                        <h5 class= "userNameClass"> {{comment.created_by}}</h5>
+                                        <h6 class= "userDateClass"> {{comment.created_at}}</h6>
+                                    </div>
+                                    <p> {{comment.comment}}</p>
+                                </div>
+                            {% endfor %}
 
+                        <form id="commentForm">
+                            <div class="input-group mb-3">
+                                <input id="commentInput" name="comment" type="text" class="form-control"
+                                       placeholder="Add a comment" aria-label="Recipient's username"
+                                       aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-primary mb-2" id="addComment">Send</button>
+                                </div>
+                            </div>
+                        </form>
 
+                    </div>
+
+                </div>
             </div>
+            <!-- /#page-content-wrapper -->
         </div>
-        <!-- /#page-content-wrapper -->
-
     </div>
 
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 
