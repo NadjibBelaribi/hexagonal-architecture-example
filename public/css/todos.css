@@ -11906,10 +11906,12 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-/* line 46, ../../sass/todos.scss */
+/* line 44, ../../sass/todos.scss */
 body {
-  background-image: url("bg.jpg");
-  background-repeat: no-repeat;
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   font-family: sans-serif;
   width: 100vw;
@@ -11926,36 +11928,46 @@ body {
 
 /* line 62, ../../sass/todos.scss */
 #wrapper {
-  height: 92%;
   padding: 0px 20px 0px 20px;
+  height: 92%;
 }
 
-/* line 66, ../../sass/todos.scss */
+/* line 67, ../../sass/todos.scss */
 .alert-primary {
   background: #ebe8e8;
 }
 
-/* line 70, ../../sass/todos.scss */
+/* line 71, ../../sass/todos.scss */
 .important, h5 {
   color: #777777;
   font-weight: bold;
 }
 
-/* line 75, ../../sass/todos.scss */
+/* line 76, ../../sass/todos.scss */
 .card-header {
   background: #7cdbe4;
 }
 
-/* line 79, ../../sass/todos.scss */
+/* line 80, ../../sass/todos.scss */
 .btn-primary {
   background: #7cdbe4;
 }
-/* line 82, ../../sass/todos.scss */
+/* line 83, ../../sass/todos.scss */
 .btn-primary:hover {
   background: #2bc1cf;
 }
 
-/* line 87, ../../sass/todos.scss */
+/* line 88, ../../sass/todos.scss */
+#sidebar-wrapper {
+  border-right: 1px solid #dee2e6;
+}
+
+/* line 92, ../../sass/todos.scss */
+#page-content-wrapper {
+  height: 100%;
+}
+
+/* line 95, ../../sass/todos.scss */
 #listComments {
   display: block;
   width: 100%;
@@ -11964,29 +11976,56 @@ body {
   padding: 20px;
 }
 
-/* line 95, ../../sass/todos.scss */
-#taskComments {
-  height: 666px;
-}
-
-/* line 99, ../../sass/todos.scss */
+/* line 107, ../../sass/todos.scss */
 #commentForm {
   padding: 0px 10px;
   margin-top: auto;
 }
 
-/* line 103, ../../sass/todos.scss */
+/* line 111, ../../sass/todos.scss */
 .userClass {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 108, ../../sass/todos.scss */
+/* line 116, ../../sass/todos.scss */
 p {
   color: black;
 }
 
-/* line 112, ../../sass/todos.scss */
-.container-fuild {
-  height: 100%;
+/* line 120, ../../sass/todos.scss */
+#test {
+  margin-left: 20px;
+}
+
+/* line 125, ../../sass/todos.scss */
+.btnPannel {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* line 130, ../../sass/todos.scss */
+.btnAddTask {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  /* line 135, ../../sass/todos.scss */
+  .card, .respoTaskDetails, .respoTaskComments {
+    max-height: 600px;
+    margin: 10px 0px 10px 0px;
+  }
+
+  /* line 139, ../../sass/todos.scss */
+  #listTasks {
+    max-height: 500px;
+    min-width: 100px;
+  }
+
+  /* line 144, ../../sass/todos.scss */
+  #sidebar-wrapper {
+    border-bottom: 1px solid #dee2e6;
+    border-right: none;
+    max-height: 700px;
+  }
 }

@@ -59,7 +59,7 @@ class TasksController
 
         $todos = $this->pdo->query('select * from todos ')->fetchAll();
         $users = $this->pdo->query('select * from users')->fetchAll();
-        $comments = $this->pdo->prepare('select * from comments where task_id = :tid ');
+        $comments = $this->pdo->prepare('select comment , email , created_at from comments inner join users  on users.id = comments.created_by  where task_id = :tid ');
         $comments->bindParam(':tid', $taskId, PDO::PARAM_INT);
         $comments->execute() ;
         $comments = $comments->fetchAll() ;

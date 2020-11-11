@@ -13,7 +13,7 @@ $( document ).ready(function() {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
-    document.getElementById('userFilterInput').onkeyup = function (event) {
+    $("#userFilterInput").onkeyup = function (event) {
         const hint = this.value;
         event.preventDefault();
         var request = new XMLHttpRequest();
@@ -33,7 +33,7 @@ $( document ).ready(function() {
             }
         }
     }
-    document.getElementById('taskFilterInput').onkeyup = function (event) {
+    $("#taskFilterInput").onkeyup = function (event) {
         const hint = this.value;
         event.preventDefault();
         var request = new XMLHttpRequest();
@@ -54,33 +54,53 @@ $( document ).ready(function() {
         }
     }
 
-    var testForm = document.getElementById('taskForm');
-    testForm.onsubmit = function (event) {
+    var loginForm = document.getElementById('loginForm');
+    loginForm.onsubmit = function(event) {
+        var formData;
+        var request;
         event.preventDefault();
-        var request = new XMLHttpRequest();
-        request.open('POST', '/tasks/addTask', false);
-        var formData = new FormData(document.getElementById('taskForm'));
+        request = new XMLHttpRequest();
+        formData = new FormData(loginForm)
+        request.open('POST', '/auth', false);
         request.send(formData);
-        var a = document.createElement('a');
-        const data  = JSON.parse(request.responseText);
-        a.textContent = data['title'] ;
-        a.href = "/tasks/" + data['id']+ "/details" ;
-        a.classList.add("list-group-item", "list-group-item-action", "bg-light");
-        document.getElementById('listTasks').appendChild(a);
-
+        document.getElementById('emailHelp').innerText = "";
+        const data = JSON.parse(request.responseText) ;
+        if(data =="no")
+        {
+            document.getElementById('emailHelp').innerText = "Error identifiants";
+        }
+        else {
+            window.location.href ="/tasks/"+data ;
+        }
     }
 
-    /*var testForm = document.getElementById('commentForm');
-    testForm.onsubmit = function (event) {
-        event.preventDefault();
-        var request = new XMLHttpRequest();
-        request.open('POST', '/addComment', false);
-        var formData = new FormData(document.getElementById('commentForm'));
-        request.send(formData);
+        var testForm = document.getElementById('taskForm');
+        testForm.onsubmit = function (event) {
+            event.preventDefault();
+            var request = new XMLHttpRequest();
+            request.open('POST', '/tasks/addTask', false);
+            var formData = new FormData(document.getElementById('taskForm'));
+            request.send(formData);
+            var a = document.createElement('a');
+            const data  = JSON.parse(request.responseText);
+            a.textContent = data['title'] ;
+            a.href = "/tasks/" + data['id']+ "/details" ;
+            a.classList.add("list-group-item", "list-group-item-action", "bg-light");
+            document.getElementById('listTasks').appendChild(a);
+
+        }
+
+        var testForm = document.getElementById('commentForm');
+        testForm.onsubmit = function (event) {
+            event.preventDefault();
+            var request = new XMLHttpRequest();
+            request.open('POST', '/addComment', false);
+            var formData = new FormData(document.getElementById('commentForm'));
+            request.send(formData);
 
 
-        li.textContent = JSON.parse(request.responseText);
-        document.getElementById('listComments').appendChild(li);
-        document.getElementById('commentInput').textContent= "" ;
-    }*/
+            li.textContent = JSON.parse(request.responseText);
+            document.getElementById('listComments').appendChild(li);
+            document.getElementById('commentInput').textContent= "" ;
+        }
 });

@@ -3,9 +3,6 @@
 
 <head>
 
-    {% block head%}
-
-    <base href="/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -30,11 +27,9 @@
             crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <link rel="stylesheet" href="css/todos.css">
-    <script src="js/index.js"></script>
-    {% endblock %}
 </head>
 
-<body style="background-image: url(img/bg.jpg)">
+<body>
 <nav class="navbar navbar-expand-lg navbar-light border-bottom">
     <a id="test" class="navbar-brand overflow-hidden" href="#">
         <img src="img/logo.png" width="30px" height="30px" />
@@ -115,6 +110,7 @@
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </form>
+
                     </div>
 
                 </div>
@@ -127,11 +123,36 @@
             height: 650px;
             text-align: center;
             scroll-behavior: smooth;">
-            {% for task in todos %}
             <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
-               onclick="this.classList.add('active');">{{task.title}} </a>
-            {% endfor %}
-
+               onclick="this.classList.add('active');">Titre TODO </a>
+            <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
+               onclick="this.classList.add('active');">Titre TODO long </a>
+            <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
+               onclick="this.classList.add('active');">Titre TODO </a>
+            <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
+               onclick="this.classList.add('active');">Titre TODO </a>
+            <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
+               onclick="this.classList.add('active');">Titre TODO </a>
+            <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
+               onclick="this.classList.add('active');">Titre TODO </a>
+            <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
+               onclick="this.classList.add('active');">Titre TODO </a>
+            <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
+               onclick="this.classList.add('active');">Titre TODO </a>
+            <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
+               onclick="this.classList.add('active');">Titre TODO </a>
+            <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
+               onclick="this.classList.add('active');">Titre TODO </a>
+            <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
+               onclick="this.classList.add('active');">Titre TODO </a>
+            <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
+               onclick="this.classList.add('active');">Titre TODO long </a>
+            <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
+               onclick="this.classList.add('active');">Titre TODO </a>
+            <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
+               onclick="this.classList.add('active');">Titre TODO </a>
+            <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
+               onclick="this.classList.add('active');">Titre TODO long </a>
         </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -162,16 +183,48 @@
                     <div class="card h-100" id="taskComments">
                         <div class="card-header important">Comments</div>
                         <ul id="listComments">
-                            {% for comment in comments %}
-
                             <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
                                 <div class = "userClass important">
-                                    <h5 class= "userNameClass"> {{comment.email}}</h5>
-                                    <h5 class= "userDateClass"> {{comment.created_at}}</h5>
+                                    <h5 class= "userNameClass"> User</h5>
+                                    <h5 class= "userDateClass"> Date</h5>
                                 </div>
-                                <p> {{comment.comment}}</p>
+                                <p> Commentaire 1 associé a une tache par qlq1</p>
                             </div>
-                            {% endfor%}
+                            <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
+                                <div class = "userClass important">
+                                    <h5 class= "userNameClass"> User</h5>
+                                    <h5 class= "userDateClass"> Date</h5>
+                                </div>
+                                <p> Commentaire 1 associé a une tache par qlq1</p>
+                            </div>
+                            <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
+                                <div class = "userClass important">
+                                    <h5 class= "userNameClass"> User</h5>
+                                    <h5 class= "userDateClass"> Date</h5>
+                                </div>
+                                <p> Commentaire 1 associé a une tache par qlq1</p>
+                            </div>
+                            <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
+                                <div class = "userClass important">
+                                    <h5 class= "userNameClass"> User</h5>
+                                    <h5 class= "userDateClass"> Date</h5>
+                                </div>
+                                <p> Commentaire 1 associé a une tache par qlq1</p>
+                            </div>
+                            <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
+                                <div class = "userClass important">
+                                    <h5 class= "userNameClass"> User</h5>
+                                    <h5 class= "userDateClass"> Date</h5>
+                                </div>
+                                <p> Commentaire 1 associé a une tache par qlq1</p>
+                            </div>
+                            <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
+                                <div class = "userClass important">
+                                    <h5 class= "userNameClass"> User</h5>
+                                    <h5 class= "userDateClass"> Date</h5>
+                                </div>
+                                <p> Commentaire 1 associé a une tache par qlq1</p>
+                            </div>
 
                         </ul>
                         <form id="commentForm">
@@ -184,58 +237,17 @@
                                 </div>
                             </div>
                         </form>
+
                     </div>
 
                 </div>
             </div>
-         </div>
+            <!-- /#page-content-wrapper -->
+        </div>
     </div>
 
+
 </div>
-<script>
-
-            document.getElementById("userFilterInput").onkeyup = function (event) {
-             const hint = this.value;
-            event.preventDefault();
-            var request = new XMLHttpRequest();
-            request.open('GET', '/filterIdSearch?user=' + hint, true);
-            request.send();
-            request.onreadystatechange = function () {
-                data = JSON.parse(request.responseText);
-                document.getElementById("listTasks").innerHTML = "";
-
-                for (i = 0; i < data.length; ++i) {
-                    var a = document.createElement('a');
-                    a.href = "/tasks/" + data[i].id + "/details";
-                    a.classList.add("list-group-item", "list-group-item-action", "bg-light");
-                    a.textContent = data[i].title;
-                    $("#listTasks").append(a);
-                }
-            }
-        }
-        document.getElementById("taskFilterInput").onkeyup = function (event) {
-             const hint = this.value;
-            event.preventDefault();
-            var request = new XMLHttpRequest();
-            request.open('GET', '/filterTaskSearch?title=' + hint, true);
-            request.send();
-            request.onreadystatechange = function () {
-                data = JSON.parse(request.responseText);
-                document.getElementById('listTasks').innerHTML = "";
-                console.log(data);
-                for (i = 0; i < data.length; ++i) {
-                    var a = document.createElement('a');
-                    a.href = "/tasks/" + data[i].id + "/details";
-                    a.classList.add("list-group-item", "list-group-item-action", "bg-light");
-                    a.textContent = data[i].title;
-                    $('#listTasks').append(a);
-
-                }
-            }
-        }
-
-
-</script>
 
 </body>
 
