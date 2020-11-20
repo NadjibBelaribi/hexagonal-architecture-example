@@ -53,7 +53,7 @@ $( document ).ready(function() {
             }
         }
     }
-
+    
     var loginForm = document.getElementById('loginForm');
     loginForm.onsubmit = function(event) {
         var formData;

@@ -234,6 +234,28 @@
             }
         }
 
+        var testForm = document.getElementById('commentForm');
+        testForm.onsubmit = function (event) {
+            event.preventDefault();
+            var request = new XMLHttpRequest();
+            request.open('POST', '/addComment', false);
+            var formData = new FormData(document.getElementById('commentForm'));
+            request.send(formData);
+
+
+            var data = JSON.parse(request.responseText);
+            document.getElementById('listComments').innerHTML +=`
+            <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
+                <div class = "userClass important">
+                    <h5 class= "userNameClass"> {{comment.email}}</h5>
+                    <h5 class= "userDateClass"> {{comment.created_at}}</h5>
+                </div>
+                <p> data </p>
+            </div>
+            `;
+            document.getElementById('commentInput').textContent= "" ;
+        }
+
 
 </script>
 
