@@ -7,17 +7,9 @@ use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Slim\Views\Twig;
 
-class FilterController
+class FilterController extends HomeController
 {
-    private PDO $pdo;
-    private Twig $twig;
 
-    public function __construct(PDO $pdo, Twig $twig)
-    {
-        $this->pdo = $pdo;
-        $this->twig = $twig;
-
-    }
 
     public function filter(RequestInterface $request, ResponseInterface $response)
     {

@@ -9,17 +9,9 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Server\RequestHandlerInterface as Handle;
 use Slim\Views\Twig;
 
-class LoginController
+class LoginController extends HomeController
 {
-    private PDO $pdo;
-    private Twig $twig;
 
-    public function __construct(PDO $pdo, Twig $twig)
-    {
-        $this->pdo = $pdo;
-        $this->twig = $twig;
-
-    }
 
     public function getLogin (RequestInterface $request, ResponseInterface $response) {
 

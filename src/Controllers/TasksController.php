@@ -8,15 +8,9 @@ use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Slim\Views\Twig;
 
-class TasksController
+class TasksController extends HomeController
 {
-    private PDO $pdo;
-    private Twig $twig;
 
-    public function __construct(PDO $pdo, Twig $twig){
-        $this->pdo = $pdo;
-        $this->twig = $twig;
-    }
 
     public function getTasks (RequestInterface $request, ResponseInterface $response, array $args) {
         $userId = $args['id'] ;
