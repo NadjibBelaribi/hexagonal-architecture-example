@@ -12,47 +12,20 @@
     <meta name="author" content="">
 
     <title>Tasks </title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <link rel="stylesheet" href="css/todos.css">
-    <script src="js/index.js"></script>
+     <script src="js/index.js"></script>
     {% endblock %}
 </head>
 
 <body style="background-image: url(img/bg.jpg)">
-<nav class="navbar navbar-expand-lg navbar-light border-bottom">
-    <a id="test" class="navbar-brand overflow-hidden" href="#">
-        <img src="img/logo.png" width="30px" height="30px" />
-        Hey UserName 🧐
-    </a>
-    <ul class="navbar-nav ml-auto important">
-        <li class = "nav-item ml-auto">
-            <a class="nav-link" href="#" id="signOut" onclick="signOut()">Sign Out</a>
-        </li>
-    </ul>
+{% include 'navbar.tpl' %}
 
-</nav>
 <div class="d-flex row" id="wrapper">
 
     <!-- Sidebar -->
     <div class="col-sm-2" id="sidebar-wrapper">
-        <button class="btnPannel btn btn-outline-primary mx-auto" type="button" data-toggle="collapse" data-target="#collapseExample"
-                aria-expanded="false" aria-controls="collapseExample">
+        <button class="btnPannel btn btn-outline-primary mx-auto" type="button" data-toggle="collapse"
+                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             Filter Pannel
         </button>
 
@@ -60,18 +33,19 @@
             <form class="form-inline my-2 my-lg-0" method="post" id="filterForm">
                 <input id="userFilterInput" name="user" class="form-control mr-sm-2" placeholder="By User"
                        aria-label="Search">
-                <input id="taskFilterInput" name="title" class="form-control mr-sm-2" placeholder="By Task Title"
-                       aria-label="Search">
+                <input id="taskFilterInput" name="title" class="form-control mr-sm-2"
+                       placeholder="By Task Title" aria-label="Search">
             </form>
         </div>
         <hr>
-        <button type="button" style="justify-content: center" class="btnAddTask btn btn-outline-primary" data-toggle="modal"
-                data-target="#exampleModalCenter">
+        <button type="button" style="justify-content: center" class="btnAddTask btn btn-outline-primary"
+                data-toggle="modal" data-target="#exampleModalCenter">
             Add New Task </button>
         <hr>
 
 
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -100,7 +74,7 @@
                                 <select name="assigned" id="inputAssign" class="form-control">
                                     <option value="empty"> </option>
                                     {% for user in users %}
-                                    <option value={{user.email}}>{{user.email}}</option>
+                                    <option value={{ user.email }}>{{ user.email }}</option>
                                     {% endfor %}
                                 </select>
                             </div>
@@ -129,7 +103,7 @@
             scroll-behavior: smooth;">
             {% for task in todos %}
             <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
-               onclick="this.classList.add('active');">{{task.title}} </a>
+               onclick="this.classList.add('active');">{{ task.title }} </a>
             {% endfor %}
 
         </div>
@@ -139,22 +113,22 @@
     <!-- Page Content -->
     <div class="container-fluid col-sm-10" id="page-content-wrapper">
         <div class="h-100 p-3">
-            <div class = "row h-100">
-                <div class = "respoTaskDetails col-md-6 h-50">
+            <div class="row h-100">
+                <div class="respoTaskDetails col-md-6 h-50">
                     <div class="card h-100" id="taskDetails">
                         <div class="card-header important">
                             Title : Titre de tache
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Description : </h5>
-                            <p class="card-text">{{curTask['description']}}</p>
+                            <p class="card-text">{{ curTask['description']}}</p>
                         </div>
 
                         <ul>
-                            <li>Created By : {{creator}} </li>
-                            <li>Created at : {{curTask['created_at']}} </li>
-                            <li>Assign To : {{assigned}} </li>
-                            <li>Due Date : {{curTask['due_date']}}</li>
+                            <li>Created By : {{ creator }} </li>
+                            <li>Created at : {{ curTask['created_at']}} </li>
+                            <li>Assign To : {{ assigned }} </li>
+                            <li>Due Date : {{ curTask['due_date']}}</li>
                         </ul>
                     </div>
                 </div>
@@ -165,13 +139,13 @@
                             {% for comment in comments %}
 
                             <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
-                                <div class = "userClass important">
-                                    <h5 class= "userNameClass"> {{comment.email}}</h5>
-                                    <h5 class= "userDateClass"> {{comment.created_at}}</h5>
+                                <div class="userClass important">
+                                    <h5 class="userNameClass"> {{ comment.email }}</h5>
+                                    <h5 class="userDateClass"> {{ comment.created_at }}</h5>
                                 </div>
-                                <p> {{comment.comment}}</p>
+                                <p> {{ comment.comment }}</p>
                             </div>
-                            {% endfor%}
+                            {% endfor %}
 
                         </ul>
                         <form id="commentForm">
@@ -180,7 +154,8 @@
                                        placeholder="Add a comment" aria-label="Recipient's username"
                                        aria-describedby="basic-addon2">
                                 <div class="input-group-append">
-                                    <button type="submit" class="btn btn-primary mb-2" id="addComment">Send</button>
+                                    <button type="submit" class="btn btn-primary mb-2"
+                                            id="addComment">Send</button>
                                 </div>
                             </div>
                         </form>
@@ -188,77 +163,10 @@
 
                 </div>
             </div>
-         </div>
+        </div>
     </div>
 
 </div>
-<script>
-
-            document.getElementById("userFilterInput").onkeyup = function (event) {
-             const hint = this.value;
-            event.preventDefault();
-            var request = new XMLHttpRequest();
-            request.open('GET', '/filterIdSearch?user=' + hint, true);
-            request.send();
-            request.onreadystatechange = function () {
-                data = JSON.parse(request.responseText);
-                document.getElementById("listTasks").innerHTML = "";
-
-                for (i = 0; i < data.length; ++i) {
-                    var a = document.createElement('a');
-                    a.href = "/tasks/" + data[i].id + "/details";
-                    a.classList.add("list-group-item", "list-group-item-action", "bg-light");
-                    a.textContent = data[i].title;
-                    $("#listTasks").append(a);
-                }
-            }
-        }
-        document.getElementById("taskFilterInput").onkeyup = function (event) {
-             const hint = this.value;
-            event.preventDefault();
-            var request = new XMLHttpRequest();
-            request.open('GET', '/filterTaskSearch?title=' + hint, true);
-            request.send();
-            request.onreadystatechange = function () {
-                data = JSON.parse(request.responseText);
-                document.getElementById('listTasks').innerHTML = "";
-                console.log(data);
-                for (i = 0; i < data.length; ++i) {
-                    var a = document.createElement('a');
-                    a.href = "/tasks/" + data[i].id + "/details";
-                    a.classList.add("list-group-item", "list-group-item-action", "bg-light");
-                    a.textContent = data[i].title;
-                    $('#listTasks').append(a);
-
-                }
-            }
-        }
-
-        var testForm = document.getElementById('commentForm');
-        testForm.onsubmit = function (event) {
-            event.preventDefault();
-            var request = new XMLHttpRequest();
-            request.open('POST', '/addComment', false);
-            var formData = new FormData(document.getElementById('commentForm'));
-            request.send(formData);
-
-
-            var data = JSON.parse(request.responseText);
-            document.getElementById('listComments').innerHTML +=`
-            <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
-                <div class = "userClass important">
-                    <h5 class= "userNameClass"> {{comment.email}}</h5>
-                    <h5 class= "userDateClass"> {{comment.created_at}}</h5>
-                </div>
-                <p> data </p>
-            </div>
-            `;
-            document.getElementById('commentInput').textContent= "" ;
-        }
-
-
-</script>
-
 </body>
 
 </html>
