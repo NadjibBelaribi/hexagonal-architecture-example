@@ -64,17 +64,11 @@ body {
   height:92%;
 }
 
-.alert-primary {
-  background: rgb(235, 232, 232);
-}
+//in sidebar and content page
 
 .important, h5 {
   color: rgb(119, 119, 119);
   font-weight: bold;
-}
-
-.card-header {
-  background: $primary;
 }
 
 .btn-primary {
@@ -85,41 +79,10 @@ body {
   }
 }
 
+//sidebar
+
 #sidebar-wrapper{
   border-right: 1px solid #dee2e6;
-}
-
-#page-content-wrapper{
-  height: 100%;
-}
-#listComments {
-  display: block;
-  width: 100%;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  padding: $padding;
-}
-
-//#taskComments {
-//    height: 100%;
-//}
-
-#commentForm{
-  padding: 0px 10px;
-  margin-top: auto;
-}
-.userClass {
-  display:flex;
-  justify-content: space-between;
-}
-
-p {
-  color: black;
-}
-
-#test
-{
-  margin-left: 20px;
 }
 
 .btnPannel{
@@ -130,6 +93,48 @@ p {
 .btnAddTask{
   width: 100%;
 }
+
+//content page
+
+#page-content-wrapper{
+  height: 100%;
+}
+
+p {
+  color: black;
+}
+
+.card-header {
+  background: $primary;
+}
+.card-header {
+  background: $primary;
+}
+//in page content -> comments
+
+#listComments {
+  display: block;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  padding: $padding;
+}
+
+.alert-primary {
+  background: rgb(235, 232, 232);
+}
+
+.userClass {
+  display:flex;
+  justify-content: space-between;
+}
+
+#commentForm{
+  padding: 0px 10px;
+  margin-top: auto;
+}
+
+//responsive
 
 @media (max-width:991px){
   .card, .respoTaskDetails, .respoTaskComments {
