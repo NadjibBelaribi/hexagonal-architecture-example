@@ -48,6 +48,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-family: sans-serif;
+  font-size: calc(10px + 1vmin);
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
@@ -102,6 +103,7 @@ body {
 
 p {
   color: black;
+  width: 100%;
 }
 
 .card-header {
@@ -129,18 +131,28 @@ p {
   justify-content: space-between;
 }
 
+.userDateClass{
+  font-style: italic;
+  color: rgb(119, 119, 119);
+}
+
 #commentForm{
   padding: 0px 10px;
   margin-top: auto;
 }
 
+.modal-content {
+    overflow: inherit;
+}
+
 //responsive
 
-@media (max-width:991px){
+@media (max-width:576px){
   .card, .respoTaskDetails, .respoTaskComments {
     max-height: 600px;
     margin: 10px 0px 10px 0px;
   }
+
   #listTasks{
     max-height: 500px;
     min-width: 100px;
@@ -150,5 +162,19 @@ p {
     border-bottom: 1px solid #dee2e6;
     border-right: none;
     max-height: 700px;
+  }
+
+  .modal-content{
+    margin-right: 10px;
+  }
+}
+
+@media (min-width:576px) and (max-width:1070px){
+  .card, .respoTaskDetails, .respoTaskComments {
+    max-height: 800px;
+  }
+
+  #sidebar-wrapper{
+    min-width: 200px;
   }
 }

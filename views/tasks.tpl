@@ -12,7 +12,7 @@
     <meta name="author" content="">
 
     <title>Tasks </title>
-    <link rel="stylesheet" href="css/todos.css">
+    <link rel="stylesheet" href="css/todos.css?">
      <script src="js/index.js"></script>
     {% endblock %}
 </head>
@@ -47,7 +47,7 @@
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+                <div class="modal-content toto">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalCenterTitle">
                             Add new Task
@@ -111,7 +111,7 @@
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
-    <div class="container-fluid col-sm-10" id="page-content-wrapper">
+    <div class="container-fluid col" id="page-content-wrapper">
         <div class="h-100 p-3">
             <div class="row h-100">
                 <div class="respoTaskDetails col-md-6 h-50">
@@ -139,9 +139,13 @@
                             {% for comment in comments %}
 
                             <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
-                                <div class="userClass important">
-                                    <h5 class="userNameClass"> {{ comment.email }}</h5>
-                                    <h5 class="userDateClass"> {{ comment.created_at }}</h5>
+                                <div class="userClass important row">
+                                    <div class="col-md-8">
+                                        <h5 class="userNameClass"> {{ comment.email }}</h5>
+                                    </div>
+                                    <div class="dateComment col-md-4">
+                                        <p class="userDateClass"> {{ comment.created_at }}</p>
+                                    </div>
                                 </div>
                                 <p> {{ comment.comment }}</p>
                             </div>
