@@ -2,13 +2,12 @@
 
 namespace Amir_nadjib\Todo_list\Controllers;
 
-use Amir_nadjib\Todo_list\Models\User;
 use PDO;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Slim\Views\Twig;
 
-class HomeController
+class NotFoundController
 {
     private PDO $pdo;
     private Twig $twig;
@@ -21,7 +20,7 @@ class HomeController
 
     public function get (RequestInterface $request, ResponseInterface $response) {
 
-        return $this->twig->render($response, 'home.tpl');
+        return $this->twig->render($response, 'notfound.tpl');
     }
 
 }

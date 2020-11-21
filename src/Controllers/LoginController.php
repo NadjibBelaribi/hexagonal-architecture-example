@@ -1,8 +1,8 @@
 <?php
 
-namespace Hakan\Hello\Controllers;
+namespace Amir_nadjib\Todo_list\Controllers;
 
-use Hakan\Hello\Models\User;
+use Amir_nadjib\Todo_list\Models\User;
 use PDO;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;

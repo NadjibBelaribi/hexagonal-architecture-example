@@ -5,7 +5,7 @@
       build:
         context: .
         dockerfile: .docker/Dockerfile
-      container_name: todos_web_nadjib
+      container_name: todos_web_amir_nadjib
       ports:
         - 8003:80
       volumes:
@@ -14,7 +14,7 @@
         - mysql
     mysql:
       image: mysql:5.7
-      container_name: todos_sql_nadjib
+      container_name: todos_sql_amir_nadjib
       environment:
         MYSQL_ROOT_PASSWORD: root
         MYSQL_DATABASE: todos

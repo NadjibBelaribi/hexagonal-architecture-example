@@ -18,7 +18,10 @@ $app = AppFactory::create();
 
 require __DIR__ . '/../app/routes.php';
 
-$errorMiddleware = $app->addErrorMiddleware(true, true, true);
+//Création du middleware
+$middleware = require __DIR__ . '/../app/middleware.php';
+$middleware($app);
+
 session_start() ;
 
 $app->run();

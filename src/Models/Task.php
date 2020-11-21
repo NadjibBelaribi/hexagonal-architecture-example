@@ -1,6 +1,6 @@
 <?php
 
-namespace Hakan\Hello\Models;
+namespace Amir_nadjib\Todo_list\Models;
 
 class Task
 {
