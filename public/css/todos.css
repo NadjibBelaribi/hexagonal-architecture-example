@@ -11934,7 +11934,7 @@ body {
 }
 
 /* line 70, ../../sass/todos.scss */
-.important, h5 {
+.important, .userNameClass {
   color: #777777;
   font-weight: bold;
 }
@@ -11964,28 +11964,34 @@ body {
   width: 100%;
 }
 
-/* line 100, ../../sass/todos.scss */
+/* line 98, ../../sass/todos.scss */
+#taskFilterInput, #userFilterInput {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* line 105, ../../sass/todos.scss */
 #page-content-wrapper {
   height: 100%;
 }
 
-/* line 104, ../../sass/todos.scss */
+/* line 109, ../../sass/todos.scss */
 p {
   color: black;
   width: 100%;
 }
 
-/* line 109, ../../sass/todos.scss */
-.card-header {
-  background: #7cdbe4;
-}
-
-/* line 112, ../../sass/todos.scss */
+/* line 114, ../../sass/todos.scss */
 .card-header {
   background: #7cdbe4;
 }
 
 /* line 117, ../../sass/todos.scss */
+.card-header {
+  background: #7cdbe4;
+}
+
+/* line 122, ../../sass/todos.scss */
 #listComments {
   display: block;
   width: 100%;
@@ -11994,66 +12000,67 @@ p {
   padding: 20px;
 }
 
-/* line 125, ../../sass/todos.scss */
+/* line 130, ../../sass/todos.scss */
 .alert-primary {
   background: #ebe8e8;
 }
 
-/* line 129, ../../sass/todos.scss */
+/* line 134, ../../sass/todos.scss */
 .userClass {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 134, ../../sass/todos.scss */
+/* line 139, ../../sass/todos.scss */
 .userDateClass {
   font-style: italic;
   color: #777777;
 }
 
-/* line 139, ../../sass/todos.scss */
+/* line 144, ../../sass/todos.scss */
 #commentForm {
   padding: 0px 10px;
   margin-top: auto;
 }
 
-/* line 144, ../../sass/todos.scss */
-.modal-content {
-  overflow: inherit;
-}
-
 @media (max-width: 576px) {
-  /* line 151, ../../sass/todos.scss */
+  /* line 152, ../../sass/todos.scss */
   .card, .respoTaskDetails, .respoTaskComments {
     max-height: 600px;
     margin: 10px 0px 10px 0px;
   }
 
-  /* line 156, ../../sass/todos.scss */
+  /* line 157, ../../sass/todos.scss */
   #listTasks {
     max-height: 500px;
     min-width: 100px;
   }
 
-  /* line 161, ../../sass/todos.scss */
+  /* line 162, ../../sass/todos.scss */
   #sidebar-wrapper {
     border-bottom: 1px solid #dee2e6;
     border-right: none;
     max-height: 700px;
   }
 
-  /* line 167, ../../sass/todos.scss */
+  /* line 168, ../../sass/todos.scss */
   .modal-content {
     margin-right: 10px;
   }
 }
 @media (min-width: 576px) and (max-width: 1070px) {
-  /* line 173, ../../sass/todos.scss */
+  /* line 174, ../../sass/todos.scss */
   .card, .respoTaskDetails, .respoTaskComments {
-    max-height: 800px;
+    max-height: 700px;
+    min-width: 500px;
   }
 
-  /* line 177, ../../sass/todos.scss */
+  /* line 178, ../../sass/todos.scss */
+  .respoTaskComments {
+    margin-top: 20px;
+  }
+
+  /* line 181, ../../sass/todos.scss */
   #sidebar-wrapper {
     min-width: 200px;
   }

@@ -67,7 +67,7 @@ body {
 
 //in sidebar and content page
 
-.important, h5 {
+.important, .userNameClass {
   color: rgb(119, 119, 119);
   font-weight: bold;
 }
@@ -92,6 +92,11 @@ body {
 }
 
 .btnAddTask{
+  width: 100%;
+}
+
+#taskFilterInput, #userFilterInput{
+  margin-top: 10px;
   width: 100%;
 }
 
@@ -141,10 +146,6 @@ p {
   margin-top: auto;
 }
 
-.modal-content {
-    overflow: inherit;
-}
-
 //responsive
 
 @media (max-width:576px){
@@ -171,9 +172,12 @@ p {
 
 @media (min-width:576px) and (max-width:1070px){
   .card, .respoTaskDetails, .respoTaskComments {
-    max-height: 800px;
+    max-height: 700px;
+    min-width: 500px;
   }
-
+  .respoTaskComments{
+    margin-top: $padding;
+  }
   #sidebar-wrapper{
     min-width: 200px;
   }

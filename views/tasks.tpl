@@ -23,7 +23,7 @@
 <div class="d-flex row" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="col-sm-2" id="sidebar-wrapper">
+    <div class="col-md-3 id="sidebar-wrapper">
         <button class="btnPannel btn btn-outline-primary mx-auto" type="button" data-toggle="collapse"
                 data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             Filter Pannel
@@ -111,7 +111,7 @@
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
-    <div class="container-fluid col" id="page-content-wrapper">
+    <div class="container-fluid col-md-9" id="page-content-wrapper">
         <div class="h-100 p-3">
             <div class="row h-100">
                 <div class="respoTaskDetails col-md-6 h-50">
@@ -120,7 +120,7 @@
                             Title : Titre de tache
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Description : </h5>
+                            <p class="card-title">Description : </p>
                             <p class="card-text">{{ curTask['description']}}</p>
                         </div>
 
@@ -140,10 +140,10 @@
 
                             <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
                                 <div class="userClass important row">
-                                    <div class="col-md-8">
-                                        <h5 class="userNameClass"> {{ comment.email }}</h5>
+                                    <div class="col-lg-8">
+                                        <p class="userNameClass"> {{ comment.email }}</p>
                                     </div>
-                                    <div class="dateComment col-md-4">
+                                    <div class="col-lg-4">
                                         <p class="userDateClass"> {{ comment.created_at }}</p>
                                     </div>
                                 </div>
