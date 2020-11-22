@@ -17,11 +17,6 @@ class LoginController extends HomeController
         return $this->twig->render($response, 'login.tpl');
     }
 
-    public function test (string $test)
-    {
-        return $test ;
-    }
-
     public function getUserByEmail (string $authEmail)
     {
         $users = $this->pdo->prepare('select * from users where email = :mail ');
@@ -43,9 +38,9 @@ class LoginController extends HomeController
             {
                 $_SESSION['user'] =$authEmail ;
                 $_SESSION['userId'] =$user['id'] ;
-               // $response->getBody()->write(json_encode($user['id'])) ;
-               // return $response->withStatus(200);
-                return $res ;
+                $response->getBody()->write(json_encode($user['id'])) ;
+                 return $response->withStatus(200);
+               // $res = $response->withHeader('Location', 'https://www.google.com/');
 
             }
             else {

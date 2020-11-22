@@ -13,6 +13,8 @@ $app->get('/', LoginController::class . ':getLogin');
 $app->post('/auth', LoginController::class . ':postLogin');
 $app->get('/signOut', LoginController::class . ':signOut');
 
+/* about us */
+$app->get('/about', HomeController::class . ':aboutUS');
 
 /* Tasks page */
 $app->get('/tasks/{id}', TasksController::class . ':getTasks')->setName('tasks');

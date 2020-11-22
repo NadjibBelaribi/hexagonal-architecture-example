@@ -11,7 +11,7 @@
     </a>
     <ul class="navbar-nav ml-auto important">
         <li class = "nav-item ml-auto">
-            <a class="nav-linkkk" href="#" id="aboutUs" onclick="">About Us</a>
+            <a class="nav-linkkk" href="/about" id="aboutUs" onclick="">About Us</a>
         </li>
         {% if currentUser %}
         <li class = "nav-item ml-auto">

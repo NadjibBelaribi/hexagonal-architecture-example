@@ -19,8 +19,9 @@ class TasksController extends HomeController
         $comments = $comments->fetchAll() ;
 
     }
-    public function getComments (int $taskId)
+    public function getComments ($taskId)
     {
+
         $comments = $this->pdo->prepare('select comment , email , created_at from comments inner join users  on users.id = comments.created_by  where task_id = :tid ');
         $comments->bindParam(':tid', $taskId, PDO::PARAM_INT);
         $comments->execute() ;
@@ -53,8 +54,9 @@ class TasksController extends HomeController
     }
     public function getUserById (int $uid)
     {
+        $val = intval($uid) ;
         $users = $this->pdo->prepare('select * from users where id = :uid ');
-        $users->bindParam(':uid', $uid, PDO::PARAM_INT);
+        $users->bindParam(':uid', $val, PDO::PARAM_INT);
         $users->execute() ;
         return $users->fetch() ;
     }
