@@ -88,7 +88,7 @@
                                 <button type="button" class="closeTask btn btn-secondary" data-dismiss="modal">
                                     Close
                                 </button>
-                                <button type="submit" class="submitTask btn btn-primary">Submit</button>
+                                <button type="submit" id = "submit-task" class="submitTask  btn btn-primary">Submit</button>
                             </div>
                         </form>
                     </div>

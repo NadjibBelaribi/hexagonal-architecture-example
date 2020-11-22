@@ -93,9 +93,8 @@ class TasksController extends HomeController
         $this->pdo->query("INSERT INTO todos (id, created_by, assigned_to, title, description, created_at, due_date)
 		VALUES(null,'$currUser','$userId','$title','$description','$currDate','$dueDate');") ;
 
-        return $this->pdo->query('SELECT * FROM todos ORDER BY id DESC LIMIT 1 ');
-
-    }
+        return $this->pdo->query('SELECT * FROM todos ORDER BY id DESC LIMIT 1 ')->fetch();
+     }
         public function addTask(RequestInterface $request, ResponseInterface $response){
         $title = $_POST['title'];
         $assigned = $_POST['assigned'];
@@ -106,8 +105,9 @@ class TasksController extends HomeController
         $user  = $this->getUserByEmail($assigned) ;
         $userId = $user['id'] ;
 
-        $task = $this->insertTask($currUser,$userId,$title,$description,$dueDate) ;
-        $response->getBody()->write( json_encode($task)) ;
+        $info = $this->insertTask($currUser,$userId,$title,$description,$dueDate) ;
+
+        $response->getBody()->write( json_encode($info)) ;
         return $response->withStatus(200);
 
 
