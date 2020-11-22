@@ -22,19 +22,20 @@
 {% include 'navbar.tpl' %}
 <div class="site-wrapper">
 
-    <div class="site-wrapper-inner">
-        <div class="container-fluid">
-            <div class="inner cover">
-                <h1 class="cover-heading">A & N <br> Todos  List </h1>
-                <p class="lead"> A Master Project By Nadjib and Amir Under M. Hakan  Supervision </p>
-                <p class="lead">
-                    <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Connexion </a>
-                </p>
-            </div>
+    <div class="site-wrapper-inner h-100">
+        <div class="inner cover mt-5 mb-auto">
+            <h1 class="cover-heading">A & N</h1>
+            <h1 class="cover-heading">Todos  List </h1>
+            <p class="lead"> A Master Project By Nadjib and Amir Under M. Hakan  Supervision </p>
+            <p class="lead">
+                <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Connexion </a>
+            </p>
         </div>
-
+        <div class="justify-content-center inner cover my-auto">
+            <img class="logo" src="/img/logogit.png"/>
+            <a href="https://git.unistra.fr" class="gitClass btn btn-secondary btn-lg"> Here the source code ! </a>
+        </div>
     </div>
-
 </div>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

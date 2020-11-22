@@ -11921,56 +11921,71 @@ body {
   box-sizing: border-box;
 }
 
-/* line 58, ../../sass/todos.scss */
+/* line 57, ../../sass/todos.scss */
+.row {
+  margin-right: 0px;
+}
+
+/* line 60, ../../sass/todos.scss */
 .navbar {
   background: #7cdbe4;
   height: 8%;
 }
 
-/* line 63, ../../sass/todos.scss */
+/* line 65, ../../sass/todos.scss */
+.nav-linkkk {
+  display: block;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 74, ../../sass/todos.scss */
 #wrapper {
-  padding: 0px 20px 0px 20px;
+  padding: 0px 0px 0px 20px;
   height: 92%;
 }
 
-/* line 70, ../../sass/todos.scss */
+/* line 81, ../../sass/todos.scss */
 .important, .userNameClass {
   color: #777777;
   font-weight: bold;
 }
 
-/* line 75, ../../sass/todos.scss */
+/* line 86, ../../sass/todos.scss */
 .btn-primary {
   background: #7cdbe4;
 }
-/* line 78, ../../sass/todos.scss */
+/* line 89, ../../sass/todos.scss */
 .btn-primary:hover {
   background: #2bc1cf;
 }
 
-/* line 85, ../../sass/todos.scss */
+/* line 96, ../../sass/todos.scss */
 #sidebar-wrapper {
   border-right: 1px solid #dee2e6;
 }
 
-/* line 89, ../../sass/todos.scss */
+/* line 100, ../../sass/todos.scss */
 .btnPannel {
   margin-top: 10px;
   width: 100%;
 }
 
-/* line 94, ../../sass/todos.scss */
+/* line 105, ../../sass/todos.scss */
 .btnAddTask {
   width: 100%;
 }
 
-/* line 98, ../../sass/todos.scss */
+/* line 109, ../../sass/todos.scss */
 #taskFilterInput, #userFilterInput {
   margin-top: 10px;
   width: 100%;
 }
 
-/* line 103, ../../sass/todos.scss */
+/* line 114, ../../sass/todos.scss */
 #listTasks {
   display: block;
   overflow: auto;
@@ -11980,28 +11995,28 @@ body {
   scroll-behavior: smooth;
 }
 
-/* line 113, ../../sass/todos.scss */
+/* line 124, ../../sass/todos.scss */
 #page-content-wrapper {
   height: 100%;
 }
 
-/* line 117, ../../sass/todos.scss */
+/* line 128, ../../sass/todos.scss */
 p {
   color: black;
   width: 100%;
 }
 
-/* line 122, ../../sass/todos.scss */
+/* line 133, ../../sass/todos.scss */
 .card-header {
   background: #7cdbe4;
 }
 
-/* line 125, ../../sass/todos.scss */
+/* line 136, ../../sass/todos.scss */
 .card-header {
   background: #7cdbe4;
 }
 
-/* line 130, ../../sass/todos.scss */
+/* line 141, ../../sass/todos.scss */
 #listComments {
   display: block;
   width: 100%;
@@ -12010,67 +12025,75 @@ p {
   padding: 20px;
 }
 
-/* line 138, ../../sass/todos.scss */
+/* line 149, ../../sass/todos.scss */
 .alert-primary {
   background: #ebe8e8;
 }
 
-/* line 142, ../../sass/todos.scss */
+/* line 153, ../../sass/todos.scss */
 .userClass {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 147, ../../sass/todos.scss */
+/* line 158, ../../sass/todos.scss */
 .userDateClass {
   font-style: italic;
   color: #777777;
 }
 
-/* line 152, ../../sass/todos.scss */
+/* line 163, ../../sass/todos.scss */
 #commentForm {
   padding: 0px 10px;
   margin-top: auto;
 }
 
 @media (max-width: 576px) {
-  /* line 160, ../../sass/todos.scss */
+  /* line 171, ../../sass/todos.scss */
   .card, .respoTaskDetails, .respoTaskComments {
     max-height: 600px;
     margin: 10px 0px 10px 0px;
   }
 
-  /* line 165, ../../sass/todos.scss */
+  /* line 176, ../../sass/todos.scss */
   #listTasks {
     max-height: 500px;
     min-width: 100px;
   }
 
-  /* line 170, ../../sass/todos.scss */
+  /* line 181, ../../sass/todos.scss */
   #sidebar-wrapper {
     border-bottom: 1px solid #dee2e6;
     border-right: none;
     max-height: 700px;
   }
 
-  /* line 176, ../../sass/todos.scss */
+  /* line 187, ../../sass/todos.scss */
   .modal-content {
     margin-right: 10px;
   }
+
+  /* line 191, ../../sass/todos.scss */
+  .nav-linkkk {
+    padding-top: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+  }
 }
 @media (min-width: 576px) and (max-width: 1070px) {
-  /* line 182, ../../sass/todos.scss */
+  /* line 200, ../../sass/todos.scss */
   .card, .respoTaskDetails, .respoTaskComments {
     max-height: 700px;
     min-width: 500px;
   }
 
-  /* line 186, ../../sass/todos.scss */
+  /* line 204, ../../sass/todos.scss */
   .respoTaskComments {
     margin-top: 20px;
   }
 
-  /* line 189, ../../sass/todos.scss */
+  /* line 207, ../../sass/todos.scss */
   #sidebar-wrapper {
     min-width: 200px;
   }

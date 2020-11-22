@@ -54,14 +54,25 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
 }
-
+.row{
+  margin-right: 0px;
+}
 .navbar {
   background: $primary;
   height:8%;
 }
 
+.nav-linkkk {
+  display: block;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
 #wrapper{
-  padding: 0px $padding 0px $padding;
+  padding: 0px 0px 0px $padding;
   height:92%;
 }
 
@@ -175,6 +186,13 @@ p {
 
   .modal-content{
     margin-right: 10px;
+  }
+
+  .nav-linkkk {
+    padding-top: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
   }
 }
 

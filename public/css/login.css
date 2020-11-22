@@ -11921,76 +11921,126 @@ a:hover {
  * Base structure
  */
 /* line 55, ../../sass/login.scss */
-html,
 body {
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+  font-size: calc(10px + 1vmin);
 }
 
-/* line 59, ../../sass/login.scss */
+/* line 62, ../../sass/login.scss */
+.site-wrapper {
+  height: 92%;
+}
+
+/* line 66, ../../sass/login.scss */
+.navbar {
+  height: 8%;
+  background-color: #7cdbe4;
+}
+
+/* line 71, ../../sass/login.scss */
 .cover {
   color: white;
-  margin-top: -20%;
   text-align: center;
 }
 
+/* line 76, ../../sass/login.scss */
+.row {
+  margin-left: 0px;
+}
+
+/* line 81, ../../sass/login.scss */
+.gitClass {
+  margin-left: 30px;
+}
+
+/* line 85, ../../sass/login.scss */
+.important, .userNameClass {
+  color: #777777;
+  font-weight: bold;
+}
+
+/* line 90, ../../sass/login.scss */
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
-/* line 66, ../../sass/login.scss */
+/* line 98, ../../sass/login.scss */
 .site-wrapper {
   display: table;
   width: 100%;
-  height: 100%;
 }
 
-/* line 72, ../../sass/login.scss */
+/* line 103, ../../sass/login.scss */
 .site-wrapper-inner {
-  display: table-cell;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   vertical-align: top;
 }
 
-/* line 76, ../../sass/login.scss */
+/* line 109, ../../sass/login.scss */
 .cover-container {
   margin-right: auto;
   margin-left: auto;
 }
 
 /* Padding for spacing */
-/* line 82, ../../sass/login.scss */
+/* line 115, ../../sass/login.scss */
 .inner {
   padding: 30px;
 }
 
+@media (max-width: 455px) {
+  /* line 121, ../../sass/login.scss */
+  .logo {
+    width: 65px;
+    height: 65px;
+  }
+
+  /* line 125, ../../sass/login.scss */
+  .gitClass {
+    margin-left: 0px;
+  }
+}
 /*
  * Hcover-headingeader
  */
-/* line 90, ../../sass/login.scss */
+/* line 133, ../../sass/login.scss */
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 94, ../../sass/login.scss */
+/* line 137, ../../sass/login.scss */
 h1 {
   font-family: "Al Tarikh";
   font-size: 80px;
   color: blue;
 }
 
-/* line 99, ../../sass/login.scss */
+/* line 142, ../../sass/login.scss */
 p {
   color: black;
 }
 
-/* line 102, ../../sass/login.scss */
+/* line 145, ../../sass/login.scss */
 .masthead-nav > li {
   display: inline-block;
 }
 
-/* line 105, ../../sass/login.scss */
+/* line 148, ../../sass/login.scss */
 .masthead-nav > li + li {
   margin-left: 20px;
 }
 
-/* line 108, ../../sass/login.scss */
+/* line 151, ../../sass/login.scss */
 .masthead-nav > li > a {
   padding-right: 0;
   padding-left: 0;
@@ -12002,13 +12052,13 @@ p {
   border-bottom: 2px solid transparent;
 }
 
-/* line 117, ../../sass/login.scss */
+/* line 160, ../../sass/login.scss */
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
 }
 
-/* line 121, ../../sass/login.scss */
+/* line 164, ../../sass/login.scss */
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
@@ -12017,12 +12067,12 @@ p {
 }
 
 @media (min-width: 768px) {
-  /* line 129, ../../sass/login.scss */
+  /* line 172, ../../sass/login.scss */
   .masthead-brand {
     float: left;
   }
 
-  /* line 132, ../../sass/login.scss */
+  /* line 175, ../../sass/login.scss */
   .masthead-nav {
     float: right;
   }
@@ -12030,12 +12080,12 @@ p {
 /*
  * Cover
  */
-/* line 142, ../../sass/login.scss */
+/* line 184, ../../sass/login.scss */
 .cover {
   padding: 0 20px;
 }
 
-/* line 145, ../../sass/login.scss */
+/* line 187, ../../sass/login.scss */
 .cover .btn-lg, .cover .btn-group-lg > .btn {
   padding: 10px 20px;
   font-weight: bold;
@@ -12046,14 +12096,14 @@ p {
  */
 @media (min-width: 768px) {
   /* Pull out the header and footer */
-  /* line 156, ../../sass/login.scss */
+  /* line 198, ../../sass/login.scss */
   .masthead {
     position: fixed;
     top: 0;
   }
 
   /* Start the vertical centering */
-  /* line 161, ../../sass/login.scss */
+  /* line 203, ../../sass/login.scss */
   .site-wrapper-inner {
     vertical-align: middle;
   }
