@@ -9,6 +9,9 @@
     </a>
     <ul class="navbar-nav ml-auto important">
         <li class = "nav-item ml-auto">
+            <a class="nav-link" href="#" id="aboutUs" onclick="">About Us</a>
+        </li>
+        <li class = "nav-item ml-auto">
             <a class="nav-link" href="#" id="signOut" onclick="signOut()">Sign Out</a>
         </li>
     </ul>
