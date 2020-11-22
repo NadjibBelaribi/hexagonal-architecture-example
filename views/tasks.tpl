@@ -111,21 +111,21 @@
     <div class="container-fluid col-md-9" id="page-content-wrapper">
         <div class="h-100 p-3">
             <div class="row h-100">
-                <div class="respoTaskDetails col-md-6 h-50">
+                <div class="respoTaskDetails col-md-6 h-100">
                     <div class="card h-100" id="taskDetails">
                         <div class="card-header important">
-                            Title : Titre de tache
+                            Title : {{ curTask['title']}}
                         </div>
                         <div class="card-body">
                             <p class="card-title">Description : </p>
-                            <p class="card-text">{{ curTask['description']}}</p>
+                            <p id="descriptionTask" class="card-text bg-primary rounded px-3 py-1">{{ curTask['description']}}</p>
                         </div>
 
-                        <ul>
-                            <li>Created By : {{ creator }} </li>
-                            <li>Created at : {{ curTask['created_at']}} </li>
-                            <li>Assign To : {{ assigned }} </li>
-                            <li>Due Date : {{ curTask['due_date']}}</li>
+                        <ul class="mr-2">
+                            <li class="card-text bg-primary rounded my-3 px-3 py-1">Created By : {{ creator }} </li>
+                            <li class="card-text bg-primary rounded my-3 px-3 py-1">Created at : {{ curTask['created_at']}} </li>
+                            <li class="card-text bg-primary rounded my-3 px-3 py-1">Assign To : {{ assigned }} </li>
+                            <li class="card-text bg-primary rounded my-3 px-3 py-1">Due Date : {{ curTask['due_date']}}</li>
                         </ul>
                     </div>
                 </div>

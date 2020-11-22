@@ -1,3 +1,4 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 /* line 1, ../../sass/bootstrap/_root.scss */
 :root {
   --blue: #007bff;
@@ -13,7 +14,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #007bff;
+  --primary: #7cdbe4;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -167,13 +168,13 @@ sup {
 
 /* line 186, ../../node_modules/bootstrap/scss/_reboot.scss */
 a {
-  color: #007bff;
+  color: #7cdbe4;
   text-decoration: none;
   background-color: transparent;
 }
 /* line 13, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
 a:hover {
-  color: #0056b3;
+  color: #3dcad7;
   text-decoration: underline;
 }
 
@@ -2039,24 +2040,24 @@ pre code {
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #b8daff;
+  background-color: #daf5f7;
 }
 /* line 14, ../../node_modules/bootstrap/scss/mixins/_table-row.scss */
 .table-primary th,
 .table-primary td,
 .table-primary thead th,
 .table-primary tbody + tbody {
-  border-color: #7abaff;
+  border-color: #bbecf1;
 }
 
 /* line 13, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
 .table-hover .table-primary:hover {
-  background-color: #9fcdff;
+  background-color: #c5eff2;
 }
 /* line 32, ../../node_modules/bootstrap/scss/mixins/_table-row.scss */
 .table-hover .table-primary:hover > td,
 .table-hover .table-primary:hover > th {
-  background-color: #9fcdff;
+  background-color: #c5eff2;
 }
 
 /* line 7, ../../node_modules/bootstrap/scss/mixins/_table-row.scss */
@@ -2382,9 +2383,9 @@ pre code {
 .form-control:focus {
   color: #495057;
   background-color: #fff;
-  border-color: #80bdff;
+  border-color: #e6f8fa;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(124, 219, 228, 0.25);
 }
 /* line 43, ../../node_modules/bootstrap/scss/_forms.scss */
 .form-control::placeholder {
@@ -2871,7 +2872,7 @@ textarea.form-control {
 /* line 27, ../../node_modules/bootstrap/scss/_buttons.scss */
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(124, 219, 228, 0.25);
 }
 /* line 34, ../../node_modules/bootstrap/scss/_buttons.scss */
 .btn.disabled, .btn:disabled {
@@ -2890,38 +2891,38 @@ fieldset:disabled a.btn {
 
 /* line 66, ../../node_modules/bootstrap/scss/_buttons.scss */
 .btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  color: #212529;
+  background-color: #7cdbe4;
+  border-color: #7cdbe4;
 }
 /* line 13, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-primary:hover {
-  color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  color: #212529;
+  background-color: #5cd2dd;
+  border-color: #52cfdb;
 }
 /* line 18, ../../node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-primary:focus, .btn-primary.focus {
-  color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
-  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  color: #212529;
+  background-color: #5cd2dd;
+  border-color: #52cfdb;
+  box-shadow: 0 0 0 0.2rem rgba(110, 192, 200, 0.5);
 }
 /* line 32, ../../node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-primary.disabled, .btn-primary:disabled {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  color: #212529;
+  background-color: #7cdbe4;
+  border-color: #7cdbe4;
 }
 /* line 43, ../../node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #0062cc;
-  border-color: #005cbf;
+  color: #212529;
+  background-color: #52cfdb;
+  border-color: #47ccd9;
 }
 /* line 53, ../../node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(110, 192, 200, 0.5);
 }
 
 /* line 66, ../../node_modules/bootstrap/scss/_buttons.scss */
@@ -3178,33 +3179,33 @@ fieldset:disabled a.btn {
 
 /* line 72, ../../node_modules/bootstrap/scss/_buttons.scss */
 .btn-outline-primary {
-  color: #007bff;
-  border-color: #007bff;
+  color: #7cdbe4;
+  border-color: #7cdbe4;
 }
 /* line 13, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-outline-primary:hover {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  color: #212529;
+  background-color: #7cdbe4;
+  border-color: #7cdbe4;
 }
 /* line 74, ../../node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(124, 219, 228, 0.5);
 }
 /* line 79, ../../node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: #007bff;
+  color: #7cdbe4;
   background-color: transparent;
 }
 /* line 85, ../../node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  color: #212529;
+  background-color: #7cdbe4;
+  border-color: #7cdbe4;
 }
 /* line 92, ../../node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(124, 219, 228, 0.5);
 }
 
 /* line 72, ../../node_modules/bootstrap/scss/_buttons.scss */
@@ -3427,12 +3428,12 @@ fieldset:disabled a.btn {
 /* line 83, ../../node_modules/bootstrap/scss/_buttons.scss */
 .btn-link {
   font-weight: 400;
-  color: #007bff;
+  color: #7cdbe4;
   text-decoration: none;
 }
 /* line 13, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-link:hover {
-  color: #0056b3;
+  color: #3dcad7;
   text-decoration: underline;
 }
 /* line 93, ../../node_modules/bootstrap/scss/_buttons.scss */
@@ -3751,7 +3752,7 @@ input[type="button"].btn-block {
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #007bff;
+  background-color: #7cdbe4;
 }
 /* line 161, ../../node_modules/bootstrap/scss/_dropdown.scss */
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -4133,22 +4134,22 @@ input[type="button"].btn-block {
 /* line 32, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #007bff;
-  background-color: #007bff;
+  border-color: #7cdbe4;
+  background-color: #7cdbe4;
 }
 /* line 39, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(124, 219, 228, 0.25);
 }
 /* line 48, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-  border-color: #80bdff;
+  border-color: #e6f8fa;
 }
 /* line 52, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
   color: #fff;
-  background-color: #b3d7ff;
-  border-color: #b3d7ff;
+  background-color: white;
+  border-color: white;
 }
 /* line 62, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-input[disabled] ~ .custom-control-label, .custom-control-input:disabled ~ .custom-control-label {
@@ -4200,8 +4201,8 @@ input[type="button"].btn-block {
 }
 /* line 128, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
-  border-color: #007bff;
-  background-color: #007bff;
+  border-color: #7cdbe4;
+  background-color: #7cdbe4;
 }
 /* line 133, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
@@ -4209,11 +4210,11 @@ input[type="button"].btn-block {
 }
 /* line 139, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(0, 123, 255, 0.5);
+  background-color: rgba(124, 219, 228, 0.5);
 }
 /* line 142, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
-  background-color: rgba(0, 123, 255, 0.5);
+  background-color: rgba(124, 219, 228, 0.5);
 }
 
 /* line 153, ../../node_modules/bootstrap/scss/_custom-forms.scss */
@@ -4226,7 +4227,7 @@ input[type="button"].btn-block {
 }
 /* line 165, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(0, 123, 255, 0.5);
+  background-color: rgba(124, 219, 228, 0.5);
 }
 
 /* line 176, ../../node_modules/bootstrap/scss/_custom-forms.scss */
@@ -4263,7 +4264,7 @@ input[type="button"].btn-block {
 }
 /* line 208, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(0, 123, 255, 0.5);
+  background-color: rgba(124, 219, 228, 0.5);
 }
 
 /* line 221, ../../node_modules/bootstrap/scss/_custom-forms.scss */
@@ -4284,9 +4285,9 @@ input[type="button"].btn-block {
 }
 /* line 238, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-select:focus {
-  border-color: #80bdff;
+  border-color: #e6f8fa;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(124, 219, 228, 0.25);
 }
 /* line 248, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-select:focus::-ms-value {
@@ -4352,8 +4353,8 @@ input[type="button"].btn-block {
 }
 /* line 320, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-file-input:focus ~ .custom-file-label {
-  border-color: #80bdff;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  border-color: #e6f8fa;
+  box-shadow: 0 0 0 0.2rem rgba(124, 219, 228, 0.25);
 }
 /* line 326, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-file-input[disabled] ~ .custom-file-label, .custom-file-input:disabled ~ .custom-file-label {
@@ -4416,15 +4417,15 @@ input[type="button"].btn-block {
 }
 /* line 395, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(124, 219, 228, 0.25);
 }
 /* line 396, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(124, 219, 228, 0.25);
 }
 /* line 397, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(124, 219, 228, 0.25);
 }
 /* line 400, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range::-moz-focus-outer {
@@ -4435,7 +4436,7 @@ input[type="button"].btn-block {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #007bff;
+  background-color: #7cdbe4;
   border: 0;
   border-radius: 1rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -4449,7 +4450,7 @@ input[type="button"].btn-block {
 }
 /* line 415, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range::-webkit-slider-thumb:active {
-  background-color: #b3d7ff;
+  background-color: white;
 }
 /* line 420, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range::-webkit-slider-runnable-track {
@@ -4465,7 +4466,7 @@ input[type="button"].btn-block {
 .custom-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #007bff;
+  background-color: #7cdbe4;
   border: 0;
   border-radius: 1rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -4479,7 +4480,7 @@ input[type="button"].btn-block {
 }
 /* line 441, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range::-moz-range-thumb:active {
-  background-color: #b3d7ff;
+  background-color: white;
 }
 /* line 446, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range::-moz-range-track {
@@ -4498,7 +4499,7 @@ input[type="button"].btn-block {
   margin-top: 0;
   margin-right: 0.2rem;
   margin-left: 0.2rem;
-  background-color: #007bff;
+  background-color: #7cdbe4;
   border: 0;
   border-radius: 1rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -4512,7 +4513,7 @@ input[type="button"].btn-block {
 }
 /* line 470, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range::-ms-thumb:active {
-  background-color: #b3d7ff;
+  background-color: white;
 }
 /* line 475, ../../node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range::-ms-track {
@@ -4642,7 +4643,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #007bff;
+  background-color: #7cdbe4;
 }
 
 /* line 95, ../../node_modules/bootstrap/scss/_nav.scss */
@@ -5422,14 +5423,14 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #007bff;
+  color: #7cdbe4;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
 /* line 18, ../../node_modules/bootstrap/scss/_pagination.scss */
 .page-link:hover {
   z-index: 2;
-  color: #0056b3;
+  color: #3dcad7;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -5438,7 +5439,7 @@ input[type="button"].btn-block {
 .page-link:focus {
   z-index: 3;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(124, 219, 228, 0.25);
 }
 
 /* line 35, ../../node_modules/bootstrap/scss/_pagination.scss */
@@ -5456,8 +5457,8 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #7cdbe4;
+  border-color: #7cdbe4;
 }
 /* line 53, ../../node_modules/bootstrap/scss/_pagination.scss */
 .page-item.disabled .page-link {
@@ -5545,18 +5546,18 @@ a.badge:hover, a.badge:focus {
 
 /* line 51, ../../node_modules/bootstrap/scss/_badge.scss */
 .badge-primary {
-  color: #fff;
-  background-color: #007bff;
+  color: #212529;
+  background-color: #7cdbe4;
 }
 /* line 17, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
 a.badge-primary:hover, a.badge-primary:focus {
-  color: #fff;
-  background-color: #0062cc;
+  color: #212529;
+  background-color: #52cfdb;
 }
 /* line 11, ../../node_modules/bootstrap/scss/mixins/_badge.scss */
 a.badge-primary:focus, a.badge-primary.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(124, 219, 228, 0.5);
 }
 
 /* line 51, ../../node_modules/bootstrap/scss/_badge.scss */
@@ -5727,17 +5728,17 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 /* line 49, ../../node_modules/bootstrap/scss/_alert.scss */
 .alert-primary {
-  color: #004085;
-  background-color: #cce5ff;
-  border-color: #b8daff;
+  color: #407277;
+  background-color: #e5f8fa;
+  border-color: #daf5f7;
 }
 /* line 6, ../../node_modules/bootstrap/scss/mixins/_alert.scss */
 .alert-primary hr {
-  border-top-color: #9fcdff;
+  border-top-color: #c5eff2;
 }
 /* line 10, ../../node_modules/bootstrap/scss/mixins/_alert.scss */
 .alert-primary .alert-link {
-  color: #002752;
+  color: #2e5256;
 }
 
 /* line 49, ../../node_modules/bootstrap/scss/_alert.scss */
@@ -5873,7 +5874,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #007bff;
+  background-color: #7cdbe4;
   transition: width 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -5967,8 +5968,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #7cdbe4;
+  border-color: #7cdbe4;
 }
 /* line 77, ../../node_modules/bootstrap/scss/_list-group.scss */
 .list-group-item + .list-group-item {
@@ -6144,19 +6145,19 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 /* line 4, ../../node_modules/bootstrap/scss/mixins/_list-group.scss */
 .list-group-item-primary {
-  color: #004085;
-  background-color: #b8daff;
+  color: #407277;
+  background-color: #daf5f7;
 }
 /* line 17, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
 .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
-  color: #004085;
-  background-color: #9fcdff;
+  color: #407277;
+  background-color: #c5eff2;
 }
 /* line 14, ../../node_modules/bootstrap/scss/mixins/_list-group.scss */
 .list-group-item-primary.list-group-item-action.active {
   color: #fff;
-  background-color: #004085;
-  border-color: #004085;
+  background-color: #407277;
+  border-color: #407277;
 }
 
 /* line 4, ../../node_modules/bootstrap/scss/mixins/_list-group.scss */
@@ -7159,14 +7160,14 @@ a.close.disabled {
 
 /* line 6, ../../node_modules/bootstrap/scss/mixins/_background-variant.scss */
 .bg-primary {
-  background-color: #007bff !important;
+  background-color: #7cdbe4 !important;
 }
 
 /* line 17, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #0062cc !important;
+  background-color: #52cfdb !important;
 }
 
 /* line 6, ../../node_modules/bootstrap/scss/mixins/_background-variant.scss */
@@ -7315,7 +7316,7 @@ button.bg-dark:focus {
 
 /* line 20, ../../node_modules/bootstrap/scss/utilities/_borders.scss */
 .border-primary {
-  border-color: #007bff !important;
+  border-color: #7cdbe4 !important;
 }
 
 /* line 20, ../../node_modules/bootstrap/scss/utilities/_borders.scss */
@@ -11660,12 +11661,12 @@ button.bg-dark:focus {
 
 /* line 6, ../../node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
 .text-primary {
-  color: #007bff !important;
+  color: #7cdbe4 !important;
 }
 
 /* line 17, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
 a.text-primary:hover, a.text-primary:focus {
-  color: #0056b3 !important;
+  color: #3dcad7 !important;
 }
 
 /* line 6, ../../node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
@@ -11906,215 +11907,161 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-/*
- * Globals
- */
-/* Links */
-/* line 44, ../../sass/login.scss */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-/*
- * Base structure
- */
-/* line 55, ../../sass/login.scss */
+/* line 44, ../../sass/aboutus.scss */
 body {
-  width: 100vw;
-  height: 100vh;
+  background: url(img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-family: sans-serif;
   font-size: calc(10px + 1vmin);
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
-/* line 62, ../../sass/login.scss */
-.site-wrapper {
-  height: 92%;
+/* FontAwesome for working BootSnippet :> */
+/* line 61, ../../sass/aboutus.scss */
+#team {
+  background: #eee !important;
 }
 
-/* line 66, ../../sass/login.scss */
-.navbar {
-  height: 8%;
-  background-color: #7cdbe4;
+/* line 65, ../../sass/aboutus.scss */
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #108d6f;
+  border-color: #108d6f;
+  box-shadow: none;
+  outline: none;
 }
 
-/* line 71, ../../sass/login.scss */
-.cover {
-  color: white;
+/* line 73, ../../sass/aboutus.scss */
+.btn-primary {
+  color: #fff;
+  background-color: #007b5e;
+  border-color: #007b5e;
+}
+
+/* line 79, ../../sass/aboutus.scss */
+section {
+  padding: 60px 0;
+}
+
+/* line 83, ../../sass/aboutus.scss */
+section .section-title {
   text-align: center;
+  color: #007b5e;
+  margin-bottom: 50px;
+  text-transform: uppercase;
 }
 
-/* line 76, ../../sass/login.scss */
-.row {
-  margin-left: 0px;
+/* line 90, ../../sass/aboutus.scss */
+#team .card {
+  border: none;
+  background: #ffffff;
 }
 
-/* line 81, ../../sass/login.scss */
-.gitClass {
-  margin-left: 30px;
+/* line 95, ../../sass/aboutus.scss */
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  border-radius: .25rem;
 }
 
-/* line 85, ../../sass/login.scss */
-.important, .userNameClass {
-  color: #777777;
-  font-weight: bold;
+/* line 105, ../../sass/aboutus.scss */
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-/* line 90, ../../sass/login.scss */
-.logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 30px;
-  border: 1px solid black;
-  margin-bottom: 10px;
+/* line 113, ../../sass/aboutus.scss */
+.mainflip {
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
 }
 
-/* line 98, ../../sass/login.scss */
-.nav-linkkk {
-  display: block;
-  padding-top: 0.5rem;
-  padding-right: 1rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  color: rgba(0, 0, 0, 0.5);
+/* line 126, ../../sass/aboutus.scss */
+.frontside {
+  position: relative;
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  z-index: 2;
+  margin-bottom: 30px;
 }
 
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-/* line 108, ../../sass/login.scss */
-.site-wrapper {
-  display: table;
-  width: 100%;
+/* line 134, ../../sass/aboutus.scss */
+.backside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-box-shadow: 5px 7px 9px -4px #9e9e9e;
+  -moz-box-shadow: 5px 7px 9px -4px #9e9e9e;
+  box-shadow: 5px 7px 9px -4px #9e9e9e;
 }
 
-/* line 113, ../../sass/login.scss */
-.site-wrapper-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  vertical-align: top;
+/* line 149, ../../sass/aboutus.scss */
+.frontside,
+.backside {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 1s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 1s;
+  -o-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
 }
 
-/* line 119, ../../sass/login.scss */
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
+/* line 167, ../../sass/aboutus.scss */
+.frontside .card,
+.backside .card {
+  min-height: 312px;
 }
 
-/* Padding for spacing */
-/* line 125, ../../sass/login.scss */
-.inner {
-  padding: 30px;
+/* line 172, ../../sass/aboutus.scss */
+.backside .card a {
+  font-size: 18px;
+  color: #007b5e !important;
 }
 
-@media (max-width: 455px) {
-  /* line 131, ../../sass/login.scss */
-  .logo {
-    width: 65px;
-    height: 65px;
-  }
-
-  /* line 135, ../../sass/login.scss */
-  .gitClass {
-    margin-left: 0px;
-  }
-}
-/*
- * Hcover-headingeader
- */
-/* line 143, ../../sass/login.scss */
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
+/* line 177, ../../sass/aboutus.scss */
+.frontside .card .card-title,
+.backside .card .card-title {
+  color: #007b5e !important;
 }
 
-/* line 147, ../../sass/login.scss */
-h1 {
-  font-family: "Al Tarikh";
-  font-size: 80px;
-  color: blue;
-}
-
-/* line 152, ../../sass/login.scss */
-p {
-  color: black;
-}
-
-/* line 155, ../../sass/login.scss */
-.masthead-nav > li {
-  display: inline-block;
-}
-
-/* line 158, ../../sass/login.scss */
-.masthead-nav > li + li {
-  margin-left: 20px;
-}
-
-/* line 161, ../../sass/login.scss */
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  /* IE8 proofing */
-  color: rgba(255, 255, 255, 0.75);
-  border-bottom: 2px solid transparent;
-}
-
-/* line 170, ../../sass/login.scss */
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-}
-
-/* line 174, ../../sass/login.scss */
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-@media (min-width: 768px) {
-  /* line 182, ../../sass/login.scss */
-  .masthead-brand {
-    float: left;
-  }
-
-  /* line 185, ../../sass/login.scss */
-  .masthead-nav {
-    float: right;
-  }
-}
-/*
- * Cover
- */
-/* line 194, ../../sass/login.scss */
-.cover {
-  padding: 0 20px;
-}
-
-/* line 197, ../../sass/login.scss */
-.cover .btn-lg, .cover .btn-group-lg > .btn {
-  padding: 10px 20px;
-  font-weight: bold;
-}
-
-/*
- * Affix and center
- */
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  /* line 208, ../../sass/login.scss */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-
-  /* Start the vertical centering */
-  /* line 213, ../../sass/login.scss */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
+/* line 182, ../../sass/aboutus.scss */
+.frontside .card .card-body img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
 }

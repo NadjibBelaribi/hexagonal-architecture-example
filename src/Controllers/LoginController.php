@@ -41,6 +41,8 @@ class LoginController extends HomeController
                 $response->getBody()->write(json_encode($user['id'])) ;
                  return $response->withStatus(200);
                // $res = $response->withHeader('Location', 'https://www.google.com/');
+                return $response->withStatus(200);
+                //return $res ;
 
             }
             else {
