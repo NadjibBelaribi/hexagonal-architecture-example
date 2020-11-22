@@ -43,9 +43,9 @@ class LoginController extends HomeController
             {
                 $_SESSION['user'] =$authEmail ;
                 $_SESSION['userId'] =$user['id'] ;
-               // $response->getBody()->write(json_encode($user['id'])) ;
-               // return $response->withStatus(200);
-                return $res ;
+                $response->getBody()->write(json_encode($user['id'])) ;
+                return $response->withStatus(200);
+                //return $res ;
 
             }
             else {
