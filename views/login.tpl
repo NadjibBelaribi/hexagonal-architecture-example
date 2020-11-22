@@ -32,8 +32,8 @@
             </p>
         </div>
         <div class="justify-content-center inner cover my-auto">
-            <img class="toto" src="/img/logogit.png" width="100px" height="100px" style="border-radius: 30px; border: 1px solid black;"/>
-            <a href="https://git.unistra.fr" class="ml-5 btn btn-secondary btn-lg"> Here the source code ! </a>
+            <img class="logo" src="/img/logogit.png"/>
+            <a href="https://git.unistra.fr" class="gitClass btn btn-secondary btn-lg"> Here the source code ! </a>
         </div>
     </div>
 </div>

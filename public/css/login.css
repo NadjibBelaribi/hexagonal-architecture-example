@@ -11948,14 +11948,27 @@ body {
   margin-left: 0px;
 }
 
+/* line 79, ../../sass/login.scss */
+.gitClass {
+  margin-left: 30px;
+}
+
+/* line 83, ../../sass/login.scss */
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
-/* line 81, ../../sass/login.scss */
+/* line 90, ../../sass/login.scss */
 .site-wrapper {
   display: table;
   width: 100%;
 }
 
-/* line 86, ../../sass/login.scss */
+/* line 95, ../../sass/login.scss */
 .site-wrapper-inner {
   display: flex;
   flex-direction: column;
@@ -11963,57 +11976,62 @@ body {
   vertical-align: top;
 }
 
-/* line 92, ../../sass/login.scss */
+/* line 101, ../../sass/login.scss */
 .cover-container {
   margin-right: auto;
   margin-left: auto;
 }
 
 /* Padding for spacing */
-/* line 98, ../../sass/login.scss */
+/* line 107, ../../sass/login.scss */
 .inner {
   padding: 30px;
 }
 
 @media (max-width: 455px) {
-  /* line 104, ../../sass/login.scss */
-  .toto {
-    width: 75px;
-    height: 75px;
+  /* line 113, ../../sass/login.scss */
+  .logo {
+    width: 65px;
+    height: 65px;
+  }
+
+  /* line 117, ../../sass/login.scss */
+  .gitClass {
+    margin-left: 0px;
   }
 }
 /*
  * Hcover-headingeader
  */
-/* line 113, ../../sass/login.scss */
+/* line 125, ../../sass/login.scss */
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 117, ../../sass/login.scss */
+/* line 129, ../../sass/login.scss */
 h1 {
   font-family: "Al Tarikh";
   font-size: 80px;
   color: blue;
 }
 
-/* line 122, ../../sass/login.scss */
+/* line 134, ../../sass/login.scss */
 p {
   color: black;
 }
 
-/* line 125, ../../sass/login.scss */
+/* line 137, ../../sass/login.scss */
 .masthead-nav > li {
   display: inline-block;
 }
 
-/* line 128, ../../sass/login.scss */
+/* line 140, ../../sass/login.scss */
 .masthead-nav > li + li {
   margin-left: 20px;
 }
 
-/* line 131, ../../sass/login.scss */
+/* line 143, ../../sass/login.scss */
 .masthead-nav > li > a {
   padding-right: 0;
   padding-left: 0;
@@ -12025,13 +12043,13 @@ p {
   border-bottom: 2px solid transparent;
 }
 
-/* line 140, ../../sass/login.scss */
+/* line 152, ../../sass/login.scss */
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
 }
 
-/* line 144, ../../sass/login.scss */
+/* line 156, ../../sass/login.scss */
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
@@ -12040,12 +12058,12 @@ p {
 }
 
 @media (min-width: 768px) {
-  /* line 152, ../../sass/login.scss */
+  /* line 164, ../../sass/login.scss */
   .masthead-brand {
     float: left;
   }
 
-  /* line 155, ../../sass/login.scss */
+  /* line 167, ../../sass/login.scss */
   .masthead-nav {
     float: right;
   }
@@ -12053,12 +12071,12 @@ p {
 /*
  * Cover
  */
-/* line 164, ../../sass/login.scss */
+/* line 176, ../../sass/login.scss */
 .cover {
   padding: 0 20px;
 }
 
-/* line 167, ../../sass/login.scss */
+/* line 179, ../../sass/login.scss */
 .cover .btn-lg, .cover .btn-group-lg > .btn {
   padding: 10px 20px;
   font-weight: bold;
@@ -12069,14 +12087,14 @@ p {
  */
 @media (min-width: 768px) {
   /* Pull out the header and footer */
-  /* line 178, ../../sass/login.scss */
+  /* line 190, ../../sass/login.scss */
   .masthead {
     position: fixed;
     top: 0;
   }
 
   /* Start the vertical centering */
-  /* line 183, ../../sass/login.scss */
+  /* line 195, ../../sass/login.scss */
   .site-wrapper-inner {
     vertical-align: middle;
   }

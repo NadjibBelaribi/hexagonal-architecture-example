@@ -76,7 +76,16 @@ body {
   margin-left: 0px;
 }
 
+.gitClass {
+  margin-left: 30px;
+}
 
+.logo{
+  width:100px;
+  height:100px;
+  border-radius:30px;
+  border:1px solid black;
+}
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
@@ -101,9 +110,12 @@ body {
 
 @media (max-width: 455px)
 {
-  .toto{
-    width: 75px;
-    height:75px;
+  .logo{
+    width: 65px;
+    height:65px;
+  }
+  .gitClass {
+    margin-left: 0px;
   }
 }
 
