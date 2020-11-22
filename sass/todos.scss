@@ -54,14 +54,16 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
 }
-
+.row{
+  margin-right: 0px;
+}
 .navbar {
   background: $primary;
   height:8%;
 }
 
 #wrapper{
-  padding: 0px $padding 0px $padding;
+  padding: 0px 0px 0px $padding;
   height:92%;
 }
 
