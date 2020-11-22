@@ -55,6 +55,8 @@ a:hover {
 body {
   width: 100vw;
   height: 100vh;
+  font-family: sans-serif;
+  font-size: calc(10px + 1vmin);
 }
 
 .site-wrapper{
@@ -80,11 +82,17 @@ body {
   margin-left: 30px;
 }
 
+.important, .userNameClass {
+  color: rgb(119, 119, 119);
+  font-weight: bold;
+}
+
 .logo{
   width:100px;
   height:100px;
   border-radius:30px;
   border:1px solid black;
+  margin-bottom: 10px;
 }
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
