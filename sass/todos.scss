@@ -100,6 +100,14 @@ body {
   width: 100%;
 }
 
+#listTasks{
+  display: block;
+  overflow:auto;
+  overflow-y: scroll;
+  height: 650px;
+  text-align: center;
+  scroll-behavior: smooth;
+}
 //content page
 
 #page-content-wrapper{

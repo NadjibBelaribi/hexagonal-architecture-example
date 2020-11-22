@@ -52,7 +52,7 @@
                         <h5 class="modal-title" id="exampleModalCenterTitle">
                             Add new Task
                         </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="closeModal" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -69,24 +69,26 @@
                                 <input name="description" type="text" class="form-control" id="inputAddress2"
                                        placeholder="" />
                             </div>
-                            <div class="form-group col-md-4">
-                                <label for="inputAssign">Assign to : </label>
-                                <select name="assigned" id="inputAssign" class="form-control">
-                                    <option value="empty"> </option>
-                                    {% for user in users %}
-                                    <option value={{ user.email }}>{{ user.email }}</option>
-                                    {% endfor %}
-                                </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="inputDate">Due Date</label>
-                                <input name="dueDate" type="date" class="form-control" id="inputDate" />
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputAssign">Assign to : </label>
+                                    <select name="assigned" id="inputAssign" class="form-control">
+                                        <option value="empty"> </option>
+                                        {% for user in users %}
+                                        <option value={{ user.email }}>{{ user.email }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputDate">Due Date</label>
+                                    <input name="dueDate" type="date" class="form-control" id="inputDate" />
+                                </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                <button type="button" class="closeTask btn btn-secondary" data-dismiss="modal">
                                     Close
                                 </button>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="submitTask btn btn-primary">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -95,12 +97,7 @@
             </div>
         </div>
 
-        <div id="listTasks" class="list-group list-group-flush overflow-auto" style="
-            display: block;
-            overflow-y: scroll;
-            height: 650px;
-            text-align: center;
-            scroll-behavior: smooth;">
+        <div id="listTasks" class="list-group list-group-flush">
             {% for task in todos %}
             <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
                onclick="this.classList.add('active');">{{ task.title }} </a>
