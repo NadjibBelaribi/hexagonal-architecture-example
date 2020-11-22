@@ -31,13 +31,9 @@
                 <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Connexion </a>
             </p>
         </div>
-
-        <div class="row w-100 justify-content-center inner cover my-auto">
-            <img src="/img/logogit.png" width="100px" height="100px"/>
-            <a class="btn btn-black display-4" href="https://git.unistra.fr">
-                CLICK HERE
-            </a>
-            <h4 class="display-4"> Here our GitLab !</h4>
+        <div class="justify-content-center inner cover my-auto">
+            <img class="toto" src="/img/logogit.png" width="100px" height="100px" style="border-radius: 30px; border: 1px solid black;"/>
+            <a href="https://git.unistra.fr" class="ml-5 btn btn-secondary btn-lg"> Here the source code ! </a>
         </div>
     </div>
 </div>

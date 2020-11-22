@@ -63,12 +63,19 @@ body {
 
 .navbar {
   height:8%;
+  background-color: rgb(124, 219, 228);;
 }
 
 .cover {
   color: white;
   text-align: center;
 }
+
+.row
+{
+  margin-left: 0px;
+}
+
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -92,6 +99,13 @@ body {
   padding: 30px;
 }
 
+@media (max-width: 455px)
+{
+  .toto{
+    width: 75px;
+    height:75px;
+  }
+}
 
 /*
  * Hcover-headingeader
@@ -142,7 +156,6 @@ p{
     float: right;
   }
 }
-
 
 /*
  * Cover
