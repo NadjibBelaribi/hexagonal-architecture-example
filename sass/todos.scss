@@ -61,6 +61,11 @@ body {
   background: $primary;
   height:8%;
 }
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
 
 .nav-linkkk {
   display: block;
@@ -116,6 +121,15 @@ body {
   overflow:auto;
   overflow-y: scroll;
   height: 650px;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+#descriptionTask{
+  display: block;
+  overflow:auto;
+  overflow-y: scroll;
+  max-height: 400px;
   text-align: center;
   scroll-behavior: smooth;
 }
@@ -194,6 +208,10 @@ p {
     padding-bottom: 0rem;
     padding-left: 0rem;
   }
+
+  #descriptionTask{
+    max-height: 250px;
+  }
 }
 
 @media (min-width:576px) and (max-width:1070px){
@@ -206,5 +224,9 @@ p {
   }
   #sidebar-wrapper{
     min-width: 200px;
+  }
+
+  #descriptionTask{
+    max-height: 350px;
   }
 }

@@ -11932,7 +11932,14 @@ body {
   height: 8%;
 }
 
-/* line 65, ../../sass/todos.scss */
+/* line 64, ../../sass/todos.scss */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* line 70, ../../sass/todos.scss */
 .nav-linkkk {
   display: block;
   padding-top: 0.5rem;
@@ -11942,50 +11949,50 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 74, ../../sass/todos.scss */
+/* line 79, ../../sass/todos.scss */
 #wrapper {
   padding: 0px 0px 0px 20px;
   height: 92%;
 }
 
-/* line 81, ../../sass/todos.scss */
+/* line 86, ../../sass/todos.scss */
 .important, .userNameClass {
   color: #777777;
   font-weight: bold;
 }
 
-/* line 86, ../../sass/todos.scss */
+/* line 91, ../../sass/todos.scss */
 .btn-primary {
   background: #7cdbe4;
 }
-/* line 89, ../../sass/todos.scss */
+/* line 94, ../../sass/todos.scss */
 .btn-primary:hover {
   background: #2bc1cf;
 }
 
-/* line 96, ../../sass/todos.scss */
+/* line 101, ../../sass/todos.scss */
 #sidebar-wrapper {
   border-right: 1px solid #dee2e6;
 }
 
-/* line 100, ../../sass/todos.scss */
+/* line 105, ../../sass/todos.scss */
 .btnPannel {
   margin-top: 10px;
   width: 100%;
 }
 
-/* line 105, ../../sass/todos.scss */
+/* line 110, ../../sass/todos.scss */
 .btnAddTask {
   width: 100%;
 }
 
-/* line 109, ../../sass/todos.scss */
+/* line 114, ../../sass/todos.scss */
 #taskFilterInput, #userFilterInput {
   margin-top: 10px;
   width: 100%;
 }
 
-/* line 114, ../../sass/todos.scss */
+/* line 119, ../../sass/todos.scss */
 #listTasks {
   display: block;
   overflow: auto;
@@ -11995,28 +12002,38 @@ body {
   scroll-behavior: smooth;
 }
 
-/* line 124, ../../sass/todos.scss */
+/* line 128, ../../sass/todos.scss */
+#descriptionTask {
+  display: block;
+  overflow: auto;
+  overflow-y: scroll;
+  max-height: 400px;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+/* line 138, ../../sass/todos.scss */
 #page-content-wrapper {
   height: 100%;
 }
 
-/* line 128, ../../sass/todos.scss */
+/* line 142, ../../sass/todos.scss */
 p {
   color: black;
   width: 100%;
 }
 
-/* line 133, ../../sass/todos.scss */
+/* line 147, ../../sass/todos.scss */
 .card-header {
   background: #7cdbe4;
 }
 
-/* line 136, ../../sass/todos.scss */
+/* line 150, ../../sass/todos.scss */
 .card-header {
   background: #7cdbe4;
 }
 
-/* line 141, ../../sass/todos.scss */
+/* line 155, ../../sass/todos.scss */
 #listComments {
   display: block;
   width: 100%;
@@ -12025,76 +12042,86 @@ p {
   padding: 20px;
 }
 
-/* line 149, ../../sass/todos.scss */
+/* line 163, ../../sass/todos.scss */
 .alert-primary {
   background: #ebe8e8;
 }
 
-/* line 153, ../../sass/todos.scss */
+/* line 167, ../../sass/todos.scss */
 .userClass {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 158, ../../sass/todos.scss */
+/* line 172, ../../sass/todos.scss */
 .userDateClass {
   font-style: italic;
   color: #777777;
 }
 
-/* line 163, ../../sass/todos.scss */
+/* line 177, ../../sass/todos.scss */
 #commentForm {
   padding: 0px 10px;
   margin-top: auto;
 }
 
 @media (max-width: 576px) {
-  /* line 171, ../../sass/todos.scss */
+  /* line 185, ../../sass/todos.scss */
   .card, .respoTaskDetails, .respoTaskComments {
     max-height: 600px;
     margin: 10px 0px 10px 0px;
   }
 
-  /* line 176, ../../sass/todos.scss */
+  /* line 190, ../../sass/todos.scss */
   #listTasks {
     max-height: 500px;
     min-width: 100px;
   }
 
-  /* line 181, ../../sass/todos.scss */
+  /* line 195, ../../sass/todos.scss */
   #sidebar-wrapper {
     border-bottom: 1px solid #dee2e6;
     border-right: none;
     max-height: 700px;
   }
 
-  /* line 187, ../../sass/todos.scss */
+  /* line 201, ../../sass/todos.scss */
   .modal-content {
     margin-right: 10px;
   }
 
-  /* line 191, ../../sass/todos.scss */
+  /* line 205, ../../sass/todos.scss */
   .nav-linkkk {
     padding-top: 0rem;
     padding-right: 0rem;
     padding-bottom: 0rem;
     padding-left: 0rem;
   }
+
+  /* line 212, ../../sass/todos.scss */
+  #descriptionTask {
+    max-height: 250px;
+  }
 }
 @media (min-width: 576px) and (max-width: 1070px) {
-  /* line 200, ../../sass/todos.scss */
+  /* line 218, ../../sass/todos.scss */
   .card, .respoTaskDetails, .respoTaskComments {
     max-height: 700px;
     min-width: 500px;
   }
 
-  /* line 204, ../../sass/todos.scss */
+  /* line 222, ../../sass/todos.scss */
   .respoTaskComments {
     margin-top: 20px;
   }
 
-  /* line 207, ../../sass/todos.scss */
+  /* line 225, ../../sass/todos.scss */
   #sidebar-wrapper {
     min-width: 200px;
+  }
+
+  /* line 229, ../../sass/todos.scss */
+  #descriptionTask {
+    max-height: 350px;
   }
 }

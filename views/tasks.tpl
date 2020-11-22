@@ -118,7 +118,7 @@
                         </div>
                         <div class="card-body">
                             <p class="card-title">Description : </p>
-                            <p class="card-text bg-primary rounded px-3 py-1">{{ curTask['description']}}</p>
+                            <p id="descriptionTask" class="card-text bg-primary rounded px-3 py-1">{{ curTask['description']}}</p>
                         </div>
 
                         <ul class="mr-2">
