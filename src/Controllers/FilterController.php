@@ -19,32 +19,29 @@ class FilterController extends HomeController
 
     public function filterByUser(RequestInterface $request, ResponseInterface $response)
     {
-
-         $usr = $_GET['user'] . '%';
-         $tasks = $this->pdo->prepare('select title from users inner join todos
-                on users.id = todos.created_by where email like :hint');
-        $tasks->bindParam(':hint', $usr, PDO::PARAM_STR);
-
-        $tasks->execute();
-        $tasks = $tasks->fetchAll();
-        $payload = json_encode($tasks);
-
-        $response->getBody()->write($payload);
+        $hint = $_GET['user'] . '%' ;
+        $tasks = $this->getTasks($hint,"user") ;
+        $response->getBody()->write($tasks);
         return $response->withStatus(200);
     }
 
-    public function filterByTask(RequestInterface $request, ResponseInterface $response)
+    public function getTasks(string $hint , string $filter)
     {
-
-        $tsk = $_GET['title'] . '%';
-        $tasks = $this->pdo->prepare('select id , title from todos where title like :hint');
-        $tasks->bindParam(':hint', $tsk, PDO::PARAM_STR);
-
+        if($filter == "task")
+            $tasks = $this->pdo->prepare('select id , title from todos where title like :hint');
+        else
+            $tasks = $this->pdo->prepare('select title from users inner join todos
+                on users.id = todos.created_by where email like :hint');
+        $tasks->bindParam(':hint', $hint, PDO::PARAM_STR);
         $tasks->execute();
         $tasks = $tasks->fetchAll();
-        $payload = json_encode($tasks);
-
-        $response->getBody()->write($payload);
+        return json_encode($tasks);
+    }
+    public function filterByTask(RequestInterface $request, ResponseInterface $response)
+    {
+        $hint = $_GET['title'] . '%';
+        $tasks = $this->getTasks($hint,"task") ;
+        $response->getBody()->write($tasks);
         return $response->withStatus(200);
     }
 }

@@ -23,14 +23,118 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3412089c-fde2-4fb9-b17d-43b9522fc2e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/todo-list.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/todo-list.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/3c8f0842c129f19c628735cd2c6795316d33c2ac/_rfs.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/3fab47822c9f38f96e6cb2b8a91ceb5aaa0c4e6c/todos.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_alert.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_badge.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_breadcrumb.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_button-group.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_buttons.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_card.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_carousel.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_close.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_code.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_custom-forms.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_dropdown.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_forms.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_functions.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_grid.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_images.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_input-group.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_jumbotron.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_list-group.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_media.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_mixins.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_modal.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_nav.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_navbar.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_pagination.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_popover.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_print.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_progress.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_reboot.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_spinners.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_tables.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_toasts.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_tooltip.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_transitions.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_type.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_utilities.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/6440fcb3b2ec8afa9d67f473436f550945853ec3/_variables.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_align.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_background.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_borders.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_clearfix.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_display.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_embed.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_flex.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_float.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_interactions.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_overflow.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_position.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_screenreaders.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_shadows.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_sizing.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_spacing.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_stretched-link.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_text.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/99f771b189ea2f0e158173e93547598192f7184f/_visibility.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_alert.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_background-variant.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_badge.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_border-radius.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_box-shadow.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_breakpoints.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_buttons.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_caret.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_clearfix.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_deprecate.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_float.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_forms.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_gradients.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_grid-framework.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_grid.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_hover.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_image.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_list-group.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_lists.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_nav-divider.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_pagination.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_reset-text.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_resize.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_screen-reader.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_size.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_table-row.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_text-emphasis.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_text-hide.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_text-truncate.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_transition.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/afc6cf5c05d8f8db12501cabc2d3f34be449db64/_visibility.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/d1c586a6711b27d5708e6e418a856e8a365e656c/_root.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/tasks.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dependencies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/dependencies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/middleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/todos.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/todos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/todos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/todos.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/FilterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/FilterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/NotFoundController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/NotFoundController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/TasksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/navbar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/navbar.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/notfound.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/notfound.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/tasks.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/tasks.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +143,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -145,6 +251,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -157,6 +264,11 @@
       <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="17.72" />
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -179,7 +291,9 @@
       <workItem from="1604999812240" duration="719000" />
       <workItem from="1605011111307" duration="7455000" />
       <workItem from="1605024020623" duration="5668000" />
-      <workItem from="1605983557934" duration="2283000" />
+      <workItem from="1605983557934" duration="21267000" />
+      <workItem from="1606043616521" duration="613000" />
+      <workItem from="1606052403197" duration="6998000" />
     </task>
     <servers />
   </component>
@@ -215,43 +329,45 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1604966858535" />
-    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1604767677052">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="548" y="169" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1606060520465">
+      <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1604767677052" />
+    <state x="548" y="169" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1606060520465" />
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604846067162">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1604846067162" />
-    <state x="474" y="369" key="ComposerInitDialogKey" timestamp="1604968232725">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="495" y="331" width="523" height="171" key="ComposerInitDialogKey" timestamp="1605988036265">
+      <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="474" y="369" key="ComposerInitDialogKey/0.0.1440.900@0.0.1440.900" timestamp="1604968232725" />
+    <state x="495" y="331" width="523" height="171" key="ComposerInitDialogKey/67.27.1299.741@67.27.1299.741" timestamp="1605988036265" />
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1604848945419">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1604848945419" />
     <state x="100" y="100" width="1240" height="700" maximized="true" key="DiffContextDialog/0.23.1440.792@0.23.1440.792" timestamp="1604841805685" />
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1605983662451">
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1606040884640">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="958" height="408" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605052142496" />
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1605983662451" />
-    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1605983662450">
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1606040884640" />
+    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1606040884637">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="958" height="408" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605052142494" />
-    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1605983662450" />
-    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1605983662449">
+    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1606040884637" />
+    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1606040884635">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="958" height="408" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605052142493" />
-    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1605983662449" />
-    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1605983662450">
+    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1606040884635" />
+    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1606040884638">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="958" height="408" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605052142495" />
-    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1605983662450" />
+    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1606040884638" />
     <state x="446" y="183" key="NewPhpClassDialog" timestamp="1604846051316">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -264,14 +380,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="498" y="159" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1604848904282" />
+    <state x="205" y="31" key="SettingsEditor" timestamp="1605986129596">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="205" y="31" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1605986129596" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605053844331">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1605053844331" />
-    <state x="380" y="175" width="672" height="677" key="run.anything.popup" timestamp="1605985112609">
+    <state x="380" y="175" width="672" height="677" key="run.anything.popup" timestamp="1606052553450">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="380" y="175" width="672" height="677" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1605985112609" />
+    <state x="380" y="175" width="672" height="677" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1606052553450" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604837917566">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -284,11 +404,6 @@
           <url>file://$PROJECT_DIR$/src/Controllers/FilterController.php</url>
           <line>4</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/Controllers/TasksController.php</url>
-          <line>22</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

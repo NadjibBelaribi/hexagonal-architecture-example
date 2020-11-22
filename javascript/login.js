@@ -1,6 +1,5 @@
 import 'bootstrap';
 let $ = require('jquery');
-
 $(function () {
 
     function signOut() {
@@ -22,7 +21,7 @@ $(function () {
         document.getElementById('emailHelp').innerText = "";
         const data = JSON.parse(request.responseText);
         if (data == "no") {
-            document.getElementById('emailHelp').innerText = "Error identifiants";
+            document.getElementById('emailHelp').innerText = "Error identifiers";
         } else {
             window.location.href = "/tasks/" + data;
         }

@@ -2,7 +2,7 @@
 
 use DI\ContainerBuilder;
 use Slim\Views\Twig;
-return function () {
+return function () : \DI\Container {
 
     $containerBuilder = new ContainerBuilder();
     $containerBuilder->addDefinitions([

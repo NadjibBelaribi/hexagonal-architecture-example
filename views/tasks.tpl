@@ -12,7 +12,7 @@
     <meta name="author" content="">
 
     <title>Tasks </title>
-    <link rel="stylesheet" href="css/todos.css">
+    <link rel="stylesheet" href="css/todos.css?">
      <script src="js/index.js"></script>
     {% endblock %}
 </head>
@@ -23,7 +23,7 @@
 <div class="d-flex row" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="col-sm-2" id="sidebar-wrapper">
+    <div class="col-md-3 id="sidebar-wrapper">
         <button class="btnPannel btn btn-outline-primary mx-auto" type="button" data-toggle="collapse"
                 data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             Filter Pannel
@@ -47,12 +47,12 @@
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+                <div class="modal-content toto">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalCenterTitle">
                             Add new Task
                         </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="closeModal" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -69,24 +69,26 @@
                                 <input name="description" type="text" class="form-control" id="inputAddress2"
                                        placeholder="" />
                             </div>
-                            <div class="form-group col-md-4">
-                                <label for="inputAssign">Assign to : </label>
-                                <select name="assigned" id="inputAssign" class="form-control">
-                                    <option value="empty"> </option>
-                                    {% for user in users %}
-                                    <option value={{ user.email }}>{{ user.email }}</option>
-                                    {% endfor %}
-                                </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="inputDate">Due Date</label>
-                                <input name="dueDate" type="date" class="form-control" id="inputDate" />
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputAssign">Assign to : </label>
+                                    <select name="assigned" id="inputAssign" class="form-control">
+                                        <option value="empty"> </option>
+                                        {% for user in users %}
+                                        <option value={{ user.email }}>{{ user.email }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputDate">Due Date</label>
+                                    <input name="dueDate" type="date" class="form-control" id="inputDate" />
+                                </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                <button type="button" class="closeTask btn btn-secondary" data-dismiss="modal">
                                     Close
                                 </button>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="submitTask btn btn-primary">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -95,12 +97,7 @@
             </div>
         </div>
 
-        <div id="listTasks" class="list-group list-group-flush overflow-auto" style="
-            display: block;
-            overflow-y: scroll;
-            height: 650px;
-            text-align: center;
-            scroll-behavior: smooth;">
+        <div id="listTasks" class="list-group list-group-flush">
             {% for task in todos %}
             <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
                onclick="this.classList.add('active');">{{ task.title }} </a>
@@ -111,7 +108,7 @@
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
-    <div class="container-fluid col-sm-10" id="page-content-wrapper">
+    <div class="container-fluid col-md-9" id="page-content-wrapper">
         <div class="h-100 p-3">
             <div class="row h-100">
                 <div class="respoTaskDetails col-md-6 h-50">
@@ -120,7 +117,7 @@
                             Title : Titre de tache
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Description : </h5>
+                            <p class="card-title">Description : </p>
                             <p class="card-text">{{ curTask['description']}}</p>
                         </div>
 
@@ -139,9 +136,13 @@
                             {% for comment in comments %}
 
                             <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
-                                <div class="userClass important">
-                                    <h5 class="userNameClass"> {{ comment.email }}</h5>
-                                    <h5 class="userDateClass"> {{ comment.created_at }}</h5>
+                                <div class="userClass important row">
+                                    <div class="col-lg-8">
+                                        <p class="userNameClass"> {{ comment.email }}</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="userDateClass"> {{ comment.created_at }}</p>
+                                    </div>
                                 </div>
                                 <p> {{ comment.comment }}</p>
                             </div>

@@ -79,4 +79,12 @@ $(function () {
         document.getElementById('listComments').innerHTML += codeblock;
     }
 
+    $('.btnAddTask').on('click', function () {
+        $('#listTasks').css('overflow','hidden');
+   });
+
+   $('.closeTask, .submitTask, .closeModal').on('click', function () {
+    $('#listTasks').css('overflow','auto');
+});
+
 });

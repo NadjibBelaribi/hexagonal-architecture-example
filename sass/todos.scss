@@ -48,6 +48,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-family: sans-serif;
+  font-size: calc(10px + 1vmin);
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
@@ -66,7 +67,7 @@ body {
 
 //in sidebar and content page
 
-.important, h5 {
+.important, .userNameClass {
   color: rgb(119, 119, 119);
   font-weight: bold;
 }
@@ -94,6 +95,19 @@ body {
   width: 100%;
 }
 
+#taskFilterInput, #userFilterInput{
+  margin-top: 10px;
+  width: 100%;
+}
+
+#listTasks{
+  display: block;
+  overflow:auto;
+  overflow-y: scroll;
+  height: 650px;
+  text-align: center;
+  scroll-behavior: smooth;
+}
 //content page
 
 #page-content-wrapper{
@@ -102,6 +116,7 @@ body {
 
 p {
   color: black;
+  width: 100%;
 }
 
 .card-header {
@@ -129,6 +144,11 @@ p {
   justify-content: space-between;
 }
 
+.userDateClass{
+  font-style: italic;
+  color: rgb(119, 119, 119);
+}
+
 #commentForm{
   padding: 0px 10px;
   margin-top: auto;
@@ -136,11 +156,12 @@ p {
 
 //responsive
 
-@media (max-width:991px){
+@media (max-width:576px){
   .card, .respoTaskDetails, .respoTaskComments {
     max-height: 600px;
     margin: 10px 0px 10px 0px;
   }
+
   #listTasks{
     max-height: 500px;
     min-width: 100px;
@@ -150,5 +171,22 @@ p {
     border-bottom: 1px solid #dee2e6;
     border-right: none;
     max-height: 700px;
+  }
+
+  .modal-content{
+    margin-right: 10px;
+  }
+}
+
+@media (min-width:576px) and (max-width:1070px){
+  .card, .respoTaskDetails, .respoTaskComments {
+    max-height: 700px;
+    min-width: 500px;
+  }
+  .respoTaskComments{
+    margin-top: $padding;
+  }
+  #sidebar-wrapper{
+    min-width: 200px;
   }
 }
