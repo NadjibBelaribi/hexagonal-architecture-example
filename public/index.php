@@ -8,10 +8,9 @@ require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../app/env.php';
 
 // Récupère notre container
-$dependencies = require __DIR__ . '/../app/dependencies.php';
-$container = $dependencies() ;
-// Set le container
-AppFactory::setContainer($container);
+$container = require __DIR__ . '/../app/dependencies.php';
+ // Set le container
+AppFactory::setContainer($container());
 
 // Création de l'app
 $app = AppFactory::create();

@@ -4,9 +4,7 @@ use Amir_nadjib\Todo_list\Controllers\HomeController;
 use Amir_nadjib\Todo_list\Controllers\LoginController;
 use Amir_nadjib\Todo_list\Controllers\TasksController;
 use Amir_nadjib\Todo_list\Controllers\FilterController;
-use function DI\value;
-use \Slim\Routing\RouteParser ;
-$container->set(RouteParser::class, value($app->getRouteCollector()->getRouteParser()));
+
 
  /* Login page */
 $app->get('/', LoginController::class . ':getLogin');
