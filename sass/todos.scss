@@ -71,7 +71,7 @@ a:hover {
   display: block;
   padding-top: 0.5rem;
   padding-right: 1rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0rem;
   padding-left: 1rem;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -224,7 +224,7 @@ p {
     margin-top: $padding;
   }
   #sidebar-wrapper{
-    min-width: 200px;
+    min-width: 100px;
   }
 
   #descriptionTask{
