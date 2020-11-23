@@ -11944,7 +11944,7 @@ a:hover {
   display: block;
   padding-top: 0.5rem;
   padding-right: 1rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0rem;
   padding-left: 1rem;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -12118,7 +12118,7 @@ p {
 
   /* line 226, ../../sass/todos.scss */
   #sidebar-wrapper {
-    min-width: 200px;
+    min-width: 100px;
   }
 
   /* line 230, ../../sass/todos.scss */
