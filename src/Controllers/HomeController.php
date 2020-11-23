@@ -44,6 +44,6 @@ class HomeController
 
     public function aboutUs (RequestInterface $request, ResponseInterface $response) {
 
-        return $this->twig->render($response, 'aboutUs.tpl');
+        return $this->twig->render($response, 'aboutus.tpl');
     }
 }

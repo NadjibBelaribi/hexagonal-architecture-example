@@ -52,9 +52,6 @@
                         <h5 class="modal-title" id="exampleModalCenterTitle">
                             Add new Task
                         </h5>
-                        <button type="button" class="closeModal" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
                     </div>
                     <div class="modal-body">
                         <form method="post" id="taskForm">
@@ -62,17 +59,17 @@
                             <div class="form-group">
                                 <label for="inputAddress">Title</label>
                                 <input name="title" type="text" class="form-control" id="inputAddress"
-                                       placeholder="" />
+                                       placeholder="" required />
                             </div>
                             <div class="form-group">
                                 <label for="inputAddress2">Description</label>
                                 <input name="description" type="text" class="form-control" id="inputAddress2"
-                                       placeholder="" />
+                                       placeholder="" / required>
                             </div>
                             <div class="row">
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-6" >
                                     <label for="inputAssign">Assign to : </label>
-                                    <select name="assigned" id="inputAssign" class="form-control">
+                                    <select name="assigned" id="inputAssign" class="form-control" required>
                                         <option value="empty"> </option>
                                         {% for user in users %}
                                         <option value={{ user.email }}>{{ user.email }}</option>
@@ -81,14 +78,14 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputDate">Due Date</label>
-                                    <input name="dueDate" type="date" class="form-control" id="inputDate" />
+                                    <input name="dueDate" type="date" class="form-control" id="inputDate" required />
                                 </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="closeTask btn btn-secondary" data-dismiss="modal">
                                     Close
                                 </button>
-                                <button type="submit" class="submitTask btn btn-primary">Submit</button>
+                                <button type="submit" id = "submit-task" class="submitTask  btn btn-primary">Submit</button>
                             </div>
                         </form>
                     </div>

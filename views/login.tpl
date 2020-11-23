@@ -26,14 +26,14 @@
         <div class="inner cover mt-5 mb-auto">
             <h1 class="cover-heading">A & N</h1>
             <h1 class="cover-heading">Todos  List </h1>
-            <p class="lead"> A Master Project By Nadjib and Amir Under M. Hakan  Supervision </p>
+            <p class="lead"> A Simple Todo List Project  By Nadjib & Amir  </p>
             <p class="lead">
                 <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Connexion </a>
             </p>
         </div>
         <div class="justify-content-center inner cover my-auto">
-            <img class="logo" src="/img/logogit.png"/>
-            <a href="https://git.unistra.fr" class="gitClass btn btn-secondary btn-lg"> Here the source code ! </a>
+            <img class="logo" src="img/logogit.png"/>
+            <a href="https://git.unistra.fr/nbelaribi/todo-list" class="gitClass btn btn-primary btn-lg">source code ! </a>
         </div>
     </div>
 </div>
@@ -51,12 +51,12 @@
                 <form id="loginForm">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input name = "email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input name = "email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input name = "password" type="password" class="form-control" id="exampleInputPassword1">
+                        <input name = "password" type="password" class="form-control" id="exampleInputPassword1" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -65,5 +65,5 @@
     </div>
 </div>
 
-    </body>
+</body>
 </html>

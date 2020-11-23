@@ -23,19 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3412089c-fde2-4fb9-b17d-43b9522fc2e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.sass-cache/3fab47822c9f38f96e6cb2b8a91ceb5aaa0c4e6c/aboutus.scssc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/aboutus.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/aboutus.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/aboutus.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/3fab47822c9f38f96e6cb2b8a91ceb5aaa0c4e6c/login.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/3fab47822c9f38f96e6cb2b8a91ceb5aaa0c4e6c/login.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/3fab47822c9f38f96e6cb2b8a91ceb5aaa0c4e6c/todos.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/3fab47822c9f38f96e6cb2b8a91ceb5aaa0c4e6c/todos.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/todos.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/todos.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/login.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/todos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/todos.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/TasksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/logogit.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/logogit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/aboutus.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/aboutus.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/tasks.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/tasks.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -196,7 +188,10 @@
       <workItem from="1605024020623" duration="5668000" />
       <workItem from="1605983557934" duration="21267000" />
       <workItem from="1606043616521" duration="613000" />
-      <workItem from="1606052403197" duration="11038000" />
+      <workItem from="1606052403197" duration="21875000" />
+      <workItem from="1606123281919" duration="129000" />
+      <workItem from="1606124186280" duration="6000" />
+      <workItem from="1606165051770" duration="990000" />
     </task>
     <servers />
   </component>
@@ -228,10 +223,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="520" y="315" key="#Scopes/0.0.1440.900@0.0.1440.900" timestamp="1605053097068" />
-    <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604966858535">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="356" y="91" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606082120579">
+      <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1604966858535" />
+    <state x="356" y="91" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1606082120579" />
     <state x="548" y="169" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1606060520465">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -246,31 +242,39 @@
     </state>
     <state x="474" y="369" key="ComposerInitDialogKey/0.0.1440.900@0.0.1440.900" timestamp="1604968232725" />
     <state x="495" y="331" width="523" height="171" key="ComposerInitDialogKey/67.27.1299.741@67.27.1299.741" timestamp="1605988036265" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1606082196805">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/67.27.1299.741@67.27.1299.741" timestamp="1606082196805" />
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1604848945419">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1604848945419" />
     <state x="100" y="100" width="1240" height="700" maximized="true" key="DiffContextDialog/0.23.1440.792@0.23.1440.792" timestamp="1604841805685" />
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1606040884640">
+    <state width="856" height="175" key="GridCell.Tab.0.bottom" timestamp="1606082294759">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="958" height="408" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605052142496" />
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1606040884640" />
-    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1606040884637">
+    <state width="856" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1606082294759" />
+    <state width="856" height="175" key="GridCell.Tab.0.center" timestamp="1606082294756">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="958" height="408" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605052142494" />
-    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1606040884637" />
-    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1606040884635">
+    <state width="856" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1606082294756" />
+    <state width="856" height="175" key="GridCell.Tab.0.left" timestamp="1606082294754">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="958" height="408" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605052142493" />
-    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1606040884635" />
-    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1606040884638">
+    <state width="856" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1606082294754" />
+    <state width="856" height="175" key="GridCell.Tab.0.right" timestamp="1606082294758">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="958" height="408" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605052142495" />
-    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1606040884638" />
+    <state width="856" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1606082294758" />
+    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1606082096212">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="263" height="500" key="HiddenNamespacesPopup/67.27.1299.741@67.27.1299.741" timestamp="1606082096212" />
     <state x="446" y="183" key="NewPhpClassDialog" timestamp="1604846051316">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
