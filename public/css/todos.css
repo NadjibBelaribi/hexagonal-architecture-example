@@ -11973,36 +11973,37 @@ a:hover {
 /* line 101, ../../sass/todos.scss */
 #sidebar-wrapper {
   border-right: 1px solid #dee2e6;
+  height: 100%;
 }
 
-/* line 105, ../../sass/todos.scss */
+/* line 106, ../../sass/todos.scss */
 .btnPannel {
   margin-top: 10px;
   width: 100%;
 }
 
-/* line 110, ../../sass/todos.scss */
+/* line 111, ../../sass/todos.scss */
 .btnAddTask {
   width: 100%;
 }
 
-/* line 114, ../../sass/todos.scss */
+/* line 115, ../../sass/todos.scss */
 #taskFilterInput, #userFilterInput {
   margin-top: 10px;
   width: 100%;
 }
 
-/* line 119, ../../sass/todos.scss */
+/* line 120, ../../sass/todos.scss */
 #listTasks {
   display: block;
   overflow: auto;
   overflow-y: scroll;
-  height: 650px;
+  height: 70%;
   text-align: center;
   scroll-behavior: smooth;
 }
 
-/* line 128, ../../sass/todos.scss */
+/* line 129, ../../sass/todos.scss */
 #descriptionTask {
   display: block;
   overflow: auto;
@@ -12012,28 +12013,28 @@ a:hover {
   scroll-behavior: smooth;
 }
 
-/* line 138, ../../sass/todos.scss */
+/* line 139, ../../sass/todos.scss */
 #page-content-wrapper {
   height: 100%;
 }
 
-/* line 142, ../../sass/todos.scss */
+/* line 143, ../../sass/todos.scss */
 p {
   color: black;
   width: 100%;
 }
 
-/* line 147, ../../sass/todos.scss */
+/* line 148, ../../sass/todos.scss */
 .card-header {
   background: #7cdbe4;
 }
 
-/* line 150, ../../sass/todos.scss */
+/* line 151, ../../sass/todos.scss */
 .card-header {
   background: #7cdbe4;
 }
 
-/* line 155, ../../sass/todos.scss */
+/* line 156, ../../sass/todos.scss */
 #listComments {
   display: block;
   width: 100%;
@@ -12042,55 +12043,55 @@ p {
   padding: 20px;
 }
 
-/* line 163, ../../sass/todos.scss */
+/* line 164, ../../sass/todos.scss */
 .alert-primary {
   background: #ebe8e8;
 }
 
-/* line 167, ../../sass/todos.scss */
+/* line 168, ../../sass/todos.scss */
 .userClass {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 172, ../../sass/todos.scss */
+/* line 173, ../../sass/todos.scss */
 .userDateClass {
   font-style: italic;
   color: #777777;
 }
 
-/* line 177, ../../sass/todos.scss */
+/* line 178, ../../sass/todos.scss */
 #commentForm {
   padding: 0px 10px;
   margin-top: auto;
 }
 
 @media (max-width: 576px) {
-  /* line 185, ../../sass/todos.scss */
+  /* line 186, ../../sass/todos.scss */
   .card, .respoTaskDetails, .respoTaskComments {
     max-height: 600px;
     margin: 10px 0px 10px 0px;
   }
 
-  /* line 190, ../../sass/todos.scss */
+  /* line 191, ../../sass/todos.scss */
   #listTasks {
     max-height: 500px;
     min-width: 100px;
   }
 
-  /* line 195, ../../sass/todos.scss */
+  /* line 196, ../../sass/todos.scss */
   #sidebar-wrapper {
     border-bottom: 1px solid #dee2e6;
     border-right: none;
     max-height: 700px;
   }
 
-  /* line 201, ../../sass/todos.scss */
+  /* line 202, ../../sass/todos.scss */
   .modal-content {
     margin-right: 10px;
   }
 
-  /* line 205, ../../sass/todos.scss */
+  /* line 206, ../../sass/todos.scss */
   .nav-linkkk {
     padding-top: 0rem;
     padding-right: 0rem;
@@ -12098,29 +12099,29 @@ p {
     padding-left: 0rem;
   }
 
-  /* line 212, ../../sass/todos.scss */
+  /* line 213, ../../sass/todos.scss */
   #descriptionTask {
     max-height: 250px;
   }
 }
 @media (min-width: 576px) and (max-width: 1070px) {
-  /* line 218, ../../sass/todos.scss */
+  /* line 219, ../../sass/todos.scss */
   .card, .respoTaskDetails, .respoTaskComments {
     max-height: 700px;
     min-width: 500px;
   }
 
-  /* line 222, ../../sass/todos.scss */
+  /* line 223, ../../sass/todos.scss */
   .respoTaskComments {
     margin-top: 20px;
   }
 
-  /* line 225, ../../sass/todos.scss */
+  /* line 226, ../../sass/todos.scss */
   #sidebar-wrapper {
     min-width: 200px;
   }
 
-  /* line 229, ../../sass/todos.scss */
+  /* line 230, ../../sass/todos.scss */
   #descriptionTask {
     max-height: 350px;
   }
