@@ -88,7 +88,7 @@ VALUES
     (7,2,2,'Manger au resto','description 2','2019-08-11 16:32:16','2019-09-09 16:32:20'),
     (8,2,3,'Analyse lexical du projet','description 2','2019-08-11 16:32:16','2019-09-09 16:32:20'),
     (9,3,2,'Aller en Algérie','description 2','2019-08-11 16:32:16','2019-09-09 16:32:20'),
-    (10,3,4,'Aller en Turkie','description 2','2019-08-11 16:32:16','2019-09-09 16:32:20'),
+    (10,3,4,'Aller en Turquie','description 2','2019-08-11 16:32:16','2019-09-09 16:32:20'),
     (11,3,5,'Régler papiers administratifs','description 2','2019-08-11 16:32:16','2019-09-09 16:32:20'),
     (12,3,3,'Courrir aux deux rives','description 2','2019-08-11 16:32:16','2019-09-09 16:32:20'),
     (13,4,1,'Faire les courses','description 2','2019-08-11 16:32:16','2019-09-09 16:32:20'),

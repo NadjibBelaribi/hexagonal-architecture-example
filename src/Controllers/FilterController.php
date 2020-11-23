@@ -10,7 +10,6 @@ use Slim\Views\Twig;
 class FilterController extends HomeController
 {
 
-
     public function filter(RequestInterface $request, ResponseInterface $response)
     {
         return $this->twig->render($response, 'search.tpl');
@@ -19,7 +18,7 @@ class FilterController extends HomeController
 
     public function filterByUser(RequestInterface $request, ResponseInterface $response)
     {
-        $hint = $_GET['user'] . '%' ;
+        $hint =  '%' .  $_GET['user'] . '%' ;
         $tasks = $this->getTasks($hint,"user") ;
         $response->getBody()->write($tasks);
         return $response->withStatus(200);
@@ -39,7 +38,7 @@ class FilterController extends HomeController
     }
     public function filterByTask(RequestInterface $request, ResponseInterface $response)
     {
-        $hint = $_GET['title'] . '%';
+        $hint =  '%' . $_GET['title'] . '%';
         $tasks = $this->getTasks($hint,"task") ;
         $response->getBody()->write($tasks);
         return $response->withStatus(200);

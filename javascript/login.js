@@ -16,9 +16,9 @@ $(function () {
         var request;
         event.preventDefault();
         request = new XMLHttpRequest();
-      //  formData = new FormData(loginForm);
-       // var pwd = formData.get('password') ;
-      //  alert(pwd + "---" + btoa(pwd) + " " +atob(btoa(pwd))) ;
+        formData = new FormData(loginForm);
+        var pwd = formData.get('password') ;
+        formData.set('password',btoa(formData.get('password'))) ;
         request.open('POST', '/auth', false);
         request.send(formData);
         document.getElementById('emailHelp').innerText = "";

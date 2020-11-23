@@ -34,15 +34,13 @@ class LoginController extends HomeController
          $authPassword = $_POST['password'] ;
 
             $user = $this->getUserByEmail($authEmail) ;
-            if($user['password'] == $authPassword)
+            if($user['password'] == base64_decode($authPassword))
             {
                 $_SESSION['user'] =$authEmail ;
                 $_SESSION['userId'] =$user['id'] ;
                 $response->getBody()->write(json_encode($user['id'])) ;
+                $response->withStatus(200);
                  return $response->withStatus(200);
-               // $res = $response->withHeader('Location', 'https://www.google.com/');
-                return $response->withStatus(200);
-                //return $res ;
 
             }
             else {
