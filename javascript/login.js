@@ -1,4 +1,5 @@
 import 'bootstrap';
+import {atob, btoa} from "js-base64";
 let $ = require('jquery');
 $(function () {
 
@@ -15,12 +16,14 @@ $(function () {
         var request;
         event.preventDefault();
         request = new XMLHttpRequest();
-        formData = new FormData(loginForm);
+      //  formData = new FormData(loginForm);
+       // var pwd = formData.get('password') ;
+      //  alert(pwd + "---" + btoa(pwd) + " " +atob(btoa(pwd))) ;
         request.open('POST', '/auth', false);
         request.send(formData);
         document.getElementById('emailHelp').innerText = "";
         const data = JSON.parse(request.responseText);
-        if (data == "no") {
+        if (data == "failure") {
             document.getElementById('emailHelp').innerText = "Error identifiers";
         } else {
             window.location.href = "/tasks/" + data;

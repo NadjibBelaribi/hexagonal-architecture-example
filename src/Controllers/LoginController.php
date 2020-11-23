@@ -46,7 +46,7 @@ class LoginController extends HomeController
 
             }
             else {
-                $res = json_encode("no") ;
+                $res = json_encode("failure") ;
                 $response->getBody()->write($res) ;
                 return $response->withStatus(200);
             }

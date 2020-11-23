@@ -32,8 +32,9 @@
             </p>
         </div>
         <div class="justify-content-center inner cover my-auto">
-            <img class="logo" src="img/logogit.png"/>
-            <a href="https://git.unistra.fr/nbelaribi/todo-list" class="gitClass btn btn-primary btn-lg">source code ! </a>
+            <a href="https://git.unistra.fr/nbelaribi/todo-list" class="gitClass">
+                <img class="logo" src="img/logogit.png"/>
+            </a>
         </div>
     </div>
 </div>
