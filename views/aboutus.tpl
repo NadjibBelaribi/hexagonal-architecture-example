@@ -21,7 +21,7 @@
 {% include 'navbar.tpl' %}
 <section id="team" class="pb-5">
         <div class="container">
-            <h5 class="section-title h1">THE DREAM TEAM</h5>
+            <h5 class="section-title h1">Réalisateurs </h5>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="image-flip" >
