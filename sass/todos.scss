@@ -100,6 +100,7 @@ a:hover {
 
 #sidebar-wrapper{
   border-right: 1px solid #dee2e6;
+  height: 100%;
 }
 
 .btnPannel{
@@ -120,7 +121,7 @@ a:hover {
   display: block;
   overflow:auto;
   overflow-y: scroll;
-  height: 650px;
+  height: 70%;
   text-align: center;
   scroll-behavior: smooth;
 }

@@ -23,7 +23,7 @@
 <div class="d-flex row" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="col-md-3 id="sidebar-wrapper">
+    <div class="col-md-3" id="sidebar-wrapper">
         <button class="btnPannel btn btn-outline-primary mx-auto" type="button" data-toggle="collapse"
                 data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             Filter Pannel
