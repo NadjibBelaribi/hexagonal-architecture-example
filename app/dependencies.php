@@ -20,6 +20,8 @@ return function () : \DI\Container {
         Twig::class => function (): Twig {
             return Twig::create(__DIR__ . '/../views', [ 'cache' => false ]);
         }
+
+
     ]);
 
     return $containerBuilder->build();

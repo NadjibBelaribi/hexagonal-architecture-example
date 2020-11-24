@@ -6,6 +6,7 @@ use Amir_nadjib\Todo_list\Models\User;
 use PDO;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
+use Slim\Routing\RouteParser;
 use Slim\Views\Twig;
 
 
@@ -18,7 +19,7 @@ class HomeController
      * HomeController constructor.
      * @param PDO $pdo
      * @param Twig $twig
-      */
+     */
     public function __construct(PDO $pdo, Twig $twig)
     {
         $this->pdo = $pdo;

@@ -34,25 +34,28 @@ class LoginController extends HomeController
          $authPassword = $_POST['password'] ;
 
             $user = $this->getUserByEmail($authEmail) ;
-            if($user['password'] == base64_decode($authPassword))
-            {
-                $_SESSION['user'] =$authEmail ;
-                $_SESSION['userId'] =$user['id'] ;
-                $response->getBody()->write(json_encode($user['id'])) ;
-                $response->withStatus(200);
-                 return $response->withStatus(200);
+            if( $user != null && $authEmail != "" && $authPassword !="" ){
+                if($user['password'] == base64_decode($authPassword))
+                {
+                    $_SESSION['user'] =$authEmail ;
+                    $_SESSION['userId'] =$user['id'] ;
+                    $link = 'tasks/'. $user['id'] ;
+                    $response->getBody()->write(json_encode($link)) ;
+                    return $response->withStatus(200);
 
+                }
             }
-            else {
-                $res = json_encode("failure") ;
-                $response->getBody()->write($res) ;
+
+                 $response->getBody()->write(json_encode("failure")) ;
                 return $response->withStatus(200);
-            }
 
     }
 
     public function signOut (RequestInterface $request, ResponseInterface $response) {
-        session_reset();
+        $_SESSION['user'] = "" ;
+        $_SESSION['userId'] = "" ;
+
+        $response->getBody()->write($_SESSION['user']) ;
         return $response->withStatus(200);
 
     }

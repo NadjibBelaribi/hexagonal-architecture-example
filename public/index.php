@@ -11,7 +11,6 @@ require __DIR__ . '/../app/env.php';
 $container = require __DIR__ . '/../app/dependencies.php';
  // Set le container
 AppFactory::setContainer($container());
-
 // Création de l'app
 $app = AppFactory::create();
 

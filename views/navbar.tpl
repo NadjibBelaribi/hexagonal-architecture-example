@@ -14,11 +14,11 @@
 
     <ul class="navbar-nav ml-auto important">
         <li class = "nav-item ml-auto">
-            <a class="nav-linkkk" href="/about" id="aboutUs" onclick="">About Us</a>
+            <a class="nav-linkkk" href="/about" id="aboutUs" >About Us</a>
         </li>
         {% if currentUser %}
         <li class = "nav-item ml-auto">
-            <a class="nav-linkkk" href="#" id="signOut" onclick="signOut()">Sign Out</a>
+            <a class="nav-linkkk" id="signOut">Sign Out</a>
         </li>
         {% endif %}
     </ul>

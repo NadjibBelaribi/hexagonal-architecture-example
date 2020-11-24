@@ -12,7 +12,6 @@
     <meta name="author" content="">
 
     <title>About us </title>
-    <script src="js/login.js"> </script>
     <link rel="stylesheet" href="css/aboutus.css">
     {% endblock %}
 </head>

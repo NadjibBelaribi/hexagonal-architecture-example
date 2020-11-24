@@ -1,9 +1,10 @@
 const path = require('path');
 
 module.exports = {
-    entry: './javascript/login.js',
+    entry: './javascript/index.js',
     output: {
-        filename: 'login.js',
+        filename: 'index.js',
         path: path.resolve(__dirname, 'public/js'),
     },
+
 };

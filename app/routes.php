@@ -5,6 +5,8 @@ use Amir_nadjib\Todo_list\Controllers\LoginController;
 use Amir_nadjib\Todo_list\Controllers\TasksController;
 use Amir_nadjib\Todo_list\Controllers\FilterController;
 
+$container = $app->getContainer() ;
+$container->set(\Slim\Routing\RouteParser::class, \DI\value($app->getRouteCollector()->getRouteParser()));
 
  /* Login page */
 $app->get('/', LoginController::class . ':getLogin');
@@ -15,7 +17,7 @@ $app->get('/signOut', LoginController::class . ':signOut');
 $app->get('/about', HomeController::class . ':aboutUS');
 
 /* Tasks page */
-$app->get('/tasks/{id}', TasksController::class . ':getTasks')->setName('tasks');
+$app->get('/tasks/{id}', TasksController::class . ':getTasks') ;
 $app->get('/tasks/{id}/details', TasksController::class . ':getTaskDetails');
 $app->post('/tasks/addTask', TasksController::class . ':addTask');
 $app->post('/addComment', TasksController::class . ':addComment');
