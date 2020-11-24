@@ -11922,13 +11922,42 @@ body {
   box-sizing: border-box;
 }
 
+/* line 58, ../../sass/aboutus.scss */
+.navbar {
+  background: #034f84;
+  height: 8%;
+}
+
+/* line 63, ../../sass/aboutus.scss */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* line 69, ../../sass/aboutus.scss */
+.nav-linkkk {
+  display: block;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  color: silver;
+}
+
+/* line 78, ../../sass/aboutus.scss */
+.important {
+  color: #777777;
+  font-weight: bold;
+}
+
 /* FontAwesome for working BootSnippet :> */
-/* line 61, ../../sass/aboutus.scss */
+/* line 86, ../../sass/aboutus.scss */
 #team {
   background: #eee !important;
 }
 
-/* line 65, ../../sass/aboutus.scss */
+/* line 90, ../../sass/aboutus.scss */
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: #108d6f;
@@ -11937,19 +11966,19 @@ body {
   outline: none;
 }
 
-/* line 73, ../../sass/aboutus.scss */
+/* line 98, ../../sass/aboutus.scss */
 .btn-primary {
   color: #fff;
   background-color: #007b5e;
   border-color: #007b5e;
 }
 
-/* line 79, ../../sass/aboutus.scss */
+/* line 104, ../../sass/aboutus.scss */
 section {
   padding: 60px 0;
 }
 
-/* line 83, ../../sass/aboutus.scss */
+/* line 108, ../../sass/aboutus.scss */
 section .section-title {
   text-align: center;
   color: #007b5e;
@@ -11957,13 +11986,13 @@ section .section-title {
   text-transform: uppercase;
 }
 
-/* line 90, ../../sass/aboutus.scss */
+/* line 115, ../../sass/aboutus.scss */
 #team .card {
   border: none;
   background: #ffffff;
 }
 
-/* line 95, ../../sass/aboutus.scss */
+/* line 120, ../../sass/aboutus.scss */
 .image-flip:hover .backside,
 .image-flip.hover .backside {
   -webkit-transform: rotateY(0deg);
@@ -11974,7 +12003,7 @@ section .section-title {
   border-radius: .25rem;
 }
 
-/* line 105, ../../sass/aboutus.scss */
+/* line 130, ../../sass/aboutus.scss */
 .image-flip:hover .frontside,
 .image-flip.hover .frontside {
   -webkit-transform: rotateY(180deg);
@@ -11983,7 +12012,7 @@ section .section-title {
   transform: rotateY(180deg);
 }
 
-/* line 113, ../../sass/aboutus.scss */
+/* line 138, ../../sass/aboutus.scss */
 .mainflip {
   -webkit-transition: 1s;
   -webkit-transform-style: preserve-3d;
@@ -11997,7 +12026,7 @@ section .section-title {
   position: relative;
 }
 
-/* line 126, ../../sass/aboutus.scss */
+/* line 151, ../../sass/aboutus.scss */
 .frontside {
   position: relative;
   -webkit-transform: rotateY(0deg);
@@ -12006,7 +12035,7 @@ section .section-title {
   margin-bottom: 30px;
 }
 
-/* line 134, ../../sass/aboutus.scss */
+/* line 159, ../../sass/aboutus.scss */
 .backside {
   position: absolute;
   top: 0;
@@ -12022,7 +12051,7 @@ section .section-title {
   box-shadow: 5px 7px 9px -4px #9e9e9e;
 }
 
-/* line 149, ../../sass/aboutus.scss */
+/* line 174, ../../sass/aboutus.scss */
 .frontside,
 .backside {
   -webkit-backface-visibility: hidden;
@@ -12041,25 +12070,25 @@ section .section-title {
   transform-style: preserve-3d;
 }
 
-/* line 167, ../../sass/aboutus.scss */
+/* line 192, ../../sass/aboutus.scss */
 .frontside .card,
 .backside .card {
   min-height: 312px;
 }
 
-/* line 172, ../../sass/aboutus.scss */
+/* line 197, ../../sass/aboutus.scss */
 .backside .card a {
   font-size: 18px;
   color: #007b5e !important;
 }
 
-/* line 177, ../../sass/aboutus.scss */
+/* line 202, ../../sass/aboutus.scss */
 .frontside .card .card-title,
 .backside .card .card-title {
   color: #007b5e !important;
 }
 
-/* line 182, ../../sass/aboutus.scss */
+/* line 207, ../../sass/aboutus.scss */
 .frontside .card .card-body img {
   width: 120px;
   height: 120px;
