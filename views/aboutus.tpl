@@ -28,10 +28,12 @@
                             <div class="frontside">
                                 <div class="card">
                                     <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                                        <p><img class=" img-fluid" src="img/amir.png" alt="card image amir"></p>
                                         <h4 class="card-title">Amir</h4>
-                                        <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        <p class="card-text">Charged of the Front-End
+                                        <br>
+                                        Pass your mouse to know more about me !
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -39,11 +41,15 @@
                                 <div class="card">
                                     <div class="card-body text-center mt-4">
                                         <h4 class="card-title">Amir</h4>
-                                        <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                        <p class="card-text">Hello ! I'm Amir and I'm in Master 1 of CMI IMAGE in Strasbourg.
+                                        For this project, I'm charged of the front-end and some controllers in PHP. I search a stage in relation with the medical domain.
+                                        <br>
+                                        Click on my linkedin link to know more about me !
+                                        </p>
                                         <ul class="list-inline">
                                             <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-facebook"></i>
+                                                <a class="social-icon text-xs-center" target="_blank" href="https://fr.linkedin.com/in/amir-bouafia">
+                                                    <i class="fa fa-linkedin"></i>                                                
                                                 </a>
                                             </li>
                                         </ul>
@@ -59,10 +65,12 @@
                             <div class="frontside">
                                 <div class="card">
                                     <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png" alt="card image"></p>
+                                        <p><img class=" img-fluid" src="img/nadjib.png" alt="card image nadjib"></p>
                                         <h4 class="card-title">Nadjib</h4>
-                                        <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        <p class="card-text">Charged of the Back-End.
+                                        <br>
+                                        Pass your mouse to know more about me !
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -70,11 +78,15 @@
                                 <div class="card">
                                     <div class="card-body text-center mt-4">
                                         <h4 class="card-title">Nadjib</h4>
-                                        <p class="card-text">Je suis algérien et je m'occupe du back-end du site. J'aime faire sonner l'alarme de ma résidence universitaire et réveiller les gens le dimanche matin.</p>
+                                        <p class="card-text">Hello ! I'm Nadjib and I'm in Master 1 of SIL in Strasbourg.
+                                        For this project, I'm charged of the back-end of the site.
+                                        <br>
+                                        Click on my linkedin link to know more about me !
+                                        </p>
                                         <ul class="list-inline">
                                             <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-facebook"></i>
+                                                <a class="social-icon text-xs-center" target="_blank" href="https://fr.linkedin.com/in/nadjib-belaribi-ba898b13a">
+                                                    <i class="fa fa-linkedin"></i>                                                
                                                 </a>
                                             </li>
                                         </ul>
