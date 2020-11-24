@@ -1,5 +1,5 @@
 import 'bootstrap';
-import {atob, btoa} from "js-base64";
+import {btoa} from "js-base64";
 let $ = require('jquery');
 $(function () {
 

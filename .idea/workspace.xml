@@ -23,12 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3412089c-fde2-4fb9-b17d-43b9522fc2e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.docker/structure.sql" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/structure.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/login.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/FilterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/FilterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/TasksController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +190,7 @@
       <workItem from="1606052403197" duration="21875000" />
       <workItem from="1606123281919" duration="129000" />
       <workItem from="1606124186280" duration="6000" />
-      <workItem from="1606165051770" duration="7230000" />
+      <workItem from="1606165051770" duration="10047000" />
     </task>
     <servers />
   </component>

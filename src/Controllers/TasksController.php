@@ -40,7 +40,7 @@ class TasksController extends HomeController
             'users' => $this->getAllUsers() ,
             'comments'=> $this->getComments(1),
             'currentUser'=>ucfirst(strtok($_SESSION['user'],'@')),
-            'curTask' => $this->getAllTasks()[0],
+            'curTask' => $this->getAllTasks()[3],
             'error' => 'Could not render tasks page'
         ]);
     }

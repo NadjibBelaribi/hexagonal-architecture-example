@@ -13,7 +13,6 @@ class FilterController extends HomeController
     public function filter(RequestInterface $request, ResponseInterface $response)
     {
         return $this->twig->render($response, 'search.tpl');
-
     }
 
     public function filterByUser(RequestInterface $request, ResponseInterface $response)
