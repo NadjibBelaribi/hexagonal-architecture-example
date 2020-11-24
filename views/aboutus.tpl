@@ -78,8 +78,8 @@
                                 <div class="card">
                                     <div class="card-body text-center mt-4">
                                         <h4 class="card-title">Nadjib</h4>
-                                        <p class="card-text">Hello ! I'm Nadjib and I'm in Master 1 of SIL in Strasbourg.
-                                        For this project, I'm charged of the back-end of the site.
+                                        <p class="card-text">Hello ! I'm Nadjib and I'm in Master 1 SIL in Strasbourg.
+                                        For this project, I took charged  of the back-end of the site and the JS features.
                                         <br>
                                         Click on my linkedin link to know more about me !
                                         </p>
