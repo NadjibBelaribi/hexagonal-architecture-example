@@ -1,4 +1,4 @@
-$primary: rgb(124, 219, 228);
+$primary: #deeaee;
 $padding: 20px;
 
 
@@ -58,7 +58,7 @@ body {
   margin-right: 0px;
 }
 .navbar {
-  background: $primary;
+  background: #034f84;
   height:8%;
 }
 a,
@@ -73,7 +73,7 @@ a:hover {
   padding-right: 1rem;
   padding-bottom: 0rem;
   padding-left: 1rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: silver;
 }
 
 #wrapper{
@@ -86,6 +86,10 @@ a:hover {
 .important, .userNameClass {
   color: rgb(119, 119, 119);
   font-weight: bold;
+}
+
+.userNameClass{
+  font-size: medium;
 }
 
 .btn-primary {
@@ -106,10 +110,18 @@ a:hover {
 .btnPannel{
   margin-top: 10px;
   width: 100%;
+  background: $primary;
+  &:hover{
+    background: white;
+  }
 }
 
 .btnAddTask{
   width: 100%;
+  background: $primary;
+  &:hover{
+    background: white;
+  }
 }
 
 #taskFilterInput, #userFilterInput{
@@ -124,6 +136,10 @@ a:hover {
   height: 70%;
   text-align: center;
   scroll-behavior: smooth;
+}
+
+.list-group-item{
+  background: $primary;
 }
 
 #descriptionTask{
@@ -162,7 +178,7 @@ p {
 }
 
 .alert-primary {
-  background: rgb(235, 232, 232);
+  background: $primary;
 }
 
 .userClass {
@@ -172,6 +188,7 @@ p {
 
 .userDateClass{
   font-style: italic;
+  font-size: medium;
   color: rgb(119, 119, 119);
 }
 

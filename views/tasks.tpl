@@ -24,7 +24,7 @@
 
     <!-- Sidebar -->
     <div class="col-md-3" id="sidebar-wrapper">
-        <button class="btnPannel btn btn-outline-primary mx-auto" type="button" data-toggle="collapse"
+        <button class="btnPannel important btn btn-outline-primary mx-auto" type="button" data-toggle="collapse"
                 data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             Filter Pannel
         </button>
@@ -38,7 +38,7 @@
             </form>
         </div>
         <hr>
-        <button type="button" style="justify-content: center" class="btnAddTask btn btn-outline-primary"
+        <button type="button" style="justify-content: center" class="btnAddTask important btn btn-outline-primary"
                 data-toggle="modal" data-target="#exampleModalCenter">
             Add New Task </button>
         <hr>
@@ -96,7 +96,7 @@
 
         <div id="listTasks" class="list-group list-group-flush">
             {% for task in todos %}
-            <a href="/tasks/{{task.id}}/details" class="list-group-item list-group-item-action"
+            <a href="/tasks/{{task.id}}/details" class="list-group-item important list-group-item-action"
                onclick="this.classList.add('active');">{{ task.title }} </a>
             {% endfor %}
 
@@ -134,10 +134,10 @@
 
                             <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
                                 <div class="userClass important row">
-                                    <div class="col-lg-8">
+                                    <div class="col-lg-6">
                                         <p class="userNameClass"> {{ comment.email }}</p>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-6">
                                         <p class="userDateClass"> {{ comment.created_at }}</p>
                                     </div>
                                 </div>
