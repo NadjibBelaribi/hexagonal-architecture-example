@@ -23,11 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3412089c-fde2-4fb9-b17d-43b9522fc2e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/todo-list.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/todo-list.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/login.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/FilterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/FilterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/TasksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TodoTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TodoTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +191,7 @@
       <workItem from="1606052403197" duration="21875000" />
       <workItem from="1606123281919" duration="129000" />
       <workItem from="1606124186280" duration="6000" />
-      <workItem from="1606165051770" duration="10047000" />
+      <workItem from="1606165051770" duration="15271000" />
     </task>
     <servers />
   </component>
@@ -278,10 +279,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="446" y="183" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1604846051316" />
-    <state x="539" y="380" key="NewPhpFileDialog" timestamp="1605000518254">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="553" y="340" width="399" height="149" key="NewPhpFileDialog" timestamp="1606179692107">
+      <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="539" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1605000518254" />
+    <state x="553" y="340" width="399" height="149" key="NewPhpFileDialog/67.27.1299.741@67.27.1299.741" timestamp="1606179692107" />
     <state x="498" y="159" key="RollbackChangesDialog" timestamp="1604848904282">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
