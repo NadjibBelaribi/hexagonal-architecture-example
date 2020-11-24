@@ -55,6 +55,31 @@ body {
   box-sizing: border-box;
 }
 
+.navbar {
+    background: #034f84;
+    height:8%;
+  }
+
+  a,
+  a:focus,
+  a:hover {
+    color: #fff;
+  }
+
+.nav-linkkk {
+    display: block;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    color: silver;
+}
+
+.important {
+    color: rgb(119, 119, 119);
+    font-weight: bold;
+}
+
 /* FontAwesome for working BootSnippet :> */
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
