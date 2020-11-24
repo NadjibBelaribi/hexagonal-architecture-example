@@ -125,7 +125,7 @@ VALUES
 	(2,'john@doe.com','johnny'),
 	(3,'nadjib@web.dz','p'),
 	(4,'amir@web.mr','arap'),
-  (5,'khabib@ufc.ru','p') ;
+     (5,'khabib@ufc.ru','p') ;
 
 
     /*!40000 ALTER TABLE `users` ENABLE KEYS */;

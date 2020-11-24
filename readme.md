@@ -1,28 +1,43 @@
-# Isoler docker
- - Créer un répertoire .docker
- - Déplacer le fichier DockerFile, la structure de base et le vhost.conf dedans
- - Corriger le fichier docker-compose.yml
- - Recompiler et lancer compose
+# About A & N Todo List 
+    This is a simple Todo List  project for "Architecture and web development" module  Master degree , we used several trendy technologies that were part of the constraints to be respected.
+     The application is  organized as follows:
+     - A login page, where the user can log in using his address and a password (which will be encoded) with error messages . 
+     - An about page, which presents the two students who worked on the project: Nadjib and Amir. 
+     - A tasks page , features ares detailed in the section below 
 
-# require automatique des classes, utilisation de l'autoloader psr-4
- - Déplacer les classes dans un répertoire src
- - Renommer les répertoires / psr (majuscule), définir les namespaces
- - Set l'autoload dans le fichier composer.json
- - Dump de l'auto-loader (composer dump-autoload)
+    For source code you can click on the GitLab logo in the home page . 
 
-# Sass
- - gem install compass
- - Dans la vue, link un fichier css
- - S'assurer que le fichier css est bien lu et interprété par le navigateur
- - fichier css accessible depuis le répertoire public
- - Ajouter une règle dans le fichier scss
- - Configurer le watcher (compass watch sass/hello.scss)
+   
+# Technologies used
+    - HTML/ CSS , SCSS, JS
+    - PHP Slim framework 
+    - SQL 
+    - Webpack 
+    - Compass
+    - Docker
+    
+# Features 
+    - Login in AJAX
+    - Encoded password 
+    - Live search for Tasks by User name & Task Title
+    - Add tasks in AJAX 
+    - Add comments in AJAX 
+    - Sign Out in AJAX
 
-# Sécuriser l'accès au code
- - accéder à localhost:8003/.docker/Dockerfile ou localhost:8003/vendor/... <- faille de sécurité
- - créer un répertoire public
- - mettre uniquement l'index du site et la feuille de style dans ce répertoire
- - modifier le vhost pour que le document root pointe sur le répertoire public
- - recompiler l'image avec docker-compose up --build
- - Vérifier qu'on accède plus au fichier
+# Tasks sharing
+    Amir 
+     - Front-end major part
+     - Setting up Twig templates 
+     - Setting up SCSS sheets
+     - Site responsiveness
+     - Writing the DB dataset seeds
+     - Error management (middleware) 404
+     
+    Nadjib  
+    - Back-end major part
+    - Implementing Routes , Models and Controllers
+    - Login and Tasks JS features 
+    - Unit tests 
+    
+    
 
