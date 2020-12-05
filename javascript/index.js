@@ -1,5 +1,4 @@
 import 'bootstrap';
-import {btoa} from "js-base64";
 let $ = require('jquery');
 
 $( document ).ready(function() {
@@ -13,13 +12,12 @@ $( document ).ready(function() {
             event.preventDefault();
             var formData;
             formData = new FormData(loginForm);
-            var pwd = btoa(formData.get('password'));
-            $.ajax({
+             $.ajax({
                 type: "post",
                 url: '/auth',
                 data:   {
                     "email": formData.get('email'),
-                    "password": pwd,
+                    "password": formData.get('password'),
                 },
                 success: function(data) {
                     data = JSON.parse(data) ;
@@ -137,7 +135,7 @@ $( document ).ready(function() {
 
             $.ajax({
                 type: "post",
-                url: '/tasks/addTask',
+                url: '/addTask/3',
                 data: {
                     'title': formData.get('title') ,
                     'assigned': formData.get('assigned') ,
@@ -169,7 +167,7 @@ $( document ).ready(function() {
             var formData = new FormData(commentForm);
             $.ajax({
                 type: "post",
-                url: '/addComment',
+                url: '/addComment/2/3',
                 data: {
                     'comment': formData.get('comment')
                 },

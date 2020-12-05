@@ -35,7 +35,7 @@ class LoginController extends HomeController
 
             $user = $this->getUserByEmail($authEmail) ;
             if( $user != null && $authEmail != "" && $authPassword !="" ){
-                if($user['password'] == base64_decode($authPassword))
+                if($user['password'] == $authPassword)
                 {
                     $_SESSION['user'] =$authEmail ;
                     $_SESSION['userId'] =$user['id'] ;

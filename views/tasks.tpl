@@ -133,6 +133,7 @@
                             {% for comment in comments %}
 
                             <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
+                            <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
                                 <div class="userClass important row">
                                     <div class="col-lg-6">
                                         <p class="userNameClass"> {{ comment.email }}</p>
