@@ -9,7 +9,7 @@
 
     For source code you can click on the GitLab logo in the home page . 
 
-   
+
 # Technologies used
     - HTML/ CSS , SCSS, JS
     - PHP Slim framework 
@@ -17,7 +17,14 @@
     - Webpack 
     - Compass
     - Docker
-    
+
+# How to launch it ?
+    - composer install
+    - npm i 
+    - webpack
+    - compass watch --css-dir public/css sass/*.scss 
+    - docker-compose up (use sudo if you are on Linux)
+
 # Features 
     - Login in AJAX
     - Encoded password 
