@@ -1,15 +1,12 @@
 <?php
 
-use Amir_nadjib\Todo_list\Controllers\HomeController;
+use Amir_nadjib\Todo_list\Features\Home\HomeController;
 use Amir_nadjib\Todo_list\Controllers\LoginController;
 use Amir_nadjib\Todo_list\Controllers\TasksController;
 use Amir_nadjib\Todo_list\Controllers\FilterController;
 
-$container = $app->getContainer() ;
-$container->set(\Slim\Routing\RouteParser::class, \DI\value($app->getRouteCollector()->getRouteParser()));
-
  /* Login page */
-$app->get('/', LoginController::class . ':getLogin');
+$app->get('/', HomeController::class);
 $app->post('/auth', LoginController::class . ':postLogin');
 $app->get('/signOut', LoginController::class . ':signOut');
 
