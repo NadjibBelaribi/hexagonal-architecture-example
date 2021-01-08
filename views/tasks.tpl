@@ -20,6 +20,7 @@
 <body style="background-image: url(img/bg.jpg)">
 {% include 'navbar.tpl' %}
 
+<script> curUserID = $_SESSION['userId'] ;  curTaskID = $_SESSION['taskId'] ; </script>
 <div class="d-flex row" id="wrapper">
 
     <!-- Sidebar -->
@@ -151,7 +152,7 @@
                             <div class="input-group mb-3">
                                 <input id="commentInput" name="comment" type="text" class="form-control"
                                        placeholder="Add a comment" aria-label="Recipient's username"
-                                       aria-describedby="basic-addon2">
+                                       aria-describedby="basic-addon2" required>
                                 <div class="input-group-append">
                                     <button type="submit" class="btn btn-primary mb-2"
                                             id="addComment">Send</button>

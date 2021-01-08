@@ -10,17 +10,12 @@ use Slim\Views\Twig;
 
 class TasksController extends HomeController
 {
+    public function getAllUsers (){
 
-    public function getAllUsers ()
-    {
         return  $this->pdo->query('select * from users ')->fetchAll();
-        $comments = $this->pdo->prepare('select * from comments where task_id = 1 ');
-        $comments->execute() ;
-        $comments = $comments->fetchAll() ;
 
     }
-    public function getComments ($taskId)
-    {
+    public function getComments ($taskId){
 
         $val = intval($taskId);
         $comments = $this->pdo->prepare('select comment , email , created_at from comments inner join users  on users.id = comments.created_by  where task_id = :tid ');

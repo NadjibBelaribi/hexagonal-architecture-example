@@ -6,23 +6,23 @@ namespace Amir_nadjib\Todo_list\Features\AddComment;
 
 class AddCommentResponse
 {
-    private int $commentId ;
+    private string $comment ;
 
     /**
      * AddCommentResponse constructor.
-     * @param int $commentId
+     * @param string $commentId
      */
-    public function __construct(int $commentId)
+    public function __construct(string $comment)
     {
-        $this->commentId = $commentId;
+        $this->comment = $comment;
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getCommentId(): int
+    public function getComment(): string
     {
-        return $this->commentId;
+        return $this->comment;
     }
 
 }

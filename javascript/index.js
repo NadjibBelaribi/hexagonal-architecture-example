@@ -1,5 +1,7 @@
 import 'bootstrap';
 let $ = require('jquery');
+var curUserID = 0 ;
+var curTaskID = 0;
 
 $( document ).ready(function() {
 
@@ -21,6 +23,7 @@ $( document ).ready(function() {
                 },
                 success: function(data) {
                     data = JSON.parse(data) ;
+                    alert(data) ;
                     document.getElementById('emailHelp').innerText = "";
                     if (data == "failure") {
                         document.getElementById('emailHelp').innerText = "Error identifiers , please try again !";
@@ -146,8 +149,8 @@ $( document ).ready(function() {
                 success: function(data) {
                     data = JSON.parse(data);
                     var a = document.createElement('a');
-                    a.textContent = data['title'];
-                    a.href = "/tasks/" + data['id'] + "/details";
+                    a.textContent = data[1];
+                    a.href = "/tasks/" + data[0] + "/details";
                     a.classList.add("list-group-item", "list-group-item-action", "bg-light");
                     var list = document.getElementById("listTasks");
                     list.insertBefore(a, list.childNodes[0])
@@ -165,6 +168,7 @@ $( document ).ready(function() {
         commentForm.onsubmit = function (event) {
             event.preventDefault();
             var formData = new FormData(commentForm);
+            alert(curUserID +" &&& "+ curTaskID) ;
             $.ajax({
                 type: "post",
                 url: '/addComment/2/3',

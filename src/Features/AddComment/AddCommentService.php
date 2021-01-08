@@ -19,8 +19,8 @@ class AddCommentService
         $this->repository = $repository;
     }
     public function addComment(AddCommentRequest $request):AddCommentResponse {
-       $id =  $this->repository->insertComment($request->getTaskId(),$request->getCreatedBy(),$request->getComment()) ;
-        return new AddCommentResponse($id) ;
+       $comment =  $this->repository->insertComment($request->getTaskId(),$request->getCreatedBy(),$request->getComment()) ;
+        return new AddCommentResponse($comment) ;
     }
 
 

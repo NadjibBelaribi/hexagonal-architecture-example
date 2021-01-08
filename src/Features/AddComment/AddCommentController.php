@@ -27,7 +27,7 @@ class AddCommentController
             $comment = $_POST['comment'];
             $request = new AddCommentRequest($taskId,$created_by,$comment) ;
             $responseData = $this->service->addComment($request) ;
-            $response->getBody()->write(json_encode($responseData->getCommentId())) ;
+            $response->getBody()->write(json_encode($responseData->getComment())) ;
             return $response->withStatus(200 ,'Comment added ! ');
     }
 

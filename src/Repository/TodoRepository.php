@@ -45,12 +45,12 @@ class TodoRepository implements TodoInterfaceRepository
 
         return $this->pdo->lastInsertId() ;
     }
-    public function insertComment(string $taskId, string $createdBy,string $comment):int {
+    public function insertComment(string $taskId, string $createdBy,string $comment):string {
         $currDate = date("Y-m-d H:i:s");
         $this->pdo->query("insert into comments (id, task_id, created_by, created_at, comment) VALUES 
                 (null,'$taskId','$createdBy','$currDate','$comment')") ;
 
-        return  $this->pdo->lastInsertId() ;
+        return  $comment ;
     }
     public function getComments (string $taskId):array
     {

@@ -29,10 +29,10 @@ class AddTaskController
             $description = $_POST['description'];
             $dueDate = $_POST['dueDate'];
             $currUser = $args['userId'] ;
-
             $request = new AddTaskRequest($title,$assigned,$description,$dueDate,$currUser) ;
             $responseData = $this->service->addTask($request) ;
-            $response->getBody()->write(json_encode($responseData->getId())) ;
+            $data = array($responseData->getId(),$title );
+            $response->getBody()->write(json_encode($data)) ;
             return $response->withStatus(200,'Task added !');
         }
         catch (DueDateException $exception){

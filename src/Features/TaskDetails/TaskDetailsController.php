@@ -22,6 +22,7 @@ class TaskDetailsController
     public function __invoke(RequestInterface $request, ResponseInterface $response,array $args):ResponseInterface
     {
         $task = $this->service->getTaskDetails($args['taskId']) ;
+        $_SESSION['taskId'] = $args['taskId'] ;
         var_dump($task->getAssignedTo());
         return $response->withStatus(200, sprintf('Task Details'));
 
