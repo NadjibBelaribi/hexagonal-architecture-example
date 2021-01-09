@@ -24,4 +24,9 @@ class HomeController
 
         return $this->twig->render($response, 'login.tpl');
     }
+
+    public function about (RequestInterface $request, ResponseInterface $response):ResponseInterface {
+
+        return $this->twig->render($response, 'aboutus.tpl');
+    }
 }

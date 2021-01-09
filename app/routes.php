@@ -15,7 +15,7 @@ $app->post('/auth', LoginController::class);
 $app->get('/signOut', LoginController::class . ':signOut');
 
 /* about us */
-$app->get('/about', HomeController::class . ':aboutUS');
+$app->get('/about', HomeController::class . ':about');
 
 /* Tasks page */
 $app->get('/tasks/{id}', TasksHomeController::class) ; // user id
