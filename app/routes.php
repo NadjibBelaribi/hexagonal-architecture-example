@@ -3,8 +3,10 @@
 use Amir_nadjib\Todo_list\Features\Home\HomeController;
 use Amir_nadjib\Todo_list\Features\Login\LoginController;
 use Amir_nadjib\Todo_list\Features\TasksHome\TasksHomeController;
+use Amir_nadjib\Todo_list\Features\TaskDetail\TaskDetailController;
+use Amir_nadjib\Todo_list\Features\AddTask\AddTaskController;
 
-use Amir_nadjib\Todo_list\Controllers\TasksController;
+use Amir_nadjib\Todo_list\Features\AddComment\AddCommentController;
 use Amir_nadjib\Todo_list\Controllers\FilterController;
 
  /* Login page */
@@ -16,10 +18,10 @@ $app->get('/signOut', LoginController::class . ':signOut');
 $app->get('/about', HomeController::class . ':aboutUS');
 
 /* Tasks page */
-$app->get('/tasks/{id}', TasksHomeController::class) ;
-$app->get('/tasks/{id}/details', TasksController::class . ':getTaskDetails');
-$app->post('/tasks/addTask', TasksController::class . ':addTask');
-$app->post('/addComment', TasksController::class . ':addComment');
+$app->get('/tasks/{id}', TasksHomeController::class) ; // user id
+$app->get('/tasks/{id}/details', TaskDetailController::class); // task id
+$app->post('/tasks/addTask', AddTaskController::class);
+$app->post('/addComment', AddCommentController::class);
 
 /* Filtering search routes */
 $app->get('/filterIdSearch', FilterController::class . ':filterByUser');

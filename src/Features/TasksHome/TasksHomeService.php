@@ -4,7 +4,6 @@
 namespace Amir_nadjib\Todo_list\Features\TasksHome;
 
 
-use Amir_nadjib\Todo_list\Features\Login\LoginResponse;
 use Amir_nadjib\Todo_list\Repository\TodoInterfaceRepository;
 
 class TasksHomeService
@@ -20,18 +19,19 @@ class TasksHomeService
         $this->repository = $repository;
     }
 
-    public function getTasks():TasksHomeResponse {
+    public function getTasks() {
         $todos = $this->repository->getAllTasks() ;
         if(empty($todos))
             throw new NoTasksFoundException() ;
-        else
-            return new TasksHomeResponse($todos,$todos,1) ;
+        else{
+            return $todos ;
+        }
     }
-    public function getUsers():TasksHomeResponse {
+    public function getUsers() {
         $users= $this->repository->getAllUsers() ;
         if(empty($users))
             throw new NoUsersFoundException() ;
         else
-            return new TasksHomeResponse($users,$users,0) ;
+            return $users ;
     }
 }

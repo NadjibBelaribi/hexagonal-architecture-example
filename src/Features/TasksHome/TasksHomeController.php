@@ -30,9 +30,8 @@ class TasksHomeController
 
         try {
 
-            $todos = $this->service->getTasks() ;
-            $users = $this->service->getUsers() ;
-            
+            $todos = ($this->service->getTasks()) ;
+            $users = ($this->service->getUsers()) ;
             return $this->twig->render($response, 'tasks.tpl',[
                  'todos' => $todos,
                  'users' => $users,

@@ -83,4 +83,13 @@ class TodoRepository implements TodoInterfaceRepository
         $users->execute() ;
         return $users->fetch() ;
     }
+    public function getUserAssigned (string $uid):array{
+      $id = intval($uid) ;
+      $task = $this->pdo->prepare('select email from todos inner join users
+		on users.id = todos.assigned_to where todos.id = :tid');
+      $task->bindParam(':tid', $id, PDO::PARAM_INT);
+      $task->execute() ;
+      return  $task->fetch() ;
+  }
+
 }

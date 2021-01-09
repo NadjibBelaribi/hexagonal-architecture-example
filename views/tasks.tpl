@@ -93,7 +93,6 @@
                 </div>
             </div>
         </div>
-
         <div id="listTasks" class="list-group list-group-flush">
             {% for task in todos %}
               <a href="/tasks/{{task.id}}/details" class="list-group-item important list-group-item-action"

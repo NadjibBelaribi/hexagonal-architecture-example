@@ -147,9 +147,10 @@ $( document ).ready(function() {
                 },
                 success: function(data) {
                     data = JSON.parse(data);
+                   // console.log(data[0] + " " data[1]) ;
                     var a = document.createElement('a');
-                    a.textContent = data['title'];
-                    a.href = "/tasks/" + data['id'] + "/details";
+                    a.textContent = data[1];
+                    a.href = "/tasks/" + data[0] + "/details";
                     a.classList.add("list-group-item", "list-group-item-action", "bg-light");
                     var list = document.getElementById("listTasks");
                     list.insertBefore(a, list.childNodes[0])
@@ -174,8 +175,7 @@ $( document ).ready(function() {
                     'comment': formData.get('comment')
                 },
                 success: function(data) {
-                    data = JSON.parse(data);
-                    document.getElementById('commentInput').innerText = "" ;
+                      document.getElementById('commentInput').innerText = "" ;
                     var codeblock ='<div class="alert alert-primary" role="alert" style="border-radius: 30px ;">'+
                         ' <div class = "userClass important row">'+
                         ' <div class="col-lg-6"> <p class="userNameClass"> Me </p>'+
@@ -184,7 +184,7 @@ $( document ).ready(function() {
                         '<p class="userDateClass">' + getCurDate()+'</p>'+
                         '</div>'+
                         ' </div>' +
-                        '<p>' + data + '</p>\n' +
+                        '<p>' + JSON.parse(data) + '</p>\n' +
                         '</div>';
                     document.getElementById('listComments').innerHTML += codeblock;            }
             });

@@ -14,6 +14,6 @@ interface TodoInterfaceRepository
     public function getComments (string $taskId):array ;
     public function getTaskById (string $tid):array ;
     public function getUserById (string $uid):array ;
-
+    public function getUserAssigned (string $uid):array ;
 
 }
