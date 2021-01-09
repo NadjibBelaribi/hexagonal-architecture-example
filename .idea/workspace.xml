@@ -23,9 +23,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3412089c-fde2-4fb9-b17d-43b9522fc2e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Features/Home/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Features/Login/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Features/Login/LoginRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Features/Login/LoginResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Features/Login/LoginService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Features/Login/UserErrorIdentificationException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Features/Login/UserNotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Features/TasksHome/NoTasksFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Features/TasksHome/NoUsersFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Features/TasksHome/TasksHomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Features/TasksHome/TasksHomeResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Features/TasksHome/TasksHomeService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/TodoInterfaceRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/TodoRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dependencies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/dependencies.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/tasks.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/tasks.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +162,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>

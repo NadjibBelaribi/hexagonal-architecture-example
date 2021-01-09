@@ -96,7 +96,7 @@
 
         <div id="listTasks" class="list-group list-group-flush">
             {% for task in todos %}
-            <a href="/tasks/{{task.id}}/details" class="list-group-item important list-group-item-action"
+              <a href="/tasks/{{task.id}}/details" class="list-group-item important list-group-item-action"
                onclick="this.classList.add('active');">{{ task.title }} </a>
             {% endfor %}
 

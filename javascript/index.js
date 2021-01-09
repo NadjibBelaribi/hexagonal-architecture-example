@@ -13,16 +13,16 @@ $( document ).ready(function() {
             event.preventDefault();
             var formData;
             formData = new FormData(loginForm);
-            var pwd = btoa(formData.get('password'));
             $.ajax({
                 type: "post",
                 url: '/auth',
                 data:   {
                     "email": formData.get('email'),
-                    "password": pwd,
+                    "password":formData.get('password'),
                 },
                 success: function(data) {
                     data = JSON.parse(data) ;
+                    alert(data) ;
                     document.getElementById('emailHelp').innerText = "";
                     if (data == "failure") {
                         document.getElementById('emailHelp').innerText = "Error identifiers , please try again !";

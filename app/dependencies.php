@@ -1,7 +1,11 @@
 <?php
 
+use Amir_nadjib\Todo_list\Repository\TodoInterfaceRepository;
+use Amir_nadjib\Todo_list\Repository\TodoRepository;
 use DI\ContainerBuilder;
 use Slim\Views\Twig;
+use function DI\get;
+
 return function () : \DI\Container {
 
     $containerBuilder = new ContainerBuilder();
@@ -19,8 +23,9 @@ return function () : \DI\Container {
         },
         Twig::class => function (): Twig {
             return Twig::create(__DIR__ . '/../views', [ 'cache' => false ]);
-        }
+        },
 
+        TodoInterfaceRepository::class => get(TodoRepository::class)
 
     ]);
 
