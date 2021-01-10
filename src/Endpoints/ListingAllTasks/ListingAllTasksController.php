@@ -25,8 +25,9 @@ class ListingAllTasksController
 
         try {
             $tasksTitles = $this->service->getTasks() ;
-            var_dump($tasksTitles);
-             return $response->withStatus(200, sprintf('all tasks titles %s',json_encode($tasksTitles)));
+            $response->getBody()->write(json_encode($tasksTitles));
+             return $response->withStatus(200,
+                 sprintf('all tasks %s',json_encode($tasksTitles)));
         }
         catch (NoTasksFoundException $exception) {
             return $response->withStatus(409,'no tasks found') ;

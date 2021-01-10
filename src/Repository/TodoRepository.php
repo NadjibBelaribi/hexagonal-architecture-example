@@ -34,8 +34,9 @@ class TodoRepository implements TodoInterfaceRepository
 
     public function getAllTasksTitles ():array
     {
-        return $this->pdo->query('select title from todos ')->fetchAll();
-     }
+        $data = $this->pdo->query('select id , title from todos ')->fetchAll(PDO::FETCH_ASSOC);
+         return $data ;
+    }
 
     public function insertTask(string $currUser,string $userId, string $title, string $description,string $dueDate):int
     {

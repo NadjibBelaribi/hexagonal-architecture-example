@@ -18,12 +18,12 @@ class ListingAllTasksService
     {
         $this->repository = $repository;
     }
-    public function getTasks():ListingAllTasksResponse {
+    public function getTasks():array {
         $todos = $this->repository->getAllTasksTitles() ;
          if(empty($todos))
             throw new NoTasksFoundException() ;
         else
-            return new ListingAllTasksResponse($todos) ;
+            return $todos ;
 
     }
 }
