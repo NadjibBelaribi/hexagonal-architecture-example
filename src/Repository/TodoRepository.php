@@ -96,7 +96,7 @@ class TodoRepository implements TodoInterfaceRepository
         $tasks = $this->pdo->prepare('select id , title from todos where title like :hint');
         $tasks->bindParam(':hint', $hint, PDO::PARAM_STR);
         $tasks->execute();
-        return $tasks->fetchAll();
+        return $tasks->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function filterByUser (string $hint):array{
@@ -105,7 +105,7 @@ class TodoRepository implements TodoInterfaceRepository
                 on users.id = todos.created_by where email like :hint');
         $tasks->bindParam(':hint', $hint, PDO::PARAM_STR);
         $tasks->execute();
-        return $tasks->fetchAll();
+        return $tasks->fetchAll(PDO::FETCH_ASSOC);
     }
 
 
