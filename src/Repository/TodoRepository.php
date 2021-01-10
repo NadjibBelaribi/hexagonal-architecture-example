@@ -91,5 +91,22 @@ class TodoRepository implements TodoInterfaceRepository
       $task->execute() ;
       return  $task->fetch() ;
   }
+    public function filterByTask (string $hint):array{
+
+        $tasks = $this->pdo->prepare('select id , title from todos where title like :hint');
+        $tasks->bindParam(':hint', $hint, PDO::PARAM_STR);
+        $tasks->execute();
+        return $tasks->fetchAll();
+    }
+
+    public function filterByUser (string $hint):array{
+
+        $tasks = $this->pdo->prepare('select todos.id , title from users inner join todos
+                on users.id = todos.created_by where email like :hint');
+        $tasks->bindParam(':hint', $hint, PDO::PARAM_STR);
+        $tasks->execute();
+        return $tasks->fetchAll();
+    }
+
 
 }

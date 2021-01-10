@@ -15,5 +15,8 @@ interface TodoInterfaceRepository
     public function getTaskById (string $tid):array ;
     public function getUserById (string $uid):array ;
     public function getUserAssigned (string $uid):array ;
+    public function filterByTask(string $tid):array;
+    public function filterByUser (string $tid):array;
+
 
 }
