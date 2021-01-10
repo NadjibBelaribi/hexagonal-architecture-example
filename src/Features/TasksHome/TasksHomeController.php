@@ -32,6 +32,7 @@ class TasksHomeController
 
             $todos = ($this->service->getTasks()) ;
             $users = ($this->service->getUsers()) ;
+            var_dump($todos);
             return $this->twig->render($response, 'tasks.tpl',[
                  'todos' => $todos,
                  'users' => $users,
