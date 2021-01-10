@@ -1,11 +1,11 @@
 <?php
 
-use Amir_nadjib\Todo_list\Features\AddComment\AddCommentController;
-use Amir_nadjib\Todo_list\Features\AddTask\AddTaskController;
-use Amir_nadjib\Todo_list\Features\ListingAllTasks\ListingAllTasksController;
-use Amir_nadjib\Todo_list\Features\ListingComments\ListingCommentsController;
-use Amir_nadjib\Todo_list\Features\TaskDetails\TaskDetailsController;
-use Amir_nadjib\Todo_list\Features\UserAuthentification\UserAuthentificationController;
+use Amir_nadjib\Todo_list\Endpoints\AddComment\AddCommentController;
+use Amir_nadjib\Todo_list\Endpoints\AddTask\AddTaskController;
+use Amir_nadjib\Todo_list\Endpoints\ListingAllTasks\ListingAllTasksController;
+use Amir_nadjib\Todo_list\Endpoints\ListingComments\ListingCommentsController;
+use Amir_nadjib\Todo_list\Endpoints\TaskDetails\TaskDetailsController;
+use Amir_nadjib\Todo_list\Endpoints\UserAuthentification\UserAuthentificationController;
 /*
 // Login page
 //$app->post('/auth', LoginController::class. ':postLogin');

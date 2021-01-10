@@ -25,7 +25,7 @@
     - compass watch --css-dir public/css sass/*.scss 
     - docker-compose up (use sudo if you are on Linux)
 
-# Features 
+# Endpoints 
     - Login in AJAX
     - Encoded password 
     - Live search for Tasks by User name & Task Title

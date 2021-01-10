@@ -25,18 +25,60 @@
     <list default="true" id="3412089c-fde2-4fb9-b17d-43b9522fc2e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Features/AddComment/AddCommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Features/AddComment/AddCommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Features/AddComment/AddCommentResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Features/AddComment/AddCommentResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Features/AddComment/AddCommentService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Features/AddComment/AddCommentService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Features/AddTask/AddTaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Features/AddTask/AddTaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Features/TaskDetails/TaskDetailsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Features/TaskDetails/TaskDetailsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Features/UserAuthentification/UserAuthentificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Features/UserAuthentification/UserAuthentificationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/TodoInterfaceRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/TodoInterfaceRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/TodoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/TodoRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tasks.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/tasks.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/aboutus.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/tasks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/todos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/amir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/logogit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/nadjib.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/index.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/aboutus.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/bootstrap/_root.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/login.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/todos.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/FilterController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/HomeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/LoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/NotFoundController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/TasksController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/AddComment/AddCommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/AddComment/AddCommentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/AddComment/AddCommentRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/AddComment/AddCommentRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/AddComment/AddCommentResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/AddComment/AddCommentResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/AddComment/AddCommentService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/AddComment/AddCommentService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/AddTask/AddTaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/AddTask/AddTaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/AddTask/AddTaskRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/AddTask/AddTaskRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/AddTask/AddTaskResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/AddTask/AddTaskResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/AddTask/AddTaskService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/AddTask/AddTaskService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/AddTask/DueDateException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/AddTask/DueDateException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/ListingAllTasks/ListingAllTasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/ListingAllTasks/ListingAllTasksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/ListingAllTasks/ListingAllTasksResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/ListingAllTasks/ListingAllTasksResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/ListingAllTasks/ListingAllTasksService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/ListingAllTasks/ListingAllTasksService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/ListingAllTasks/NoTasksFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/ListingAllTasks/NoTasksFoundException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/ListingComments/ListingCommentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/ListingComments/ListingCommentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/ListingComments/ListingCommentsResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/ListingComments/ListingCommentsResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/ListingComments/ListingCommentsService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/ListingComments/ListingCommentsService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/TaskDetails/TaskDetailsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/TaskDetails/TaskDetailsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/TaskDetails/TaskDetailsResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/TaskDetails/TaskDetailsResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/TaskDetails/TaskDetailsService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/TaskDetails/TaskDetailsService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/UserAuthentification/UserAuthentificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/UserAuthentification/UserAuthentificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/UserAuthentification/UserAuthentificationRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/UserAuthentification/UserAuthentificationRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/UserAuthentification/UserAuthentificationResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/UserAuthentification/UserAuthentificationResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/UserAuthentification/UserAuthentificationService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/UserAuthentification/UserAuthentificationService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/UserAuthentification/UserErrorIdentification.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/UserAuthentification/UserErrorIdentification.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/UserAuthentification/UserNotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/UserAuthentification/UserNotFoundException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/aboutus.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/navbar.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/notfound.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/tasks.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
