@@ -29,13 +29,9 @@ class FilterByTaskController
         // TODO: try catch
 
         $request = new FilterByTaskRequest($_GET['title']) ;
-        var_dump(json_encode($this->service->getTasks($request)));
-        return $this->twig->render($response, 'tasks.tpl', [
-             'todos' => json_encode($this->service->getTasks($request)),
-             'users' => $this->service->getUsers(),
-             //'currentUser'=>ucfirst(strtok($_SESSION['user'],'@')),
-            'error' => 'Could not render tasks page'
-        ]);
+        //'users' => $this->service->getUsers(),
+        $response->getBody()->write(json_encode($this->service->getTasks($request)));
+        return $response->withStatus(200);
 
     }
 }

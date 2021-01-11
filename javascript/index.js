@@ -95,10 +95,8 @@ $( document ).ready(function() {
                     'title' : hint
                 },
                 success: function(data) {
-                    alert(data) ;
-                    alert(JSON.parse(data)) ;
-
                     data = JSON.parse(data) ;
+                    alert("here are results " + data) ;
                     var listTasks = document.getElementById('listTasks') ;
                     listTasks.innerHTML = "";
                     for (var i = 0; i < data.length; ++i) {
