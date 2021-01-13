@@ -30,10 +30,16 @@
       <change afterPath="$PROJECT_DIR$/src/Features/FilterByUser/FilterByUserRequest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Features/FilterByUser/FilterByUserService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/app/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/TodoInterfaceRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/TodoInterfaceRepository.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/Endpoints/ListingAllTasks/ListingAllTasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/ListingAllTasks/ListingAllTasksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Endpoints/ListingAllTasks/ListingAllTasksResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Endpoints/ListingAllTasks/ListingAllTasksService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Endpoints/ListingAllTasks/ListingAllTasksService.php" afterDir="false" />
+>>>>>>> c7db92740e576144a775507b3c3d87a8f5150f1f
       <change beforePath="$PROJECT_DIR$/src/Repository/TodoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/TodoRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,6 +126,17 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/php-http/discovery" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/php-http/httplug" />
+      <path value="$PROJECT_DIR$/vendor/php-http/guzzle6-adapter" />
+      <path value="$PROJECT_DIR$/vendor/php-http/promise" />
     </include_path>
   </component>
   <component name="ProblemsViewState">
@@ -143,6 +160,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -204,6 +222,13 @@
       <workItem from="1606165051770" duration="22113000" />
       <workItem from="1606221467123" duration="1355000" />
       <workItem from="1606222997945" duration="17547000" />
+      <workItem from="1606782155851" duration="84000" />
+      <workItem from="1606815558790" duration="626000" />
+      <workItem from="1606820805845" duration="51000" />
+      <workItem from="1607102651262" duration="20396000" />
+      <workItem from="1608764274523" duration="467000" />
+      <workItem from="1610065718784" duration="1482000" />
+      <workItem from="1610123085364" duration="10798000" />
     </task>
     <servers />
   </component>
