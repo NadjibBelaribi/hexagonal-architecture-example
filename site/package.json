@@ -1,0 +1,27 @@
+{
+  "name": "todos-web",
+  "version": "1.0.0",
+  "description": "- Créer un répertoire .docker  - Déplacer le fichier DockerFile, la structure de base et le vhost.conf dedans  - Corriger le fichier docker-compose.yml  - Recompiler et lancer compose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "compass watch --css-dir public/css sass/login.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.unistra.fr/nbelaribi/todo-list"
+  },
+  "author": "Nadjib Belaribi",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "js-base64": "^3.6.0",
+    "popper": "^1.0.1",
+    "popper.js": "^1.16.1",
+    "webpack": "^5.4.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.2.0"
+  }
+}

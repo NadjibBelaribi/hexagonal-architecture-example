@@ -2,12 +2,9 @@
 
 
 namespace Amir_nadjib\Todo_list\Repository;
-<<<<<<< HEAD
-=======
 
 
 use Amir_nadjib\Todo_list\Endpoints\ListingAllTasks\ListingAllTasksResponse;
->>>>>>> c7db92740e576144a775507b3c3d87a8f5150f1f
 use PDO;
 
 class TodoRepository implements TodoInterfaceRepository
@@ -35,21 +32,10 @@ class TodoRepository implements TodoInterfaceRepository
         return array() ;
     }
 
-<<<<<<< HEAD
-    public function getAllTasks ():array
-    {
-        return $this->pdo->query('select * from todos ')->fetchAll();
-    }
-
-    public function getAllUsers():array
-    {
-        return $this->pdo->query('select * from users')->fetchAll();
-=======
     public function getAllTasksTitles ():array
     {
         $data = $this->pdo->query('select id , title from todos ')->fetchAll(PDO::FETCH_ASSOC);
          return $data ;
->>>>>>> c7db92740e576144a775507b3c3d87a8f5150f1f
     }
 
     public function insertTask(string $currUser,string $userId, string $title, string $description,string $dueDate):int
@@ -96,34 +82,4 @@ class TodoRepository implements TodoInterfaceRepository
         $users->execute() ;
         return $users->fetch() ;
     }
-<<<<<<< HEAD
-    public function getUserAssigned (string $uid):array{
-      $id = intval($uid) ;
-      $task = $this->pdo->prepare('select email from todos inner join users
-		on users.id = todos.assigned_to where todos.id = :tid');
-      $task->bindParam(':tid', $id, PDO::PARAM_INT);
-      $task->execute() ;
-      return  $task->fetch() ;
-  }
-    public function filterByTask (string $hint):array{
-
-        $tasks = $this->pdo->prepare('select id , title from todos where title like :hint');
-        $tasks->bindParam(':hint', $hint, PDO::PARAM_STR);
-        $tasks->execute();
-        return $tasks->fetchAll();
-    }
-
-    public function filterByUser (string $hint):array{
-
-        $tasks = $this->pdo->prepare('select todos.id , title from users inner join todos
-                on users.id = todos.created_by where email like :hint');
-        $tasks->bindParam(':hint', $hint, PDO::PARAM_STR);
-        $tasks->execute();
-        return $tasks->fetchAll();
-    }
-
-
 }
-=======
-}
->>>>>>> c7db92740e576144a775507b3c3d87a8f5150f1f

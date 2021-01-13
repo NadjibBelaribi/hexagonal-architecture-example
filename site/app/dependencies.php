@@ -24,10 +24,7 @@ return function () : \DI\Container {
         Twig::class => function (): Twig {
             return Twig::create(__DIR__ . '/../views', [ 'cache' => false ]);
         },
-<<<<<<< HEAD
 
-=======
->>>>>>> c7db92740e576144a775507b3c3d87a8f5150f1f
         TodoInterfaceRepository::class => get(TodoRepository::class)
 
     ]);
