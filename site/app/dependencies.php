@@ -42,7 +42,7 @@ return function () : \DI\Container {
                 Psr18ClientDiscovery::find(),
                 Psr17FactoryDiscovery::findRequestFactory(),
                 Psr17FactoryDiscovery::findStreamFactory(),
-                'https://localhost:8000' // Url de base de l'api
+                'http://todos_api_amir_nadjib' // Url de base de l'api
             );
         }
 

@@ -11,7 +11,7 @@
       "ext-json": "*",
         "php-http/discovery": "^1.13",
         "psr/http-client": "^1.0",
-        "php-http/guzzle6-adapter": "^2.0"
+        "guzzlehttp/guzzle": "^7.2"
     },
     "authors": [
         {

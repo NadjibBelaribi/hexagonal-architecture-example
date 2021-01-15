@@ -26,9 +26,7 @@ class TasksHomeService
     }
 
     public function getTasks() {
-        //$todos = $this->api->getAllTasks() ;
-        $todos = $this->repository->getAllTasks() ;
-
+        $todos = $this->api->getAllTasks() ;
         if(empty($todos))
             throw new NoTasksFoundException() ;
         else{

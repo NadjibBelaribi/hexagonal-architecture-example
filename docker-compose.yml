@@ -1,9 +1,5 @@
 
   version: '3'
-  networks:
-    isolation-network:
-      driver: bridge
-
   services:
     api:
       build:
@@ -14,8 +10,6 @@
         - 8005:80
       volumes:
         - ./api:/srv/api
-      networks:
-        - isolation-network
       depends_on:
         - mysql
     site:
@@ -27,8 +21,6 @@
           - 8003:80
         volumes:
           - ./site:/srv/site
-        networks:
-          - isolation-network
         depends_on:
           - mysql
     mysql:
@@ -43,5 +35,3 @@
         - 8004:3306
       volumes:
         - ./api/.docker/:/docker-entrypoint-initdb.d
-      networks:
-        - isolation-network

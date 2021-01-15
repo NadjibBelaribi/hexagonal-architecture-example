@@ -30,9 +30,12 @@ class AddTaskController
             $dueDate = $_POST['dueDate'];
             $currUser = $_SESSION['userId'] ;
 
+
             $request = new AddTaskRequest($title,$assigned,$description,$dueDate,$currUser) ;
+
             $responseData = $this->service->addTask($request) ;
             $data = array($responseData->getId(),$title );
+
             $response->getBody()->write(json_encode($data)) ;
             return $response->withStatus(200,'Task added !');
         }

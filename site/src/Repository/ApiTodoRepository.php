@@ -3,6 +3,7 @@
 
 namespace Amir_nadjib\Todo_list\Repository;
 
+use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestFactoryInterface;
 use Psr\Http\Message\StreamFactoryInterface;
@@ -25,15 +26,20 @@ class ApiTodoRepository
 
     public function getAllTasks()
     {
-        $httpResponse = $this->httpClient->sendRequest(
-            $this->requestFactory->createRequest('GET', $this->apiEndpoint . '/getTasks' . $email)
-        );
-        var_dump($this->apiEndpoint );
-        $jsonResponse = json_decode($httpResponse->getBody()->__toString());
-        echo " on a recu frere" ;
-        var_dump($jsonResponse);
-        // On considère que l'utilisateur existe si le serveur a retourné un status code 200, qu'il a retourné au moins un item dans sa recherche
-        return $jsonResponse ;
+        try {
+            $httpResponse = $this->httpClient->sendRequest(
+                $this->requestFactory->createRequest('GET', $this->apiEndpoint . '/getTasks')
+            );
+
+            $jsonResponse = json_decode($httpResponse->getBody()->__toString());
+            echo " on a recu frere" ;
+            var_dump($jsonResponse);
+            // On considère que l'utilisateur existe si le serveur a retourné un status code 200, qu'il a retourné au moins un item dans sa recherche
+            return $jsonResponse ;
+
+        } catch (ClientExceptionInterface $e) {
+        }
+
     }
 
     /*

@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '21854603780e29b7ddcb3607d224a734979a0a59',
+    'reference' => 'b2130ad975b0300ec52cb457d1f27f0d6c0c3dae',
     'name' => 'amir_nadjib/todo_list',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '21854603780e29b7ddcb3607d224a734979a0a59',
+      'reference' => 'b2130ad975b0300ec52cb457d1f27f0d6c0c3dae',
     ),
     'doctrine/instantiator' => 
     array (
@@ -69,6 +69,33 @@ private static $installed = array (
       array (
       ),
       'reference' => '7e279d2cd5d7fbb156ce46daada972355cea27bb',
+    ),
+    'guzzlehttp/guzzle' => 
+    array (
+      'pretty_version' => '7.2.0',
+      'version' => '7.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '0aa74dfb41ae110835923ef10a9d803a22d50e79',
+    ),
+    'guzzlehttp/promises' => 
+    array (
+      'pretty_version' => '1.4.0',
+      'version' => '1.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '60d379c243457e073cff02bc323a2a86cb355631',
+    ),
+    'guzzlehttp/psr7' => 
+    array (
+      'pretty_version' => '1.7.0',
+      'version' => '1.7.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '53330f47520498c0ae1f61f7e2c90f55690c06a3',
     ),
     'myclabs/deep-copy' => 
     array (
@@ -268,6 +295,22 @@ private static $installed = array (
       'provided' => 
       array (
         0 => '^1.0',
+      ),
+    ),
+    'psr/http-client' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2dfb5f6c5eff0e91e20e913f8c5452ed95b86621',
+    ),
+    'psr/http-client-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '1.0',
       ),
     ),
     'psr/http-factory' => 

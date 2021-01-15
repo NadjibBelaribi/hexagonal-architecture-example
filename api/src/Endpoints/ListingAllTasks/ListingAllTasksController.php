@@ -27,7 +27,7 @@ class ListingAllTasksController
             $tasksTitles = $this->service->getTasks() ;
             var_dump($tasksTitles);
             $response->getBody()->write(json_encode($tasksTitles));
-             return $response->withHeader('Access-Control-Allow-Origin', 'http://localhost:8003')->withStatus(200,
+             return $response->withStatus(200,
                  sprintf('all tasks %s',json_encode($tasksTitles)));
         }
         catch (NoTasksFoundException $exception) {

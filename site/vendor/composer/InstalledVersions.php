@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '21854603780e29b7ddcb3607d224a734979a0a59',
+    'reference' => 'b2130ad975b0300ec52cb457d1f27f0d6c0c3dae',
     'name' => 'amir_nadjib/todo_list',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '21854603780e29b7ddcb3607d224a734979a0a59',
+      'reference' => 'b2130ad975b0300ec52cb457d1f27f0d6c0c3dae',
     ),
     'doctrine/instantiator' => 
     array (
@@ -72,12 +72,12 @@ private static $installed = array (
     ),
     'guzzlehttp/guzzle' => 
     array (
-      'pretty_version' => '6.5.5',
-      'version' => '6.5.5.0',
+      'pretty_version' => '7.2.0',
+      'version' => '7.2.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '9d4290de1cfd701f38099ef7e183b64b4b7b0c5e',
+      'reference' => '0aa74dfb41ae110835923ef10a9d803a22d50e79',
     ),
     'guzzlehttp/promises' => 
     array (
@@ -157,12 +157,12 @@ private static $installed = array (
     ),
     'php-di/invoker' => 
     array (
-      'pretty_version' => '2.2.0',
-      'version' => '2.2.0.0',
+      'pretty_version' => '2.3.0',
+      'version' => '2.3.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'e08a7c87068daeaeef464b95d81643ea530bc535',
+      'reference' => '992fec6c56f2d1ad1ad5fee28267867c85bfb8f9',
     ),
     'php-di/php-di' => 
     array (
@@ -182,20 +182,6 @@ private static $installed = array (
       ),
       'reference' => '66daff34cbd2627740ffec9469ffbac9f8c8185c',
     ),
-    'php-http/async-client-implementation' => 
-    array (
-      'provided' => 
-      array (
-        0 => '1.0',
-      ),
-    ),
-    'php-http/client-implementation' => 
-    array (
-      'provided' => 
-      array (
-        0 => '1.0',
-      ),
-    ),
     'php-http/discovery' => 
     array (
       'pretty_version' => '1.13.0',
@@ -204,33 +190,6 @@ private static $installed = array (
       array (
       ),
       'reference' => '788f72d64c43dc361e7fcc7464c3d947c64984a7',
-    ),
-    'php-http/guzzle6-adapter' => 
-    array (
-      'pretty_version' => 'v2.0.1',
-      'version' => '2.0.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '6074a4b1f4d5c21061b70bab3b8ad484282fe31f',
-    ),
-    'php-http/httplug' => 
-    array (
-      'pretty_version' => '2.2.0',
-      'version' => '2.2.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '191a0a1b41ed026b717421931f8d3bd2514ffbf9',
-    ),
-    'php-http/promise' => 
-    array (
-      'pretty_version' => '1.1.0',
-      'version' => '1.1.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '4c4c1f9b7289a2ec57cde7f1e9762a5789506f88',
     ),
     'phpdocumentor/reflection-common' => 
     array (
@@ -611,24 +570,6 @@ private static $installed = array (
       ),
       'reference' => 'c6c942b1ac76c82448322025e084cadc56048b4e',
     ),
-    'symfony/polyfill-intl-idn' => 
-    array (
-      'pretty_version' => 'v1.22.0',
-      'version' => '1.22.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '0eb8293dbbcd6ef6bf81404c9ce7d95bcdf34f44',
-    ),
-    'symfony/polyfill-intl-normalizer' => 
-    array (
-      'pretty_version' => 'v1.22.0',
-      'version' => '1.22.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '6e971c891537eb617a00bb07a43d182a6915faba',
-    ),
     'symfony/polyfill-mbstring' => 
     array (
       'pretty_version' => 'v1.22.0',
@@ -637,15 +578,6 @@ private static $installed = array (
       array (
       ),
       'reference' => 'f377a3dd1fde44d37b9831d68dc8dea3ffd28e13',
-    ),
-    'symfony/polyfill-php72' => 
-    array (
-      'pretty_version' => 'v1.22.0',
-      'version' => '1.22.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'cc6e6f9b39fe8075b3dabfbaf5b5f645ae1340c9',
     ),
     'symfony/polyfill-php80' => 
     array (

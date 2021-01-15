@@ -25,13 +25,14 @@ class TasksHomeController
     }
 
 
-    public function __invoke (RequestInterface $request, ResponseInterface $response): ResponseInterface{
+    public function __invoke (RequestInterface $request, ResponseInterface $response):ResponseInterface{
         // TODO: Implement __invoke() method.
 
         try {
-
-            $todos = ($this->service->getTasks()) ;
             $users = ($this->service->getUsers()) ;
+            $todos = ($this->service->getTasks()) ;
+            var_dump($todos);
+
             return $this->twig->render($response, 'tasks.tpl',[
                  'todos' => $todos,
                  'users' => $users,
