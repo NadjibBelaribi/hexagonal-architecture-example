@@ -14,10 +14,6 @@ class TasksController extends HomeController
     public function getAllUsers ()
     {
         return  $this->pdo->query('select * from users ')->fetchAll();
-        $comments = $this->pdo->prepare('select * from comments where task_id = 1 ');
-        $comments->execute() ;
-        $comments = $comments->fetchAll() ;
-
     }
     public function getComments ($taskId)
     {
