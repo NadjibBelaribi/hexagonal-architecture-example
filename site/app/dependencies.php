@@ -6,7 +6,7 @@ use Amir_nadjib\Todo_list\Repository\TodoRepository;
 use DI\ContainerBuilder;
 use Http\Discovery\Psr18ClientDiscovery;
 use Http\Discovery\Psr17FactoryDiscovery;
-
+use GuzzleHttp\Client ;
 use Slim\Views\Twig;
 use function DI\get;
 
@@ -39,9 +39,7 @@ return function () : \DI\Container {
             // permettent de scanner les dépendances et trouver automatiquement des classes http qui implémentent les PSR
             // Tel que Guzzle par exemple. A noter, vous devez composer require guzzle. En effet, si la discovery ne trouve
             // pas de classe compatible, alors elle va throw une exception
-                Psr18ClientDiscovery::find(),
-                Psr17FactoryDiscovery::findRequestFactory(),
-                Psr17FactoryDiscovery::findStreamFactory(),
+                new GuzzleHttp\Client(),
                 'http://todos_api_amir_nadjib' // Url de base de l'api
             );
         }

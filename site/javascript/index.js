@@ -176,7 +176,7 @@ $( document ).ready(function() {
                     'comment': formData.get('comment')
                 },
                 success: function(data) {
-                    document.getElementById('commentInput').innerText = "" ;
+                      document.getElementById('commentInput').innerText = "" ;
                     var codeblock ='<div class="alert alert-primary" role="alert" style="border-radius: 30px ;">'+
                         ' <div class = "userClass important row">'+
                         ' <div class="col-lg-6"> <p class="userNameClass"> Me </p>'+
@@ -187,9 +187,7 @@ $( document ).ready(function() {
                         ' </div>' +
                         '<p>' + JSON.parse(data) + '</p>\n' +
                         '</div>';
-                    document.getElementById('listComments').innerHTML += codeblock;
-                    document.getElementById('commentInput').value = "" ;
-                   }
+                    document.getElementById('listComments').innerHTML += codeblock;            }
             });
 
         }

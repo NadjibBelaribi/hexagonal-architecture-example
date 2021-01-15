@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'b2130ad975b0300ec52cb457d1f27f0d6c0c3dae',
+    'reference' => '866addd7eac3be71d1fc4737fb5487154e018e4a',
     'name' => 'amir_nadjib/todo_list',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'b2130ad975b0300ec52cb457d1f27f0d6c0c3dae',
+      'reference' => '866addd7eac3be71d1fc4737fb5487154e018e4a',
     ),
     'doctrine/instantiator' => 
     array (

@@ -3,42 +3,33 @@
 
 namespace Amir_nadjib\Todo_list\Repository;
 
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Client\ClientExceptionInterface;
-use Psr\Http\Client\ClientInterface;
-use Psr\Http\Message\RequestFactoryInterface;
-use Psr\Http\Message\StreamFactoryInterface;
-
+use GuzzleHttp\Psr7\Request ;
 class ApiTodoRepository
 {
 
-    private ClientInterface $httpClient;
-    private RequestFactoryInterface $requestFactory;
-    private StreamFactoryInterface $streamFactory;
-    private string $apiEndpoint;
+     private Client $httpClient;
+     private string $apiEndpoint;
 
-    public function __construct(ClientInterface $httpClient, RequestFactoryInterface $requestFactory, StreamFactoryInterface $streamFactory, string $apiEndpoint)
+    public function __construct(Client $httpClient, string $apiEndpoint)
     {
         $this->httpClient = $httpClient;
-        $this->requestFactory = $requestFactory;
-        $this->streamFactory = $streamFactory;
-        $this->apiEndpoint = $apiEndpoint;
+         $this->apiEndpoint = $apiEndpoint;
     }
 
     public function getAllTasks()
     {
         try {
-            $httpResponse = $this->httpClient->sendRequest(
-                $this->requestFactory->createRequest('GET', $this->apiEndpoint . '/getTasks')
-            );
-
-            $jsonResponse = json_decode($httpResponse->getBody()->__toString());
-            echo " on a recu frere" ;
+            $httpResponse = $this->httpClient->request('GET',$this->apiEndpoint . '/getTasks');
+            $jsonResponse =  json_decode($httpResponse->getBody()->getContents(), true);
+            echo "Api sent " ;
             var_dump($jsonResponse);
-            // On considère que l'utilisateur existe si le serveur a retourné un status code 200, qu'il a retourné au moins un item dans sa recherche
-            return $jsonResponse ;
-
-        } catch (ClientExceptionInterface $e) {
+            return json_encode($jsonResponse) ;
+        } catch (GuzzleException $e) {
         }
+
 
     }
 

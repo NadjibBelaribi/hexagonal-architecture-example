@@ -22,7 +22,6 @@ class ListingAllTasksController
 
     public function __invoke(RequestInterface $request, ResponseInterface $response): ResponseInterface {
         // TODO: Implement __invoke() method.
-        echo date('l jS \of F Y h:i:s A');
         try {
             $tasksTitles = $this->service->getTasks() ;
             var_dump($tasksTitles);
