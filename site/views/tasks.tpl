@@ -148,7 +148,7 @@
                         <form id="commentForm">
                             <div class="input-group mb-3">
                                 <input id="commentInput" name="comment" type="text" class="form-control"
-                                       placeholder="Add a comment" aria-label="Recipient's username"
+                                       placeholder="Add a comment" value="" aria-label="Recipient's username"
                                        aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                     <button type="submit" class="btn btn-primary mb-2"
