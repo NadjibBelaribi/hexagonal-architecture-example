@@ -1,0 +1,6 @@
+{
+    "require": {
+        "php-http/discovery": "^1.13",
+        "psr/http-client": "^1.0"
+    }
+}

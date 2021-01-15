@@ -6,28 +6,15 @@ use Amir_nadjib\Todo_list\Endpoints\ListingAllTasks\ListingAllTasksController;
 use Amir_nadjib\Todo_list\Endpoints\ListingComments\ListingCommentsController;
 use Amir_nadjib\Todo_list\Endpoints\TaskDetails\TaskDetailsController;
 use Amir_nadjib\Todo_list\Endpoints\UserAuthentification\UserAuthentificationController;
-/*
-// Login page
-//$app->post('/auth', LoginController::class. ':postLogin');
-$app->get('/signOut', LoginController::class . ':signOut');
 
-// about us
-$app->get('/about', HomeController::class . ':aboutUS');
-
-// Tasks page
-$app->get('/tasks/{id}', TasksController::class . ':getTasks') ;
-$app->get('/tasks/{id}/details', TasksController::class . ':getTaskDetails');
-//$app->post('/tasks/addTask', TasksController::class . ':addTask');
-//$app->post('/addComment', TasksController::class . ':addComment');
-
-//Filtering search routes
-$app->get('/filterIdSearch', FilterController::class . ':filterByUser');
-$app->get('/filterTaskSearch', FilterController::class . ':filterByTask');
-*/
 
 /****************** API TESTS ************/
 
-$app->get('/', UserAuthentificationController::class);
+
+$app->get('/', function (){
+
+    echo "welcome" ;
+});
 
 //- authentication utilisateur
 $app->post('/auth', UserAuthentificationController::class. ':login');

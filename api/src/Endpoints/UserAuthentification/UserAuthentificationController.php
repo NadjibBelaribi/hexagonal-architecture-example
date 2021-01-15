@@ -32,18 +32,6 @@ class UserAuthentificationController
     }
         public function login(RequestInterface $request, ResponseInterface $response): ResponseInterface {
 
-        try {
-            $request = new UserAuthentificationRequest($_POST['email'],$_POST['password']);
-            $responseData = $this->service->checkUser($request);
-            $_SESSION['userId'] = $responseData->getUserData()['id'] ;
-            $destin = 'tasks/'.  $_SESSION['userId'];
-            $response->getBody()->write(json_encode($destin)) ;
-             return $response->withStatus(200,'User data');
-
-        } catch (UserNotFoundException $exception) {
-            return $response->withStatus(400, 'User not Found ');
-        } catch (UserErrorIdentification $exception) {
-            return $response->withStatus(409, 'User error identification');
-        }
+        echo " we are here boy" ;
     }
 }

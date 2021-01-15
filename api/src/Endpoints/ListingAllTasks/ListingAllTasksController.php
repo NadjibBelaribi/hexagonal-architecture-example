@@ -22,11 +22,12 @@ class ListingAllTasksController
 
     public function __invoke(RequestInterface $request, ResponseInterface $response): ResponseInterface {
         // TODO: Implement __invoke() method.
-
+        echo date('l jS \of F Y h:i:s A');
         try {
             $tasksTitles = $this->service->getTasks() ;
+            var_dump($tasksTitles);
             $response->getBody()->write(json_encode($tasksTitles));
-             return $response->withStatus(200,
+             return $response->withHeader('Access-Control-Allow-Origin', 'http://localhost:8003')->withStatus(200,
                  sprintf('all tasks %s',json_encode($tasksTitles)));
         }
         catch (NoTasksFoundException $exception) {
