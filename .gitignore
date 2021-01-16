@@ -1,4 +1,4 @@
-/node_modules
-/vendor
+site/node_modules
+*/vendor
 .idea
 .sass-cache

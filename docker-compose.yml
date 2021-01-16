@@ -1,17 +1,28 @@
 
   version: '3'
   services:
-    web:
+    api:
       build:
-        context: .
+        context: api/
         dockerfile: .docker/Dockerfile
-      container_name: todos_web_amir_nadjib
+      container_name: todos_api_amir_nadjib
       ports:
-        - 8003:80
+        - 8005:80
       volumes:
-        - .:/srv/app
+        - ./api:/srv/api
       depends_on:
         - mysql
+    site:
+        build:
+          context: site/
+          dockerfile: .docker/Dockerfile
+        container_name: todos_web_amir_nadjib
+        ports:
+          - 8003:80
+        volumes:
+          - ./site:/srv/site
+        depends_on:
+          - api
     mysql:
       image: mysql:5.7
       container_name: todos_sql_amir_nadjib
@@ -23,4 +34,4 @@
       ports:
         - 8004:3306
       volumes:
-        - .docker/:/docker-entrypoint-initdb.d
+        - ./api/.docker/:/docker-entrypoint-initdb.d
