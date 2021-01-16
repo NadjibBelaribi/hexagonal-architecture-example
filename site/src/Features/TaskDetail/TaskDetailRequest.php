@@ -3,7 +3,7 @@
 
 namespace Amir_nadjib\Todo_list\Features\TaskDetail;
 
-
+use stdClass ;
 class TaskDetailRequest
 {
    private int $taskId ;
@@ -23,6 +23,15 @@ class TaskDetailRequest
     public function getTaskId(): int
     {
         return $this->taskId;
+    }
+
+    public static function from(stdClass $json): self
+    {
+        if (empty($json->taskId)) {
+            throw new MissingInputParametersException();
+        }
+
+        return new self($json->taskId);
     }
 
 
