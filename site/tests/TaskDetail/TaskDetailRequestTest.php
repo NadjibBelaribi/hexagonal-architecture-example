@@ -3,8 +3,6 @@
 namespace Tests\Hakan\Hello\Features\CreateAccount;
 
 use Amir_nadjib\Todo_list\Features\TaskDetail\TaskDetailRequest;
-use Amir_nadjib\Todo_list\Features\TaskDetail\TaskDetailService;
-use Amir_nadjib\Todo_list\Features\TaskDetail\TaskDetailController;
 use Amir_nadjib\Todo_list\Features\TaskDetail\MissingInputParametersException;
 
 use PHPUnit\Framework\TestCase;
@@ -16,7 +14,7 @@ class TaskDetailRequestTest extends TestCase
     {
         $this->expectException(MissingInputParametersException::class);
         $stdClass = new stdClass();
-        $stdClass->email = 'hakan@ebabil.fr';
+        $stdClass->email = 'nadjib@amir.dz';
         TaskDetailRequest::from($stdClass);
     }
 
