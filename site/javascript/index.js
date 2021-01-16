@@ -1,6 +1,5 @@
 import 'bootstrap';
-import {btoa} from "js-base64";
-let $ = require('jquery');
+ let $ = require('jquery');
 
 $( document ).ready(function() {
 
@@ -134,7 +133,6 @@ $( document ).ready(function() {
         taskForm.onsubmit = function (event) {
             event.preventDefault();
             var formData = new FormData(taskForm) ;
-
             $.ajax({
                 type: "post",
                 url: '/tasks/addTask',
@@ -147,7 +145,6 @@ $( document ).ready(function() {
                 },
                 success: function(data) {
                     data = JSON.parse(data);
-                   // console.log(data[0] + " " data[1]) ;
                     var a = document.createElement('a');
                     a.textContent = data[1];
                     a.href = "/tasks/" + data[0] + "/details";
@@ -175,7 +172,7 @@ $( document ).ready(function() {
                     'comment': formData.get('comment')
                 },
                 success: function(data) {
-                      document.getElementById('commentInput').innerText = "" ;
+                      document.getElementById('commentInput').value = "" ;
                     var codeblock ='<div class="alert alert-primary" role="alert" style="border-radius: 30px ;">'+
                         ' <div class = "userClass important row">'+
                         ' <div class="col-lg-6"> <p class="userNameClass"> Me </p>'+
