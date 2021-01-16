@@ -18,7 +18,7 @@
     {% endblock %}
 </head>
 
-<body style="background-image: url('img/bg.jpg');background-repeat: no-repeat;background-size: cover;">
+<body>
 {% include 'navbar.tpl' %}
 <div class="site-wrapper">
 

@@ -54,7 +54,21 @@
         "support": {
             "issues": "https://github.com/doctrine/instantiator/issues",
             "source": "https://github.com/doctrine/instantiator/tree/1.4.0"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://www.doctrine-project.org/sponsorship.html",
+                "type": "custom"
+            },
+            {
+                "url": "https://www.patreon.com/phpdoctrine",
+                "type": "patreon"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finstantiator",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "fig/http-message-util",
@@ -170,7 +184,17 @@
         "support": {
             "issues": "https://github.com/GrahamCampbell/Result-Type/issues",
             "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.0.1"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/GrahamCampbell",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/graham-campbell/result-type",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "guzzlehttp/guzzle",
@@ -256,7 +280,25 @@
         "support": {
             "issues": "https://github.com/guzzle/guzzle/issues",
             "source": "https://github.com/guzzle/guzzle/tree/7.2.0"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/GrahamCampbell",
+                "type": "github"
+            },
+            {
+                "url": "https://github.com/Nyholm",
+                "type": "github"
+            },
+            {
+                "url": "https://github.com/alexeyshockov",
+                "type": "github"
+            },
+            {
+                "url": "https://github.com/gmponos",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "guzzlehttp/promises",
@@ -444,7 +486,13 @@
         "support": {
             "issues": "https://github.com/myclabs/DeepCopy/issues",
             "source": "https://github.com/myclabs/DeepCopy/tree/1.10.2"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://tidelift.com/funding/github/packagist/myclabs/deep-copy",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "nikic/fast-route",
@@ -787,7 +835,13 @@
         "support": {
             "issues": "https://github.com/PHP-DI/Invoker/issues",
             "source": "https://github.com/PHP-DI/Invoker/tree/2.3.0"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/mnapoli",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "php-di/php-di",
@@ -855,7 +909,17 @@
         "support": {
             "issues": "https://github.com/PHP-DI/PHP-DI/issues",
             "source": "https://github.com/PHP-DI/PHP-DI/tree/6.3.0"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/mnapoli",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/php-di/php-di",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "php-di/phpdoc-reader",
@@ -1195,7 +1259,17 @@
         "support": {
             "issues": "https://github.com/schmittjoh/php-option/issues",
             "source": "https://github.com/schmittjoh/php-option/tree/1.7.5"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/GrahamCampbell",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/phpoption/phpoption",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "phpspec/prophecy",
@@ -1337,7 +1411,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
             "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.5"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "phpunit/php-file-iterator",
@@ -1393,7 +1473,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/php-file-iterator/issues",
             "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/3.0.5"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "phpunit/php-invoker",
@@ -1452,7 +1538,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/php-invoker/issues",
             "source": "https://github.com/sebastianbergmann/php-invoker/tree/3.1.1"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "phpunit/php-text-template",
@@ -1507,7 +1599,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/php-text-template/issues",
             "source": "https://github.com/sebastianbergmann/php-text-template/tree/2.0.4"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "phpunit/php-timer",
@@ -1562,7 +1660,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/php-timer/issues",
             "source": "https://github.com/sebastianbergmann/php-timer/tree/5.0.3"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "phpunit/phpunit",
@@ -1657,7 +1761,17 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/phpunit/issues",
             "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.0"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://phpunit.de/donate.html",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "psr/container",
@@ -2146,7 +2260,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/cli-parser/issues",
             "source": "https://github.com/sebastianbergmann/cli-parser/tree/1.0.1"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "sebastian/code-unit",
@@ -2198,7 +2318,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/code-unit/issues",
             "source": "https://github.com/sebastianbergmann/code-unit/tree/1.0.8"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "sebastian/code-unit-reverse-lookup",
@@ -2249,7 +2375,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/issues",
             "source": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/tree/2.0.3"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "sebastian/comparator",
@@ -2319,7 +2451,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/comparator/issues",
             "source": "https://github.com/sebastianbergmann/comparator/tree/4.0.6"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "sebastian/complexity",
@@ -2372,7 +2510,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/complexity/issues",
             "source": "https://github.com/sebastianbergmann/complexity/tree/2.0.2"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "sebastian/diff",
@@ -2434,7 +2578,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/diff/issues",
             "source": "https://github.com/sebastianbergmann/diff/tree/4.0.4"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "sebastian/environment",
@@ -2493,7 +2643,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/environment/issues",
             "source": "https://github.com/sebastianbergmann/environment/tree/5.1.3"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "sebastian/exporter",
@@ -2566,7 +2722,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/exporter/issues",
             "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.3"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "sebastian/global-state",
@@ -2626,7 +2788,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/global-state/issues",
             "source": "https://github.com/sebastianbergmann/global-state/tree/5.0.2"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "sebastian/lines-of-code",
@@ -2679,7 +2847,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/lines-of-code/issues",
             "source": "https://github.com/sebastianbergmann/lines-of-code/tree/1.0.3"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "sebastian/object-enumerator",
@@ -2732,7 +2906,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/object-enumerator/issues",
             "source": "https://github.com/sebastianbergmann/object-enumerator/tree/4.0.4"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "sebastian/object-reflector",
@@ -2783,7 +2963,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/object-reflector/issues",
             "source": "https://github.com/sebastianbergmann/object-reflector/tree/2.0.4"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "sebastian/recursion-context",
@@ -2842,7 +3028,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
             "source": "https://github.com/sebastianbergmann/recursion-context/tree/4.0.4"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "sebastian/resource-operations",
@@ -2893,7 +3085,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/resource-operations/issues",
             "source": "https://github.com/sebastianbergmann/resource-operations/tree/3.0.3"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "sebastian/type",
@@ -2945,7 +3143,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/type/issues",
             "source": "https://github.com/sebastianbergmann/type/tree/2.3.1"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "sebastian/version",
@@ -2994,7 +3198,13 @@
         "support": {
             "issues": "https://github.com/sebastianbergmann/version/issues",
             "source": "https://github.com/sebastianbergmann/version/tree/3.0.2"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/sebastianbergmann",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "slim/psr7",
@@ -3183,7 +3393,17 @@
             "slack": "https://slimphp.slack.com/",
             "source": "https://github.com/slimphp/Slim",
             "wiki": "https://github.com/slimphp/Slim/wiki"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://opencollective.com/slimphp",
+                "type": "open_collective"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/slim/slim",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "slim/twig-view",
@@ -3316,7 +3536,21 @@
         ],
         "support": {
             "source": "https://github.com/symfony/polyfill-ctype/tree/v1.22.0"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "symfony/polyfill-mbstring",
@@ -3384,7 +3618,21 @@
         ],
         "support": {
             "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.22.0"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "symfony/polyfill-php80",
@@ -3455,7 +3703,21 @@
         ],
         "support": {
             "source": "https://github.com/symfony/polyfill-php80/tree/v1.22.0"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "theseer/tokenizer",
@@ -3501,7 +3763,13 @@
         "support": {
             "issues": "https://github.com/theseer/tokenizer/issues",
             "source": "https://github.com/theseer/tokenizer/tree/master"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/theseer",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "twig/twig",
@@ -3569,7 +3837,17 @@
         "support": {
             "issues": "https://github.com/twigphp/Twig/issues",
             "source": "https://github.com/twigphp/Twig/tree/v3.2.1"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/twig/twig",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "vlucas/phpdotenv",
@@ -3641,7 +3919,17 @@
         "support": {
             "issues": "https://github.com/vlucas/phpdotenv/issues",
             "source": "https://github.com/vlucas/phpdotenv/tree/v5.2.0"
-        }
+        },
+        "funding": [
+            {
+                "url": "https://github.com/GrahamCampbell",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "webmozart/assert",
