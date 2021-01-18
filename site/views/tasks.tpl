@@ -64,7 +64,7 @@
                             <div class="form-group">
                                 <label for="inputAddress2">Description</label>
                                 <input name="description" type="text" class="form-control" id="inputAddress2"
-                                       placeholder="" / required>
+                                    placeholder="" required/>
                             </div>
                             <div class="row">
                                 <div class="form-group col-md-6" >
@@ -85,7 +85,7 @@
                                 <button type="button" class="closeTask btn btn-secondary" data-dismiss="modal">
                                     Close
                                 </button>
-                                <button type="submit" id = "submit-task" class="submitTask data-dismiss="modal" btn btn-primary" data-dismiss="modal">Submit</button>
+                                <button type="submit" id = "submit-task" class="submitTask btn btn-primary" data-dismiss="modal" >Submit</button>
                             </div>
                         </form>
                     </div>
