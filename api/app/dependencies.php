@@ -2,10 +2,8 @@
 
 use Amir_nadjib\Todo_list\Repository\TodoInterfaceRepository;
 use Amir_nadjib\Todo_list\Repository\TodoRepository;
-use Amir_nadjib\Todo_list\Repository\ApiTodoRepository;
 
 use DI\ContainerBuilder;
-use Slim\Views\Twig;
 use function DI\get;
 
 return function () : \DI\Container {
@@ -22,9 +20,6 @@ return function () : \DI\Container {
 
             $dsn = "mysql:host=$host;port=$port;dbname=$name;charset=utf8;";
             return new PDO($dsn, $user, $pass, [ PDO::ATTR_PERSISTENT => false ]);
-        },
-        Twig::class => function (): Twig {
-            return Twig::create(__DIR__ . '/../views', [ 'cache' => false ]);
         },
 
         TodoInterfaceRepository::class => get(TodoRepository::class)

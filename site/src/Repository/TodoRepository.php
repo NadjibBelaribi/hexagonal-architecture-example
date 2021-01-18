@@ -89,7 +89,7 @@ class TodoRepository implements TodoInterfaceRepository
 		on users.id = todos.assigned_to where todos.id = :tid');
       $task->bindParam(':tid', $id, PDO::PARAM_INT);
       $task->execute() ;
-        return $task->fetchAll(PDO::FETCH_ASSOC);
+        return $task->fetch();
   }
     public function filterByTask (string $hint):array{
 

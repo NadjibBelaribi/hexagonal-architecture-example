@@ -21,8 +21,7 @@ class ListingAllTasksController
     }
 
     public function __invoke(RequestInterface $request, ResponseInterface $response): ResponseInterface {
-        // TODO: Implement __invoke() method.
-        try {
+         try {
             $tasksTitles = $this->service->getTasks() ;
              $response->getBody()->write(json_encode($tasksTitles));
              return $response ;

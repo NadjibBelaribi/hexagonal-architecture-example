@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitfe6c0b8898ea265ccb43acaa3ba84371
+class ComposerStaticInit8077f7d1807d47f4fb461586c562be5e
 {
     public static $files = array (
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
@@ -12,11 +12,11 @@ class ComposerStaticInitfe6c0b8898ea265ccb43acaa3ba84371
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
     );
@@ -30,17 +30,11 @@ class ComposerStaticInitfe6c0b8898ea265ccb43acaa3ba84371
         array (
             'Webmozart\\Assert\\' => 17,
         ),
-        'T' => 
-        array (
-            'Twig\\' => 5,
-            'Tests\\Amir_nadjib\\Todo_list\\' => 28,
-        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
-            'Slim\\Views\\' => 11,
             'Slim\\Psr7\\' => 10,
             'Slim\\' => 5,
         ),
@@ -104,14 +98,6 @@ class ComposerStaticInitfe6c0b8898ea265ccb43acaa3ba84371
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
-        'Twig\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/twig/twig/src',
-        ),
-        'Tests\\Amir_nadjib\\Todo_list\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/tests',
-        ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
@@ -123,10 +109,6 @@ class ComposerStaticInitfe6c0b8898ea265ccb43acaa3ba84371
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
-        ),
-        'Slim\\Views\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/slim/twig-view/src',
         ),
         'Slim\\Psr7\\' => 
         array (
@@ -864,9 +846,9 @@ class ComposerStaticInitfe6c0b8898ea265ccb43acaa3ba84371
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitfe6c0b8898ea265ccb43acaa3ba84371::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitfe6c0b8898ea265ccb43acaa3ba84371::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitfe6c0b8898ea265ccb43acaa3ba84371::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit8077f7d1807d47f4fb461586c562be5e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit8077f7d1807d47f4fb461586c562be5e::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit8077f7d1807d47f4fb461586c562be5e::$classMap;
 
         }, null, ClassLoader::class);
     }

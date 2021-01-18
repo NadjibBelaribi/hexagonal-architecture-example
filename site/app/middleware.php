@@ -4,10 +4,8 @@ use Slim\Views\Twig;
 use Psr\Http\Message\ServerRequestInterface;
 use Slim\Psr7\Response;
 use Slim\Exception\HttpNotFoundException;
-use Slim\Views\TwigMiddleware;
-use Amir_nadjib\Todo_list\Features\NotFound\NotFoundController ;
-use \Slim\Routing\Route ;
-return function (App $app): void {
+ use Amir_nadjib\Todo_list\Features\NotFound\NotFoundController ;
+ return function (App $app): void {
     $errorMiddleware = $app->addErrorMiddleware(true,true,true);
 
     $customErrorHandler = function (
