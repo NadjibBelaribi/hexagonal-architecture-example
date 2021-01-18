@@ -17,7 +17,7 @@
     {% endblock %}
 </head>
 
-<body style="background-image: url(img/bg.jpg)">
+<body>
 {% include 'navbar.tpl' %}
 
 <div class="d-flex row" id="wrapper">
@@ -38,7 +38,7 @@
             </form>
         </div>
         <hr>
-        <button type="button" style="justify-content: center" class="btnAddTask important btn btn-outline-primary"
+        <button type="button" class="btnAddTask important btn btn-outline-primary"
                 data-toggle="modal" data-target="#exampleModalCenter">
             Add New Task </button>
         <hr>
@@ -85,7 +85,7 @@
                                 <button type="button" class="closeTask btn btn-secondary" data-dismiss="modal">
                                     Close
                                 </button>
-                                <button type="submit" id = "submit-task" class="submitTask data-dismiss="modal" btn btn-primary">Submit</button>
+                                <button type="submit" id = "submit-task" class="submitTask data-dismiss="modal" btn btn-primary" data-dismiss="modal">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -131,7 +131,7 @@
                         <ul id="listComments">
                             {% for comment in comments %}
 
-                            <div class="alert alert-primary" role="alert" style="border-radius: 30px ;">
+                            <div class="listCommentsClass alert alert-primary" role="alert">
                                 <div class="userClass important row">
                                     <div class="col-lg-6">
                                         <p class="userNameClass"> {{ comment.email }}</p>

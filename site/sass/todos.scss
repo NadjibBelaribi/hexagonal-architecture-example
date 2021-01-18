@@ -42,7 +42,7 @@ $padding: 20px;
 
 
 body {
-  background: url(img/bg.jpg) no-repeat center center fixed;
+  background: url(../img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -57,6 +57,11 @@ body {
 .row{
   margin-right: 0px;
 }
+
+.navbar-brand {
+  color:silver;
+}
+
 .navbar {
   background: #034f84;
   height:8%;
@@ -116,8 +121,13 @@ a:hover {
   }
 }
 
+.listCommentsClass{
+  border-radius: 30px;
+}
+
 .btnAddTask{
   width: 100%;
+  justify-content: center;
   background:#92a8d1;
   &:hover{
     background: white;
