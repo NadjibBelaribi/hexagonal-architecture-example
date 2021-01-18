@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Amir_Nadjib\Todo_list\Models;
+namespace AN\Models;
 
 
 class Comment

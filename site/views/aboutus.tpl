@@ -16,7 +16,7 @@
     {% endblock %}
 </head>
 
-<body>
+<body style="background-image: url(img/bg.jpg)">
 {% include 'navbar.tpl' %}
 <section id="team" class="pb-5">
         <div class="container">

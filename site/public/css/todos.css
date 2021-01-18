@@ -11908,7 +11908,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 /* line 44, ../../sass/todos.scss */
 body {
-  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background: url(img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -11926,20 +11926,20 @@ body {
   margin-right: 0px;
 }
 
-/* line 61, ../../sass/todos.scss */
+/* line 60, ../../sass/todos.scss */
 .navbar {
   background: #034f84;
   height: 8%;
 }
 
-/* line 66, ../../sass/todos.scss */
+/* line 64, ../../sass/todos.scss */
 a,
 a:focus,
 a:hover {
   color: #fff;
 }
 
-/* line 72, ../../sass/todos.scss */
+/* line 70, ../../sass/todos.scss */
 .nav-linkkk {
   display: block;
   padding-top: 0.5rem;
@@ -11949,72 +11949,66 @@ a:hover {
   color: silver;
 }
 
-/* line 81, ../../sass/todos.scss */
+/* line 79, ../../sass/todos.scss */
 #wrapper {
   padding: 0px 0px 0px 20px;
   height: 92%;
 }
 
-/* line 88, ../../sass/todos.scss */
+/* line 86, ../../sass/todos.scss */
 .important, .userNameClass {
   color: #777777;
   font-weight: bold;
 }
 
-/* line 93, ../../sass/todos.scss */
+/* line 91, ../../sass/todos.scss */
 .userNameClass {
   font-size: medium;
 }
 
-/* line 97, ../../sass/todos.scss */
+/* line 95, ../../sass/todos.scss */
 .btn-primary {
   background: #deeaee;
 }
-/* line 100, ../../sass/todos.scss */
+/* line 98, ../../sass/todos.scss */
 .btn-primary:hover {
   background: #9bbfcb;
 }
 
-/* line 107, ../../sass/todos.scss */
+/* line 105, ../../sass/todos.scss */
 #sidebar-wrapper {
   border-right: 1px solid #dee2e6;
   height: 100%;
 }
 
-/* line 112, ../../sass/todos.scss */
+/* line 110, ../../sass/todos.scss */
 .btnPannel {
   margin-top: 10px;
   width: 100%;
   background: #92a8d1;
 }
-/* line 116, ../../sass/todos.scss */
+/* line 114, ../../sass/todos.scss */
 .btnPannel:hover {
   background: white;
 }
 
-/* line 121, ../../sass/todos.scss */
-.listCommentsClass {
-  border-radius: 30px;
-}
-
-/* line 125, ../../sass/todos.scss */
+/* line 119, ../../sass/todos.scss */
 .btnAddTask {
   width: 100%;
-  justify-content: center;
   background: #92a8d1;
 }
-/* line 129, ../../sass/todos.scss */
+/* line 122, ../../sass/todos.scss */
 .btnAddTask:hover {
   background: white;
 }
 
-/* line 134, ../../sass/todos.scss */
+/* line 127, ../../sass/todos.scss */
 #taskFilterInput, #userFilterInput {
   margin-top: 10px;
   width: 100%;
 }
 
-/* line 139, ../../sass/todos.scss */
+/* line 132, ../../sass/todos.scss */
 #listTasks {
   display: block;
   overflow: auto;
@@ -12024,12 +12018,12 @@ a:hover {
   scroll-behavior: smooth;
 }
 
-/* line 148, ../../sass/todos.scss */
+/* line 141, ../../sass/todos.scss */
 .list-group-item {
   background: #deeaee;
 }
 
-/* line 152, ../../sass/todos.scss */
+/* line 145, ../../sass/todos.scss */
 #descriptionTask {
   display: block;
   overflow: auto;
@@ -12039,28 +12033,28 @@ a:hover {
   scroll-behavior: smooth;
 }
 
-/* line 162, ../../sass/todos.scss */
+/* line 155, ../../sass/todos.scss */
 #page-content-wrapper {
   height: 100%;
 }
 
-/* line 166, ../../sass/todos.scss */
+/* line 159, ../../sass/todos.scss */
 p {
   color: black;
   width: 100%;
 }
 
-/* line 171, ../../sass/todos.scss */
+/* line 164, ../../sass/todos.scss */
 .card-header {
   background: #deeaee;
 }
 
-/* line 174, ../../sass/todos.scss */
+/* line 167, ../../sass/todos.scss */
 .card-header {
   background: #deeaee;
 }
 
-/* line 179, ../../sass/todos.scss */
+/* line 172, ../../sass/todos.scss */
 #listComments {
   display: block;
   width: 100%;
@@ -12069,56 +12063,56 @@ p {
   padding: 20px;
 }
 
-/* line 187, ../../sass/todos.scss */
+/* line 180, ../../sass/todos.scss */
 .alert-primary {
   background: #deeaee;
 }
 
-/* line 191, ../../sass/todos.scss */
+/* line 184, ../../sass/todos.scss */
 .userClass {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 196, ../../sass/todos.scss */
+/* line 189, ../../sass/todos.scss */
 .userDateClass {
   font-style: italic;
   font-size: medium;
   color: #777777;
 }
 
-/* line 202, ../../sass/todos.scss */
+/* line 195, ../../sass/todos.scss */
 #commentForm {
   padding: 0px 10px;
   margin-top: auto;
 }
 
 @media (max-width: 576px) {
-  /* line 210, ../../sass/todos.scss */
+  /* line 203, ../../sass/todos.scss */
   .card, .respoTaskDetails, .respoTaskComments {
     max-height: 600px;
     margin: 10px 0px 10px 0px;
   }
 
-  /* line 215, ../../sass/todos.scss */
+  /* line 208, ../../sass/todos.scss */
   #listTasks {
     max-height: 500px;
     min-width: 100px;
   }
 
-  /* line 220, ../../sass/todos.scss */
+  /* line 213, ../../sass/todos.scss */
   #sidebar-wrapper {
     border-bottom: 1px solid #dee2e6;
     border-right: none;
     max-height: 700px;
   }
 
-  /* line 226, ../../sass/todos.scss */
+  /* line 219, ../../sass/todos.scss */
   .modal-content {
     margin-right: 10px;
   }
 
-  /* line 230, ../../sass/todos.scss */
+  /* line 223, ../../sass/todos.scss */
   .nav-linkkk {
     padding-top: 0rem;
     padding-right: 0rem;
@@ -12126,29 +12120,29 @@ p {
     padding-left: 0rem;
   }
 
-  /* line 237, ../../sass/todos.scss */
+  /* line 230, ../../sass/todos.scss */
   #descriptionTask {
     max-height: 250px;
   }
 }
 @media (min-width: 576px) and (max-width: 1070px) {
-  /* line 243, ../../sass/todos.scss */
+  /* line 236, ../../sass/todos.scss */
   .card, .respoTaskDetails, .respoTaskComments {
     max-height: 700px;
     min-width: 500px;
   }
 
-  /* line 247, ../../sass/todos.scss */
+  /* line 240, ../../sass/todos.scss */
   .respoTaskComments {
     margin-top: 20px;
   }
 
-  /* line 250, ../../sass/todos.scss */
+  /* line 243, ../../sass/todos.scss */
   #sidebar-wrapper {
     min-width: 100px;
   }
 
-  /* line 254, ../../sass/todos.scss */
+  /* line 247, ../../sass/todos.scss */
   #descriptionTask {
     max-height: 350px;
   }

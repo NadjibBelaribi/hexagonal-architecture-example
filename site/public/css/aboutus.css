@@ -11909,7 +11909,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 /* line 44, ../../sass/aboutus.scss */
 body {
-  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background: url(img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -11923,24 +11923,19 @@ body {
 }
 
 /* line 58, ../../sass/aboutus.scss */
-.navbar-brand {
-  color: silver;
-}
-
-/* line 62, ../../sass/aboutus.scss */
 .navbar {
   background: #034f84;
   height: 8%;
 }
 
-/* line 67, ../../sass/aboutus.scss */
+/* line 63, ../../sass/aboutus.scss */
 a,
 a:focus,
 a:hover {
   color: #fff;
 }
 
-/* line 73, ../../sass/aboutus.scss */
+/* line 69, ../../sass/aboutus.scss */
 .nav-linkkk {
   display: block;
   padding-top: 0.5rem;
@@ -11950,19 +11945,19 @@ a:hover {
   color: silver;
 }
 
-/* line 82, ../../sass/aboutus.scss */
+/* line 78, ../../sass/aboutus.scss */
 .important {
   color: #777777;
   font-weight: bold;
 }
 
 /* FontAwesome for working BootSnippet :> */
-/* line 90, ../../sass/aboutus.scss */
+/* line 86, ../../sass/aboutus.scss */
 #team {
   background: #eee !important;
 }
 
-/* line 94, ../../sass/aboutus.scss */
+/* line 90, ../../sass/aboutus.scss */
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: #108d6f;
@@ -11971,19 +11966,19 @@ a:hover {
   outline: none;
 }
 
-/* line 102, ../../sass/aboutus.scss */
+/* line 98, ../../sass/aboutus.scss */
 .btn-primary {
   color: #fff;
   background-color: #007b5e;
   border-color: #007b5e;
 }
 
-/* line 108, ../../sass/aboutus.scss */
+/* line 104, ../../sass/aboutus.scss */
 section {
   padding: 60px 0;
 }
 
-/* line 112, ../../sass/aboutus.scss */
+/* line 108, ../../sass/aboutus.scss */
 section .section-title {
   text-align: center;
   color: #007b5e;
@@ -11991,13 +11986,13 @@ section .section-title {
   text-transform: uppercase;
 }
 
-/* line 119, ../../sass/aboutus.scss */
+/* line 115, ../../sass/aboutus.scss */
 #team .card {
   border: none;
   background: #ffffff;
 }
 
-/* line 124, ../../sass/aboutus.scss */
+/* line 120, ../../sass/aboutus.scss */
 .image-flip:hover .backside,
 .image-flip.hover .backside {
   -webkit-transform: rotateY(0deg);
@@ -12008,7 +12003,7 @@ section .section-title {
   border-radius: .25rem;
 }
 
-/* line 134, ../../sass/aboutus.scss */
+/* line 130, ../../sass/aboutus.scss */
 .image-flip:hover .frontside,
 .image-flip.hover .frontside {
   -webkit-transform: rotateY(180deg);
@@ -12017,12 +12012,13 @@ section .section-title {
   transform: rotateY(180deg);
 }
 
-/* line 142, ../../sass/aboutus.scss */
+/* line 138, ../../sass/aboutus.scss */
 .mainflip {
   -webkit-transition: 1s;
   -webkit-transform-style: preserve-3d;
   -ms-transition: 1s;
   -moz-transition: 1s;
+  -moz-transform: perspective(1000px);
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   transition: 1s;
@@ -12030,14 +12026,16 @@ section .section-title {
   position: relative;
 }
 
-/* line 154, ../../sass/aboutus.scss */
+/* line 151, ../../sass/aboutus.scss */
 .frontside {
   position: relative;
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
   z-index: 2;
   margin-bottom: 30px;
 }
 
-/* line 160, ../../sass/aboutus.scss */
+/* line 159, ../../sass/aboutus.scss */
 .backside {
   position: absolute;
   top: 0;
@@ -12053,7 +12051,7 @@ section .section-title {
   box-shadow: 5px 7px 9px -4px #9e9e9e;
 }
 
-/* line 175, ../../sass/aboutus.scss */
+/* line 174, ../../sass/aboutus.scss */
 .frontside,
 .backside {
   -webkit-backface-visibility: hidden;
@@ -12072,25 +12070,25 @@ section .section-title {
   transform-style: preserve-3d;
 }
 
-/* line 193, ../../sass/aboutus.scss */
+/* line 192, ../../sass/aboutus.scss */
 .frontside .card,
 .backside .card {
   min-height: 312px;
 }
 
-/* line 198, ../../sass/aboutus.scss */
+/* line 197, ../../sass/aboutus.scss */
 .backside .card a {
   font-size: 18px;
   color: #007b5e !important;
 }
 
-/* line 203, ../../sass/aboutus.scss */
+/* line 202, ../../sass/aboutus.scss */
 .frontside .card .card-title,
 .backside .card .card-title {
   color: #007b5e !important;
 }
 
-/* line 208, ../../sass/aboutus.scss */
+/* line 207, ../../sass/aboutus.scss */
 .frontside .card .card-body img {
   width: 120px;
   height: 120px;

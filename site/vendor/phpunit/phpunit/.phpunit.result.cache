@@ -1,1 +1,0 @@
-C:37:"PHPUnit\Runner\DefaultTestResultCache":322:{a:2:{s:7:"defects";a:1:{s:7:"Warning";i:6;}s:5:"times";a:3:{s:7:"Warning";d:0.002;s:107:"Tests\Hakan\Hello\Features\CreateAccount\TaskDetailRequestTest::testShouldThrowExceptionWhenParamsNotFilled";d:0.001;s:101:"Tests\Hakan\Hello\Features\CreateAccount\TaskDetailRequestTest::testShouldCreateRequestWithProperties";d:0;}}}

@@ -26,6 +26,7 @@ class FilterByUserController
     }
 
     public function __invoke (RequestInterface $request, ResponseInterface $response,array $args): ResponseInterface{
+        // TODO: try catch
 
         $request = new FilterByUserRequest($_GET['user']) ;
         $response->getBody()->write(json_encode($this->service->getTasks($request)));

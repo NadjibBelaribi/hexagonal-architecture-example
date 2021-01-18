@@ -31,6 +31,17 @@ class Task
     }
 
 
+    public function taskExists(string $title): bool {
+        $query = 'SELECT 1 FROM todos WHERE title = ?';
+        $res = $this->db->prepare($query);
+        $res->execute([$title]);
+        $data = $res->fetch();
+
+        if (!$data) {
+            return false;
+        }
+        return true;
+    }
     /**
      * @return mixed
      */
@@ -126,6 +137,7 @@ class Task
     {
         $this->due_date = $due_date;
     }
+
 
 
 }
