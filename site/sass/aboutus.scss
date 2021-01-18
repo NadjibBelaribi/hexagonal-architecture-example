@@ -42,7 +42,7 @@ $padding: 20px;
 
 
 body {
-  background: url(img/bg.jpg) no-repeat center center fixed;
+  background: url(../img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -53,6 +53,10 @@ body {
   height: 100vh;
   overflow-x: hidden;
   box-sizing: border-box;
+}
+
+.navbar-brand {
+    color:silver;
 }
 
 .navbar {
@@ -140,7 +144,6 @@ section .section-title {
     -webkit-transform-style: preserve-3d;
     -ms-transition: 1s;
     -moz-transition: 1s;
-    -moz-transform: perspective(1000px);
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     transition: 1s;
@@ -150,8 +153,6 @@ section .section-title {
 
 .frontside {
     position: relative;
-    -webkit-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
     z-index: 2;
     margin-bottom: 30px;
 }

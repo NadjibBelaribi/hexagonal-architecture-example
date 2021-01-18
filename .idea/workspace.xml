@@ -23,23 +23,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3412089c-fde2-4fb9-b17d-43b9522fc2e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/site/public/css/notfound.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/sass/notfound.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/.docker/structure.sql" beforeDir="false" afterPath="$PROJECT_DIR$/api/.docker/structure.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/.env" beforeDir="false" afterPath="$PROJECT_DIR$/api/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/middleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/middleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/.env" beforeDir="false" afterPath="$PROJECT_DIR$/site/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/site/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/site/javascript/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/Features/FilterByTask/FilterByTaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/Features/FilterByTask/FilterByTaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/Features/FilterByUser/FilterByUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/Features/FilterByUser/FilterByUserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/Features/FilterByUser/FilterByUserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/Features/FilterByUser/FilterByUserService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/Features/TaskDetail/TaskDetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/Features/TaskDetail/TaskDetailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/Models/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/Models/Task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/tests/TaskDetail/TaskDetailControllerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/tests/TaskDetail/TaskDetailServiceTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Repository/TodoInterfaceRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Repository/TodoInterfaceRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Repository/TodoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Repository/TodoRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/public/css/aboutus.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/public/css/aboutus.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/public/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/public/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/public/css/todos.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/public/css/todos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/sass/aboutus.scss" beforeDir="false" afterPath="$PROJECT_DIR$/site/sass/aboutus.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/sass/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/site/sass/login.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/sass/todos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/site/sass/todos.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/views/aboutus.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/aboutus.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/views/navbar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/navbar.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/views/notfound.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/notfound.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/views/tasks.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/tasks.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +223,7 @@
       <workItem from="1610921689101" duration="6901000" />
       <workItem from="1610930380953" duration="4641000" />
       <workItem from="1610995179059" duration="2730000" />
-      <workItem from="1611003900872" duration="2250000" />
+      <workItem from="1611003900872" duration="2405000" />
     </task>
     <servers />
   </component>
