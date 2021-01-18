@@ -28,21 +28,26 @@ class TaskDetailController
     }
 
     public function __invoke (RequestInterface $request, ResponseInterface $response,array $args): ResponseInterface{
-        // TODO: try catch
 
-        $request = new TaskDetailRequest($args['id']) ;
-        $assigned = $this->service->getAssigned($args['id'] );
-        $_SESSION['taskId'] = $args['id'] ;
-         return $this->twig->render($response, 'tasks.tpl', [
-            'todos' => $this->service->getTasks() ,
-            'comments' => $this->service->getComments($request),
-            'users' => $this->service->getUsers(),
-            'curTask' => $this->service->getTask($request),
-            'currentUser'=>ucfirst(strtok($_SESSION['userEmail'],'@')),
-            'creator' => $this->service->getTask($request)['email'],
-            'assigned'=> $assigned[0],
-            'error' => 'Could not render tasks page detail'
-        ]);
+        try {
+            $request = new TaskDetailRequest($args['id']) ;
+            $assigned = $this->service->getAssigned($args['id'] );
+            $_SESSION['taskId'] = $args['id'] ;
+            return $this->twig->render($response, 'tasks.tpl', [
+                'todos' => $this->service->getTasks() ,
+                'comments' => $this->service->getComments($request),
+                'users' => $this->service->getUsers(),
+                'curTask' => $this->service->getTask($request),
+                'currentUser'=>ucfirst(strtok($_SESSION['userEmail'],'@')),
+                'creator' => $this->service->getTask($request)['email'],
+                'assigned'=> $assigned[0],
+                'error' => 'Could not render tasks page detail'
+            ]);
+
+        }catch (MissingInputParametersException $exception)
+        {
+
+        }
 
     }
 }

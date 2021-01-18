@@ -20,5 +20,4 @@ require __DIR__ . '/../app/routes.php';
 $middleware = require __DIR__ . '/../app/middleware.php';
 $middleware($app);
 
-
 $app->run();

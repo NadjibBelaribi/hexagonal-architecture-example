@@ -3,7 +3,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light border-bottom">
-    <a id="test" class="navbar-brand overflow-hidden" href="#">
+    <a id="test" class="navbar-brand overflow-hidden">
     </a>
     <a class="navbar-brand overflow-hidden important" style="color:silver;" href="#">
         <img src="img/logo.png" width="50px" height="50px" />
