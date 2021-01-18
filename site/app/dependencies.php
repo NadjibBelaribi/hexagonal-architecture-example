@@ -6,7 +6,6 @@ use Amir_nadjib\Todo_list\Repository\TodoRepository;
 use DI\ContainerBuilder;
 use Http\Discovery\Psr18ClientDiscovery;
 use Http\Discovery\Psr17FactoryDiscovery;
-use GuzzleHttp\Client ;
 use Slim\Views\Twig;
 use function DI\get;
 
@@ -30,9 +29,7 @@ return function () : \DI\Container {
         },
 
         TodoInterfaceRepository::class => get(TodoRepository::class),
-        // Notez commment on a très facilement modifié la source de l'information ici
-        // Le reste du programme n'a pas changé, seul la répo est remplacé par une autre
-        // implémentation concrète
+
         ApiTodoRepository::class => function (): ApiTodoRepository {
                 return new ApiTodoRepository(
                     Psr18ClientDiscovery::find(),

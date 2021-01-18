@@ -37,7 +37,7 @@ class TaskDetailService
         return $this->repository->getAllTasks() ;
     }
 
-    public function getAssigned($tid): array{
+    public function getAssigned($tid){
 
         return $this->repository->getUserAssigned($tid);
     }

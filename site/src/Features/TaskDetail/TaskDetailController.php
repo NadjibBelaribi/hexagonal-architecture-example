@@ -33,15 +33,15 @@ class TaskDetailController
         $request = new TaskDetailRequest($args['id']) ;
         $assigned = $this->service->getAssigned($args['id'] );
         $_SESSION['taskId'] = $args['id'] ;
-        return $this->twig->render($response, 'tasks.tpl', [
+         return $this->twig->render($response, 'tasks.tpl', [
             'todos' => $this->service->getTasks() ,
             'comments' => $this->service->getComments($request),
             'users' => $this->service->getUsers(),
             'curTask' => $this->service->getTask($request),
-            //'currentUser'=>ucfirst(strtok($_SESSION['user'],'@')),
+            'currentUser'=>ucfirst(strtok($_SESSION['userEmail'],'@')),
             'creator' => $this->service->getTask($request)['email'],
-            'assigned'=> $assigned['email'],
-            'error' => 'Could not render tasks page'
+            'assigned'=> $assigned[0],
+            'error' => 'Could not render tasks page detail'
         ]);
 
     }
