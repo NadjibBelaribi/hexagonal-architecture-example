@@ -24,11 +24,9 @@ class ListingAllTasksController
         // TODO: Implement __invoke() method.
         try {
             $tasksTitles = $this->service->getTasks() ;
-            var_dump($tasksTitles);
-            $response->getBody()->write(json_encode($tasksTitles));
-             return $response->withStatus(200,
-                 sprintf('all tasks %s',json_encode($tasksTitles)));
-        }
+             $response->getBody()->write(json_encode($tasksTitles));
+             return $response ;
+         }
         catch (NoTasksFoundException $exception) {
             return $response->withStatus(409,'no tasks found') ;
         }

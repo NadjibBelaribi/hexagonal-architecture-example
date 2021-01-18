@@ -1,58 +1,48 @@
 <?php
-
+declare(strict_types=1);
 
 namespace Amir_nadjib\Todo_list\Repository;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\Exception\GuzzleException;
-use Psr\Http\Client\ClientExceptionInterface;
-use GuzzleHttp\Psr7\Request ;
+use Psr\Http\Client\ClientInterface;
+use Psr\Http\Message\RequestFactoryInterface;
+use Psr\Http\Message\StreamFactoryInterface;
 class ApiTodoRepository
 {
 
-     private Client $httpClient;
-     private string $apiEndpoint;
+    private ClientInterface $httpClient;
+    private RequestFactoryInterface $requestFactory;
+    private StreamFactoryInterface $streamFactory;
+    private string $apiEndpoint;
 
-    public function __construct(Client $httpClient, string $apiEndpoint)
+    public function __construct(ClientInterface $httpClient, RequestFactoryInterface $requestFactory, StreamFactoryInterface $streamFactory, string $apiEndpoint)
     {
         $this->httpClient = $httpClient;
-         $this->apiEndpoint = $apiEndpoint;
+        $this->requestFactory = $requestFactory;
+        $this->streamFactory = $streamFactory;
+        $this->apiEndpoint = $apiEndpoint;
     }
 
-    public function getAllTasks()
+
+    public function getAllTasks(): array
     {
-        try {
-            $httpResponse = $this->httpClient->request('GET',$this->apiEndpoint . '/getTasks');
-            $jsonResponse =  json_decode($httpResponse->getBody()->getContents(), true);
-            echo "Api sent " ;
-            var_dump($jsonResponse);
-            return json_encode($jsonResponse) ;
-        } catch (GuzzleException $e) {
+        $apiRequest = $this->requestFactory->createRequest('GET', $this->apiEndpoint . '/getTasks');
+
+        $apiResponse = $this->httpClient->sendRequest($apiRequest);
+
+        if ($apiResponse->getStatusCode() !== 200) {
+            return [];
         }
 
-
-    }
-
-    /*
-    public function insert(CreateAccountRequest $request): ?int
-    {
-        $httpResponse = $this->httpClient->sendRequest(
-            $this->requestFactory->createRequest('POST', $this->apiEndpoint . '/users')
-                ->withBody($this->streamFactory->createStream(
-                // On suppose qu'on peut jsonencoder la réponse
-                    json_encode($request)
-                ))
-        );
-
-        if ($httpResponse->getStatusCode() !== 201) {
-            return null; // non créée
+        $jsonResponse = json_decode($apiResponse->getBody()->__toString());
+        $tasks = [];
+        foreach ($jsonResponse as $task) {
+            $tasks[] = array(
+                'id' => $task->id,
+                 'title' => $task->title
+            );
         }
 
-        $jsonResponse = json_decode($httpResponse->getBody()->__toString());
-
-        // On suppose qu'on a cette propriété dans le payload de retour
-        return $jsonResponse->newItemId;
+        return $tasks;
     }
-*/
 
 }

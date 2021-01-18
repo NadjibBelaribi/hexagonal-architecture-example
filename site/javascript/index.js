@@ -21,7 +21,6 @@ $( document ).ready(function() {
                 },
                 success: function(data) {
                     data = JSON.parse(data) ;
-                    alert(data) ;
                     document.getElementById('emailHelp').innerText = "";
                     if (data == "failure") {
                         document.getElementById('emailHelp').innerText = "Error identifiers , please try again !";
@@ -39,6 +38,7 @@ $( document ).ready(function() {
     if(signOut != null)
     {
         signOut.onclick = function (){
+            alert("Are U sure frere") ;
             $.ajax({
                 type: "get",
                 url: '/signOut',

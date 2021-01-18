@@ -25,29 +25,28 @@ class TasksHomeController
     }
 
 
-    public function __invoke (RequestInterface $request, ResponseInterface $response): ResponseInterface{
-        // TODO: Implement __invoke() method.
+    public function __invoke (RequestInterface $request, ResponseInterface $response): ResponseInterface
+    {
 
+        if($_SESSION['userEmail'] == "")
+        {
+            var_dump("we need to redirect him vers 404");
+        }
         try {
 
-            $todos = ($this->service->getTasks()) ;
-            $users = ($this->service->getUsers()) ;
-           // var_dump($todos);
-            return $this->twig->render($response, 'tasks.tpl',[
-                 'todos' => $todos,
-                 'users' => $users,
-                // 'currentUser'=>ucfirst(strtok($_SESSION['user'],'@')),
+            $todos = ($this->service->getTasks());
+            $users = ($this->service->getUsers());
+             return $this->twig->render($response, 'tasks.tpl', [
+                'todos' => $todos,
+                'users' => $users,
+                'currentUser'=>ucfirst(strtok($_SESSION['userEmail'],'@')),
                 'error' => 'Could not render tasks page'
             ]);
-        }
-        catch (NoUsersFoundException $exception) {
+        } catch (NoUsersFoundException $exception) {
 
-        }
-        catch (NoTasksFoundException $exception){
+        } catch (NoTasksFoundException $exception) {
 
         }
 
     }
-
-
 }

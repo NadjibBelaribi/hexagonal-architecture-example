@@ -34,15 +34,14 @@ return function () : \DI\Container {
         // Le reste du programme n'a pas changé, seul la répo est remplacé par une autre
         // implémentation concrète
         ApiTodoRepository::class => function (): ApiTodoRepository {
-            return new ApiTodoRepository(
-            // classes dispo dans la librairie php-http/discovery
-            // permettent de scanner les dépendances et trouver automatiquement des classes http qui implémentent les PSR
-            // Tel que Guzzle par exemple. A noter, vous devez composer require guzzle. En effet, si la discovery ne trouve
-            // pas de classe compatible, alors elle va throw une exception
-                new GuzzleHttp\Client(),
-                'http://todos_api_amir_nadjib' // Url de base de l'api
-            );
-        }
+                return new ApiTodoRepository(
+                    Psr18ClientDiscovery::find(),
+                    Psr17FactoryDiscovery::findRequestFactory(),
+                    Psr17FactoryDiscovery::findStreamFactory(),
+                    'http://todoApi'
+                );
+
+            }
 
 
     ]);

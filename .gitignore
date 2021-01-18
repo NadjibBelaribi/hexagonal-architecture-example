@@ -1,4 +1,6 @@
-site/node_modules
-*/vendor
+*/node_modules/
+*/vendor/
 .idea
 .sass-cache
+.DS_Store
+.DS_Store

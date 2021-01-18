@@ -64,6 +64,10 @@ class ComposerStaticInitfe6c0b8898ea265ccb43acaa3ba84371
         array (
             'Invoker\\' => 8,
         ),
+        'H' => 
+        array (
+            'Http\\Discovery\\' => 15,
+        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
@@ -177,6 +181,10 @@ class ComposerStaticInitfe6c0b8898ea265ccb43acaa3ba84371
         'Invoker\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-di/invoker/src',
+        ),
+        'Http\\Discovery\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/discovery/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (

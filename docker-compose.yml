@@ -5,7 +5,7 @@
       build:
         context: api/
         dockerfile: .docker/Dockerfile
-      container_name: todos_api_amir_nadjib
+      container_name: todoApi
       ports:
         - 8005:80
       volumes:
@@ -16,7 +16,7 @@
         build:
           context: site/
           dockerfile: .docker/Dockerfile
-        container_name: todos_web_amir_nadjib
+        container_name: todoWeb
         ports:
           - 8003:80
         volumes:
@@ -25,7 +25,7 @@
           - api
     mysql:
       image: mysql:5.7
-      container_name: todos_sql_amir_nadjib
+      container_name: todoSql
       environment:
         MYSQL_ROOT_PASSWORD: root
         MYSQL_DATABASE: todos

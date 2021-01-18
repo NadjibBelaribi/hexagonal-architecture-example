@@ -29,6 +29,7 @@ class LoginController
             $request = new LoginRequest($_POST['email'],$_POST['password']);
             $responseData = $this->service->checkUser($request);
             $_SESSION['userId'] = $responseData->getUserData()['id'] ;
+            $_SESSION['userEmail'] = $_POST['email'] ;
             $destin = 'tasks/'.  $_SESSION['userId'];
             $response->getBody()->write(json_encode($destin)) ;
             return $response->withStatus(200,'User data');

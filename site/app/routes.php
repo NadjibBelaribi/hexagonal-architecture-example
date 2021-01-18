@@ -2,6 +2,7 @@
 
 use Amir_nadjib\Todo_list\Features\Home\HomeController;
 use Amir_nadjib\Todo_list\Features\Login\LoginController;
+use Amir_nadjib\Todo_list\Features\SignOut\SignOutController;
 use Amir_nadjib\Todo_list\Features\TasksHome\TasksHomeController;
 use Amir_nadjib\Todo_list\Features\TaskDetail\TaskDetailController;
 use Amir_nadjib\Todo_list\Features\AddTask\AddTaskController;
@@ -12,7 +13,7 @@ use Amir_nadjib\Todo_list\Features\FilterByUser\FilterByUserController;
  /* Login page */
 $app->get('/', HomeController::class);
 $app->post('/auth', LoginController::class);
-$app->get('/signOut', LoginController::class . ':signOut');
+$app->get('/signOut', SignOutController::class);
 
 /* about us */
 $app->get('/about', HomeController::class . ':about');
