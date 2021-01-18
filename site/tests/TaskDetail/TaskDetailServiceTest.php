@@ -58,7 +58,6 @@ use PHPUnit\Framework\TestCase;
          $service = new CreateAccountService($userRepository);
 
          $response = $service->handle($request);
-         $this->assertInstanceOf(CreateAccountResponse::class, $response);
-         $this->assertSame(12, $response->getUserId());
+          $this->assertSame(12, $response->getUserId());
      }
  }

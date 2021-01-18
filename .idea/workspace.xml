@@ -24,7 +24,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3412089c-fde2-4fb9-b17d-43b9522fc2e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Repository/TodoInterfaceRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Repository/TodoInterfaceRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Repository/TodoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Repository/TodoRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/public/img/bg.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
