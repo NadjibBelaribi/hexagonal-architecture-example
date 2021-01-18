@@ -153,7 +153,7 @@
 
                                 {% if curTask %}
                                 <div class="input-group-append">
-                                    <button type="submit" class="btn btn-primary mb-2"
+                                    <button type="submit" class="btn btn-primary mb-2 ml-2"
                                             id="addComment">Send</button>
                                 </div>
                                 {% endif %}
