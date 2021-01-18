@@ -49,16 +49,4 @@ class User
     }
 
 
-    public function userExists(string $username): bool {
-        $query = 'SELECT id FROM users WHERE email = ?';
-        $res = $this->db->prepare($query);
-        $res->execute([$username]);
-        $data = $res->fetch();
-
-        if (!$data) {
-            return false;
-        }
-
-        return true;
-    }
 }
