@@ -150,10 +150,14 @@
                                 <input id="commentInput" name="comment" type="text" class="form-control"
                                        placeholder="Add a comment" aria-label="Recipient's username"
                                        aria-describedby="basic-addon2">
+
+                                {% if curTask %}
                                 <div class="input-group-append">
                                     <button type="submit" class="btn btn-primary mb-2"
                                             id="addComment">Send</button>
                                 </div>
+                                {% endif %}
+
                             </div>
                         </form>
                     </div>

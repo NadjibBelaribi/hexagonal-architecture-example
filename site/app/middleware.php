@@ -5,7 +5,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use Slim\Psr7\Response;
 use Slim\Exception\HttpNotFoundException;
 use Slim\Views\TwigMiddleware;
-use Amir_nadjib\Todo_list\Controllers\NotFoundController;
+use Amir_nadjib\Todo_list\Features\NotFound\NotFoundController ;
 use \Slim\Routing\Route ;
 return function (App $app): void {
     $errorMiddleware = $app->addErrorMiddleware(true,true,true);
@@ -18,10 +18,9 @@ return function (App $app): void {
         $response = (new Response())->withStatus(404);
         $container = $app->getContainer();
 
-        $pdo = $container->get(PDO::class);
-        $twig = $container->get(Twig::class);
+         $twig = $container->get(Twig::class);
 
-        $NotFoundController = new NotFoundController($pdo,$twig);
+        $NotFoundController = new NotFoundController($twig);
         return $NotFoundController->get($request,$response);
     };
     

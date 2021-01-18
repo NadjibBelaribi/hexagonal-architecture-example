@@ -38,8 +38,7 @@ $( document ).ready(function() {
     if(signOut != null)
     {
         signOut.onclick = function (){
-            alert("Are U sure frere") ;
-            $.ajax({
+             $.ajax({
                 type: "get",
                 url: '/signOut',
                 success: function() {

@@ -11,10 +11,7 @@ use Amir_nadjib\Todo_list\Endpoints\UserAuthentification\UserAuthentificationCon
 /****************** API TESTS ************/
 
 
-$app->get('/', function (){
 
-    echo "welcome" ;
-});
 
 //- authentication utilisateur
 $app->post('/auth', UserAuthentificationController::class. ':login');

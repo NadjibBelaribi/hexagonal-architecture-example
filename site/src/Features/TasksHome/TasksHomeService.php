@@ -34,10 +34,7 @@ class TasksHomeService
             return $todos;
         }
     }
-    // version API
-    /* public function getTasks() {
-        return $this->api->getAllTasks() ;
-    }*/
+
 
     public function getUsers()
     {

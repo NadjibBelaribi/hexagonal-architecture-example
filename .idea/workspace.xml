@@ -23,85 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3412089c-fde2-4fb9-b17d-43b9522fc2e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/site/src/Features/SignOut/SignOutController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/Features/NotFound/NotFoundController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/todo-list.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/todo-list.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/.env" beforeDir="false" afterPath="$PROJECT_DIR$/api/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/dependencies.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/dependencies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Endpoints/ListingAllTasks/ListingAllTasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Endpoints/ListingAllTasks/ListingAllTasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/.env" beforeDir="false" afterPath="$PROJECT_DIR$/site/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/app/dependencies.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/app/dependencies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/app/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/app/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/site/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/site/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/app/middleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/app/middleware.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/site/javascript/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/site/public/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/Controllers/FilterController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/Controllers/HomeController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/Controllers/LoginController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/Controllers/NotFoundController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/Controllers/TasksController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/Features/Login/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/Features/Login/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/src/Features/TasksHome/TasksHomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/Features/TasksHome/TasksHomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/src/Features/TasksHome/TasksHomeService.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/Features/TasksHome/TasksHomeService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/src/Repository/ApiTodoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/Repository/ApiTodoRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/composer/autoload_classmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/composer/autoload_files.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/composer/autoload_psr4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/composer/autoload_static.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/composer/installed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/UPGRADING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Client.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/ClientInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Cookie/CookieJar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Cookie/CookieJarInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Cookie/FileCookieJar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Cookie/SessionCookieJar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Cookie/SetCookie.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Exception/BadResponseException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Exception/ClientException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Exception/ConnectException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Exception/GuzzleException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Exception/ServerException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Exception/TooManyRedirectsException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Exception/TransferException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Handler/CurlFactoryInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Handler/EasyHandle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Handler/MockHandler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/HandlerStack.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/MessageFormatter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Middleware.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Pool.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/RequestOptions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/RetryMiddleware.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/TransferStats.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/Utils.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/guzzlehttp/guzzle/src/functions_include.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/php-di/invoker/src/Invoker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/php-di/invoker/src/ParameterResolver/Container/TypeHintContainerResolver.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/php-di/invoker/src/ParameterResolver/TypeHintResolver.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/vendor/php-di/invoker/src/Reflection/CallableReflection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/views/tasks.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/tasks.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +217,7 @@
       <workItem from="1610368184388" duration="1102000" />
       <workItem from="1610921582776" duration="103000" />
       <workItem from="1610921689101" duration="6901000" />
-      <workItem from="1610930380953" duration="2109000" />
+      <workItem from="1610930380953" duration="4641000" />
     </task>
     <servers />
   </component>

@@ -30,16 +30,17 @@ class TasksHomeController
 
         if($_SESSION['userEmail'] == "")
         {
-            var_dump("we need to redirect him vers 404");
+            return $this->twig->render($response, 'notfound.tpl');
         }
         try {
 
-            $todos = ($this->service->getTasks());
-            $users = ($this->service->getUsers());
+            $todos = $this->service->getTasks();
+            $users = $this->service->getUsers();
+
              return $this->twig->render($response, 'tasks.tpl', [
                 'todos' => $todos,
                 'users' => $users,
-                'currentUser'=>ucfirst(strtok($_SESSION['userEmail'],'@')),
+                 'currentUser'=>ucfirst(strtok($_SESSION['userEmail'],'@')),
                 'error' => 'Could not render tasks page'
             ]);
         } catch (NoUsersFoundException $exception) {
