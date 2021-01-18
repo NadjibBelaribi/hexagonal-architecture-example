@@ -149,7 +149,7 @@
                             <div class="input-group mb-3">
                                 <input id="commentInput" name="comment" type="text" class="form-control"
                                        placeholder="Add a comment" aria-label="Recipient's username"
-                                       aria-describedby="basic-addon2">
+                                       aria-describedby="basic-addon2" required>
 
                                 {% if curTask %}
                                 <div class="input-group-append">
