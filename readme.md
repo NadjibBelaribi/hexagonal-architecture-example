@@ -25,21 +25,15 @@
     - Add tasks in AJAX 
     - Add comments in AJAX 
     - Sign Out in AJAX
+    - API Call
 
-# Tasks sharing
-    Amir 
-     - Front-end major part
-     - Setting up Twig templates 
-     - Setting up SCSS sheets
-     - Site responsiveness
-     - Writing the DB dataset seeds
-     - Error management (middleware) 404
-     
-    Nadjib  
-    - Back-end major part
-    - Implementing Routes , Models and Controllers
-    - Login and Tasks JS features 
-    - Unit tests 
     
+# How to launch it ?
+    - cd api && composer install
+    - cd ../site && composer install && npm i 
+    - cd .. && (sudo) docker-compose up --build
+    - website is on localhost:8003
     
+
+
 
